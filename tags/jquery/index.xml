@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JQuery on NERVGEEK</title>
+    <link>/tags/jquery/</link>
+    <description>Recent content in JQuery on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 15 Apr 2016 09:43:32 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JQuery、Bootstrap 3.0 以及JQuery.form.js兼容性以及解决办法</title>
+      <link>/2016/04/jquery-bootstrap3-and-jquery-form-js-compatibility-and-solutions/</link>
+      <pubDate>Fri, 15 Apr 2016 09:43:32 +0000</pubDate>
+      
+      <guid>/2016/04/jquery-bootstrap3-and-jquery-form-js-compatibility-and-solutions/</guid>
+      <description>随着网页的设计越来越美丽，很多人都发现老旧的IE 6、7、8都无法呈现出最好的画面，甚至无法使用部分功能从而使用Chrome之类的浏览器。但这</description>
+    </item>
+    
+  </channel>
+</rss>

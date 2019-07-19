@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fluent on NERVGEEK</title>
+    <link>/tags/fluent/</link>
+    <description>Recent content in Fluent on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Apr 2017 01:18:19 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/fluent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu 16.04 配置 Fluentd 收集 Docker 容器日志保存到 Mongodb</title>
+      <link>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</link>
+      <pubDate>Tue, 18 Apr 2017 01:18:19 +0000</pubDate>
+      
+      <guid>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</guid>
+      <description>一个容器运行起来，我们判断容器是否正常运行，一般都是去查看日志。默认 Docker 产生的日志文件都保持在本机， Ubuntu 下 Docker 保存路径是 /var/lib/dock</description>
+    </item>
+    
+  </channel>
+</rss>

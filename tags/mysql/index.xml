@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on NERVGEEK</title>
+    <link>/tags/mysql/</link>
+    <description>Recent content in MySQL on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 14 Nov 2016 14:44:45 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySQL 根据 datatime 获取每隔分钟一条信息</title>
+      <link>/2016/11/2016-11-14-mysql-e6a0b9e68dae-datatime-e88eb7e58f96e6af8fe99a94e58886e9929fe4b880e69da1e4bfa1e681af/</link>
+      <pubDate>Mon, 14 Nov 2016 14:44:45 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-14-mysql-e6a0b9e68dae-datatime-e88eb7e58f96e6af8fe99a94e58886e9929fe4b880e69da1e4bfa1e681af/</guid>
+      <description>目前做的 Docker 监控脚本，用的是自带 docker-api 每秒获取一次各容器占用信息，在脚本里设置了每十秒写入一次数据库，但网页的 Chart 显示也是十秒间距，那要看 最近六小时</description>
+    </item>
+    
+    <item>
+      <title>Python之MySQL的Select操作返回Dict类型</title>
+      <link>/2016/09/2016-09-24-pythone4b98bmysqle79a84selecte6938de4bd9ce8bf94e59b9edicte7b1bbe59e8b/</link>
+      <pubDate>Sat, 24 Sep 2016 12:17:53 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-24-pythone4b98bmysqle79a84selecte6938de4bd9ce8bf94e59b9edicte7b1bbe59e8b/</guid>
+      <description>之前不知道 Select 操作可以获取 Dict 类型，每次取出 Select 返回的 Tuple 都是用下标来取的。只要修改过数据库那下标又不一样，那就要大幅修改 Jinja2 和代码了。假如取出的是 Dict</description>
+    </item>
+    
+    <item>
+      <title>在CentOS6.4部署django环境(python&#43;nginx&#43;uwsgi&#43;mysql)(另外再加一个Redis和Redis-py的配置)</title>
+      <link>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</link>
+      <pubDate>Fri, 24 Jun 2016 12:20:27 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</guid>
+      <description>最近想学学python web，虽然Windows也能部署开发环境，但Linux还是主流，所以直接在Linux上部署环境学习python了。 0x01</description>
+    </item>
+    
+    <item>
+      <title>一键LNMP的命令以及配置文件的存放地址</title>
+      <link>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</link>
+      <pubDate>Thu, 17 Mar 2016 07:32:19 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</guid>
+      <description>一般人快速搭建网站都会选择一键LNMP来快速搭建环境，本博客就是基于那个一键LNMP搭建起来的，日常维护使用非常方便。 管理命令： * **LNM</description>
+    </item>
+    
+    <item>
+      <title>修改WampServer的MySQL空密码</title>
+      <link>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</link>
+      <pubDate>Fri, 04 Mar 2016 07:26:06 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</guid>
+      <description>在Windows下开发PHP，搭建Linux虚拟机无疑性能开销太大，自己在Windows下搭建PHP运行环境也非常麻烦、不稳定，因此很多人会</description>
+    </item>
+    
+    <item>
+      <title>Docker入门以及搭建WordPress与MySQL</title>
+      <link>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</link>
+      <pubDate>Thu, 21 Jan 2016 08:23:00 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</guid>
+      <description>上年因为比赛所需稍微接触了一下(真的只有一下)Docker，那个时候连启动都不知道，只是去维基了下Docker罢了。 回到正题，我搭建Dock</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x06</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x06/</link>
+      <pubDate>Tue, 12 Jan 2016 08:21:01 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x06/</guid>
+      <description>6.运行带有查询参数的语句 对于 不携带任何参数的查询语句，我们可以使用 query方法处理SELECT操作，使用exec方法处理 INSERT，U</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x05</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x05/</link>
+      <pubDate>Tue, 12 Jan 2016 08:06:50 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x05/</guid>
+      <description>5.执行 INSERT, UPDATE, DELETE 操作 5.1. mysql代码: $results = mysql_query(&amp;quot;UPDATE table SET field=&#39;value&#39;&amp;quot;) or die(mysql_error()); $affected_rows = mysql_affected_rows($result); echo $affected_rows.&#39; were affected&#39;; 5.2. PDO代码: $affected_rows = $db-&amp;gt;exec(&amp;quot;UPDATE table SET field=&#39;value&#39;&amp;quot;); echo $affected_rows.&#39; were affected&#39; DELETE ， INSERT 操作同样适用。</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x04</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x04/</link>
+      <pubDate>Tue, 12 Jan 2016 08:00:29 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x04/</guid>
+      <description>4.简单的查询语句（SELECT） 4.1. mysql代码: $result = mysql_query(&#39;SELECT * from table&#39;) or die(mysql_error()); $num_rows = mysql_num_rows($result); while($row = mysql_fetch_assoc($result)) { echo $row[&#39;field1&#39;].&#39; &#39;.$row[&#39;field2&#39;]; //etc... } 4.2. PDO代码: foreach($db-&amp;gt;query(&#39;SELECT * FROM table&#39;) as $row) { echo $row[&#39;field1&#39;].&#39; &#39;.$row[&#39;field2&#39;]; //etc... } query() 方法返回</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x03</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x03/</link>
+      <pubDate>Tue, 12 Jan 2016 07:51:45 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x03/</guid>
+      <description>3.错误处理 3.1. mysql_*函数的错误处理 //connected to mysql $result = mysql_query(&amp;quot;SELECT * FROM table&amp;quot;, $link) or die(mysql_error($link)); OR die()是个不错的错误处理方法，但是会因此结束页面，将错误信息呈现到用</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x02</title>
+      <link>/2016/01/2016-01-10-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x02/</link>
+      <pubDate>Sun, 10 Jan 2016 11:48:11 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-10-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x02/</guid>
+      <description>2.连接MySQL 2.1. 以前的方式 $link = mysql_connect(&#39;localhost&#39;, &#39;user&#39;, &#39;pass&#39;); mysql_select_db(&#39;testdb&#39;, $link); mysql_set_charset(&#39;UTF-8&#39;, $link); 2.2. 新的方式 创建一个PDO对象，参数包括 DSN，username，password 和 一个驱动选</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x01</title>
+      <link>/2016/01/2016-01-05-phpe4b8admysqle695b0e68daee5ba93pdoe69599e7a88b/</link>
+      <pubDate>Tue, 05 Jan 2016 13:41:28 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-05-phpe4b8admysqle695b0e68daee5ba93pdoe69599e7a88b/</guid>
+      <description>1、为什么要使用PDO？ mysql函数已经过时，相当一段时间以来，mysql函数在其他SQL数据库编程接口方面已经有所差别；它不支持预处理，</description>
+    </item>
+    
+    <item>
+      <title>MySQL基础语句</title>
+      <link>/2015/10/2015-10-14-117/</link>
+      <pubDate>Wed, 14 Oct 2015 06:40:45 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-117/</guid>
+      <description>登陆MySQL： mysql [-h 主机地址] -u 用户名 -p 修改root的登陆密码： 方法一： mysqladmin -u 用户名 -p 旧密码 password 新密码(首先在DOS下进入目录mysql\bin</description>
+    </item>
+    
+  </channel>
+</rss>

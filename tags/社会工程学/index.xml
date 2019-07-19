@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>社会工程学 on NERVGEEK</title>
+    <link>/tags/%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E5%AD%A6/</link>
+    <description>Recent content in 社会工程学 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Oct 2015 11:21:43 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>社会工程学工具集Social-Engineer Toolkit基础使用教程</title>
+      <link>/2015/10/how-to-use-social-engineer-toolkit/</link>
+      <pubDate>Mon, 26 Oct 2015 11:21:43 +0000</pubDate>
+      
+      <guid>/2015/10/how-to-use-social-engineer-toolkit/</guid>
+      <description>关于社会工程学工具集Social-Engineer Toolkit （SET，以下简称SET）这玩意的名字相信各位也是知道一二了。SET和它的好基友Meta</description>
+    </item>
+    
+  </channel>
+</rss>

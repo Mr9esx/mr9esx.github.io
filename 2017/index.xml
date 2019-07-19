@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017s on NERVGEEK</title>
+    <link>/2017/</link>
+    <description>Recent content in 2017s on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Nov 2017 08:51:27 +0000</lastBuildDate>
+    
+	<atom:link href="/2017/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>經紀日記「1」</title>
+      <link>/2017/11/2017-11-08-e7b693e7b480e697a5e8a898e3808c1e3808d/</link>
+      <pubDate>Wed, 08 Nov 2017 08:51:27 +0000</pubDate>
+      
+      <guid>/2017/11/2017-11-08-e7b693e7b480e697a5e8a898e3808c1e3808d/</guid>
+      <description>第 X 日 早上七時，被她叫醒，八時，到大同飲早茶，周二娘獨自囘家去了。她說自己要買鑽石，恐怕是「水盤」，大概和人家「踏路」是眞。王仔走來，「猛擦</description>
+    </item>
+    
+    <item>
+      <title>大学三年</title>
+      <link>/2017/05/2017-05-17-e5a4a7e5ada6e4b889e5b9b4/</link>
+      <pubDate>Wed, 17 May 2017 15:20:09 +0000</pubDate>
+      
+      <guid>/2017/05/2017-05-17-e5a4a7e5ada6e4b889e5b9b4/</guid>
+      <description>我的大学生活，准确来说只有两年半，还有半年时间是出来实习的。虽然时间不多，但我觉得大学三年经历过的事是初高中无法比拟的。当然，初高中所结交的</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 16.04 配置 Fluentd 收集 Docker 容器日志保存到 Mongodb</title>
+      <link>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</link>
+      <pubDate>Tue, 18 Apr 2017 01:18:19 +0000</pubDate>
+      
+      <guid>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</guid>
+      <description>一个容器运行起来，我们判断容器是否正常运行，一般都是去查看日志。默认 Docker 产生的日志文件都保持在本机， Ubuntu 下 Docker 保存路径是 /var/lib/dock</description>
+    </item>
+    
+    <item>
+      <title>CentOS 7.0 配置 DockerM Web 环境</title>
+      <link>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</link>
+      <pubDate>Tue, 14 Feb 2017 05:50:38 +0000</pubDate>
+      
+      <guid>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</guid>
+      <description>一、安装 Docker 1、安装 yum-utils sudo yum &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install -y yum-utils 2、设置 yum 使用稳定的 repository yum-config-manager &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ --add-repo &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ https:&amp;lt;span class=&amp;quot;hljs-comment&amp;quot;&amp;gt;//docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo 3、创建缓存 yum makecache fast 4、安装 Docker yum -y &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install docker-&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;engine 二、安装 Rabbit MQ 1、安装 Erlang yum install erlang 2</description>
+    </item>
+    
+    <item>
+      <title>Docker-py 2.0 新建容器参数笔记</title>
+      <link>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</link>
+      <pubDate>Tue, 03 Jan 2017 09:25:10 +0000</pubDate>
+      
+      <guid>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</guid>
+      <description>&amp;hellip;期末事多，博客都忘了&amp;hellip; docker-py升级到了 2.0 版本，功能变化不算很大，使用方法倒是变了一圈，以前使用 Client 方法</description>
+    </item>
+    
+  </channel>
+</rss>

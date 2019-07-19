@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nmap on NERVGEEK</title>
+    <link>/tags/nmap/</link>
+    <description>Recent content in Nmap on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 12 Oct 2015 08:21:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nmap速查表</title>
+      <link>/2015/10/namp-zoom-table/</link>
+      <pubDate>Mon, 12 Oct 2015 08:21:06 +0000</pubDate>
+      
+      <guid>/2015/10/namp-zoom-table/</guid>
+      <description>基本语法： nmap [扫描方式] [命令选项] {目标} 扫描目标格式： IPv4 地址： 192.168.1.1 IPv6 地址：AABB:CCDD::FF%eth0 主机名：www.target</description>
+    </item>
+    
+    <item>
+      <title>Nmap从探测到漏洞利用备忘录 – Nmap简介(一)</title>
+      <link>/2015/10/introduction-to-namp-one/</link>
+      <pubDate>Mon, 12 Oct 2015 06:03:48 +0000</pubDate>
+      
+      <guid>/2015/10/introduction-to-namp-one/</guid>
+      <description>在侦查期间，扫描一直是信息收集的初始阶段。 什么是侦查 侦查是尽可能多收集关于目标网络的信息。从黑客的角度来看，信息收集对于一次攻击非常有用，所</description>
+    </item>
+    
+  </channel>
+</rss>

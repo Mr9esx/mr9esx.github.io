@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>implements on NERVGEEK</title>
+    <link>/tags/implements/</link>
+    <description>Recent content in implements on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 Jan 2016 08:50:34 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/implements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的接口以及接口和抽象类的区别</title>
+      <link>/2016/01/2016-01-24-javae4b8ade79a84e68ea5e58fa3/</link>
+      <pubDate>Sun, 24 Jan 2016 08:50:34 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8ade79a84e68ea5e58fa3/</guid>
+      <description>1 . 接口可以理解成一个特殊的类，其组成全都是全局常量以及公共的抽象方法所组成。 2 . 使用interface关键字来修饰。 3 . 接口必须经过子类来</description>
+    </item>
+    
+  </channel>
+</rss>

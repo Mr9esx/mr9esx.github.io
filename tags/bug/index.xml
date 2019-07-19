@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bug on NERVGEEK</title>
+    <link>/tags/bug/</link>
+    <description>Recent content in Bug on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 23 Nov 2015 09:53:59 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>解决Ubuntu下VI的上下左右出现ABCD等问题</title>
+      <link>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</link>
+      <pubDate>Mon, 23 Nov 2015 09:53:59 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</guid>
+      <description>依次执行以下两个命令即可解决Ubuntu下vi编辑器上下左右方向键变ABCD的问题。 一、sudo apt-get remove vim-common 二、sudo apt-get install vim 来自为知笔记(Wiz</description>
+    </item>
+    
+  </channel>
+</rss>

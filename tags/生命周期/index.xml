@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生命周期 on NERVGEEK</title>
+    <link>/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</link>
+    <description>Recent content in 生命周期 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 01 Feb 2016 12:08:25 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android中的Activity生命周期</title>
+      <link>/2016/02/2016-02-01-androide4b8ade79a84activitye7949fe591bde591a8e69c9f/</link>
+      <pubDate>Mon, 01 Feb 2016 12:08:25 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-01-androide4b8ade79a84activitye7949fe591bde591a8e69c9f/</guid>
+      <description>先放一张图了解一下Activity的生命周期： 先占个位，生命周期图找日详细写一写。 本人英语渣，粗略翻译。 上图可知，Activity有七个函数</description>
+    </item>
+    
+  </channel>
+</rss>

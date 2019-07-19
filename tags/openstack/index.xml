@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenStack on NERVGEEK</title>
+    <link>/tags/openstack/</link>
+    <description>Recent content in OpenStack on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Dec 2015 13:24:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>先电OpenStack v1.2 – PaaS平台各应用平台搭建配置</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0e59084e5ba94e794a8e5b9b3e58fb0e690ade5bbbae9858de7bdae/</link>
+      <pubDate>Wed, 30 Dec 2015 13:24:14 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0e59084e5ba94e794a8e5b9b3e58fb0e690ade5bbbae9858de7bdae/</guid>
+      <description>应用平台安装配置 前提：把Node的公钥添加至PaaS平台；在Node节点root下新建mygit和sourcegit两个文件夹，并从控制节点</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 – PaaS平台Git节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0gite88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:13:10 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0gite88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>**Git **安装 前提：修改eth0的ip；在hosts文件上添加broker节点的ip和域名。 配置yum源 [openshift-base] name=openshift-base baseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies enabled=1 gpgcheck=0</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - PaaS平台Node节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0nodee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:10:16 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0nodee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>**Node **安装 前提：修改eth0的ip；selinux修改为enforcing，然后重启！！！ 配置yum源 [openshift-base] name=openshift-basebaseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies enabled=1 gpgcheck=0</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - PaaS平台Broker节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0brokere88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:08:01 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0brokere88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Broker安装 前提：修改eth0的ip；selinux修改为enforcing，然后重启！！！ 设置源： [openshift-base] name=openshift-base baseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - IaaS平台Compute节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0computee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 12:59:08 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0computee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Compute安装 **前提：修改eth0、eth1的ip（只能有一张网卡设置网关，建议设置外网网关）；selinux修改为permissiv</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - IaaS平台Controller节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 11:34:16 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Controller安装 前提：修改eth0、eth1的ip（只能有一张网卡设置网关，建议设置外网网关）；selinux修改为permissi</description>
+    </item>
+    
+    <item>
+      <title>openstack的常用命令</title>
+      <link>/2015/12/2015-12-10-openstacke79a84e5b8b8e794a8e591bde4bba4/</link>
+      <pubDate>Thu, 10 Dec 2015 10:09:15 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-10-openstacke79a84e5b8b8e794a8e591bde4bba4/</guid>
+      <description>1、查看rabbitmq 队列：rabbitmqctl list_queues 2、查看keystone的用户：keystone user-list 3、查看keystone endpoi</description>
+    </item>
+    
+  </channel>
+</rss>

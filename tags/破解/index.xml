@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>破解 on NERVGEEK</title>
+    <link>/tags/%E7%A0%B4%E8%A7%A3/</link>
+    <description>Recent content in 破解 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Feb 2016 11:40:35 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%A0%B4%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IntelliJ IDEA 15 联网激活</title>
+      <link>/2016/02/2016-02-28-intellij-idea-15-e88194e7bd91e6bf80e6b4bb/</link>
+      <pubDate>Sun, 28 Feb 2016 11:40:35 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-28-intellij-idea-15-e88194e7bd91e6bf80e6b4bb/</guid>
+      <description>直接利用iteblog博客提供的License server（服务器地址为http://www.iteblog.com/idea/key.ph</description>
+    </item>
+    
+    <item>
+      <title>Crunch生成字典&#43;Medusa暴力破解FTP\SSH等</title>
+      <link>/2015/10/2015-10-14-crunche7949fe68890e5ad97e585b8medusae69ab4e58a9be7a0b4e8a7a3ftpsshe7ad89/</link>
+      <pubDate>Wed, 14 Oct 2015 07:32:43 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-crunche7949fe68890e5ad97e585b8medusae69ab4e58a9be7a0b4e8a7a3ftpsshe7ad89/</guid>
+      <description>0x01、使用Crunch生成字典 Crunch是Kali自带的一个字典生成软件，使用方便，生成迅速。 例如我需要生成一个6位的密码，密码组合元</description>
+    </item>
+    
+    <item>
+      <title>aircrack-ng扫描&#43;reaver跑pin破解开启wps功能的Wifi</title>
+      <link>/2015/10/2015-10-13-aircrack-nge689abe68f8freavere8b791pine7a0b4e8a7a3e5bc80e590afwpse58a9fe883bde79a84wifi/</link>
+      <pubDate>Tue, 13 Oct 2015 11:27:42 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-aircrack-nge689abe68f8freavere8b791pine7a0b4e8a7a3e5bc80e590afwpse58a9fe883bde79a84wifi/</guid>
+      <description>插上无线网卡，先运行下列代码，避免无线网卡被使用。 airmon-ng check kill 再运行 airmon-ng start wlan0(无线网卡) 准备完毕开始扫描附近wifi airodump-ng wlan0mon 出现以下画面 在MB这</description>
+    </item>
+    
+    <item>
+      <title>Aircrack-ng扫描、抓握手包、跑字典破Wifi密码</title>
+      <link>/2015/10/2015-10-13-aircrack-nge689abe68f8fe38081e68a93e68fa1e6898be58c85e38081e8b791e5ad97e585b8e7a0b4wifie5af86e7a081/</link>
+      <pubDate>Tue, 13 Oct 2015 10:10:31 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-aircrack-nge689abe68f8fe38081e68a93e68fa1e6898be58c85e38081e8b791e5ad97e585b8e7a0b4wifie5af86e7a081/</guid>
+      <description>简记： 插上网卡，先运行 airmon-ng check kill 再运行 airmon-ng start wlan0(无线网卡) 准备完毕开始扫描附近wifi airodump-ng wlan0mon 会显示以下结果 重要的几个信息： BSSID：网卡物</description>
+    </item>
+    
+  </channel>
+</rss>

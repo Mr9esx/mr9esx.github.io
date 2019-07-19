@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>深度商店 on NERVGEEK</title>
+    <link>/tags/%E6%B7%B1%E5%BA%A6%E5%95%86%E5%BA%97/</link>
+    <description>Recent content in 深度商店 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 16 Apr 2016 14:50:47 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%B7%B1%E5%BA%A6%E5%95%86%E5%BA%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>解决Deepin 15.1.1 深度商店下载软件一直显示等待下载</title>
+      <link>/2016/04/2016-04-16-e8a7a3e586b3deepin-15-1-1-e6b7b1e5baa6e59586e5ba97e4b88be8bdbde8bdafe4bbb6e4b880e79bb4e698bee7a4bae7ad89e5be85e4b88be8bdbd/</link>
+      <pubDate>Sat, 16 Apr 2016 14:50:47 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-16-e8a7a3e586b3deepin-15-1-1-e6b7b1e5baa6e59586e5ba97e4b88be8bdbde8bdafe4bbb6e4b880e79bb4e698bee7a4bae7ad89e5be85e4b88be8bdbd/</guid>
+      <description>最近给老旧的笔记本换上Linux系统成为主力系统，要求是简便容易上手还能玩DotA2的，国内的Deepin就是非常不错的选择。 不仅界面简洁好</description>
+    </item>
+    
+  </channel>
+</rss>

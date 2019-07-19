@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interface on NERVGEEK</title>
+    <link>/tags/interface/</link>
+    <description>Recent content in interface on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 Mar 2016 07:24:52 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/interface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java之在接口中使用泛型</title>
+      <link>/2016/03/2016-03-01-javae4b98be59ca8e68ea5e58fa3e4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Tue, 01 Mar 2016 07:24:52 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-01-javae4b98be59ca8e68ea5e58fa3e4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>在接口上使用泛型并不多见，但还是需要学会看懂。 interface Inter&amp;lt;t&amp;gt;{ void show(T t); } class Intermpl&amp;lt;t&amp;gt; implements Inter&amp;lt;t&amp;gt;{ public void show(T t){ System.out.println(t); } } class Demo{ public static void main(String[] args){ Intermpl&amp;lt;string&amp;gt; imS = new Intermpl&amp;lt;string&amp;gt;(); imS.show(&amp;quot;a&amp;quot;); Intermpl&amp;lt;integer&amp;gt; imI = new Intermpl&amp;lt;integer&amp;gt;(); imI.show(123); } }</description>
+    </item>
+    
+  </channel>
+</rss>

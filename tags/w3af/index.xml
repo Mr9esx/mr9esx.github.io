@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>w3af on NERVGEEK</title>
+    <link>/tags/w3af/</link>
+    <description>Recent content in w3af on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 18 Oct 2015 13:06:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/w3af/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>诸多漏洞的网站入侵实验</title>
+      <link>/2015/10/2015-10-18-e8afb8e5a49ae6bc8fe6b49ee79a84e7bd91e7ab99e585a5e4beb5e5ae9ee9aa8c/</link>
+      <pubDate>Sun, 18 Oct 2015 13:06:16 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-18-e8afb8e5a49ae6bc8fe6b49ee79a84e7bd91e7ab99e585a5e4beb5e5ae9ee9aa8c/</guid>
+      <description>先使用w3af扫描网站漏洞，发现一个有GET注入点的网址。 换上sqlmap扫描有注入点的网址，加上&amp;ndash;tables参数，发现能爆库</description>
+    </item>
+    
+  </channel>
+</rss>

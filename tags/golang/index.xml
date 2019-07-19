@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on NERVGEEK</title>
+    <link>/tags/golang/</link>
+    <description>Recent content in Golang on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 24 Jun 2019 14:21:38 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go 面试题</title>
+      <link>/2019/06/golang-interview-question/</link>
+      <pubDate>Mon, 24 Jun 2019 14:21:38 +0000</pubDate>
+      
+      <guid>/2019/06/golang-interview-question/</guid>
+      <description>有些题目是在网上摘录，有些是把自己不懂的列为题目。 1. 描述一下你参加过的项目 答： 2. HTTP1.1 定义了几种方法？分别有什么用？ 答： 定义了八种方法（GET/</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 下的 go-micro 安装笔记（go mod 模式）</title>
+      <link>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</link>
+      <pubDate>Thu, 09 May 2019 03:42:53 +0000</pubDate>
+      
+      <guid>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</guid>
+      <description>初次安装 go-micro ，遇到不少问题。 第一步先安装 go-micro: &amp;lt;code class=&amp;quot;&amp;quot;&amp;gt;go get github.com/micro/go-micro ### 第二步安装 grpc 和 protobuf: 参考本博客文章： [Windows 10 安装 Golang gRpc](https://www.nervgeek.com/2019/04/28/windows-10-%E5%AE%89%E8%A3%85-golang-grpc/) ### 第三步安装 protoc 的 micro 插件 用这个插件生成的代码会有</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 安装 Golang gRpc</title>
+      <link>/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/</link>
+      <pubDate>Sun, 28 Apr 2019 07:20:42 +0000</pubDate>
+      
+      <guid>/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/</guid>
+      <description>安装 Protobuf Protobuf 会基于 .proto 文件生成各种 grpc 代码文件。 前往：Github 地址 下载相对应平台的包，并把 bin 目录加入到环境变量里。 打开命令行，输入 protoc 检验一下。 安</description>
+    </item>
+    
+    <item>
+      <title>Golang - 刷题（1）</title>
+      <link>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</link>
+      <pubDate>Fri, 14 Dec 2018 09:20:28 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</guid>
+      <description>下面的程序运行后为什么会爆异常。 原题 Main 里面的 sleep 原本是 time.Sleep(time.Second * 100000000000000) ，不过原因太明显了（constant 100000000000000000000000 overflows time.Duration ），我就改为 10 秒。 package main import ( &amp;quot;fmt&amp;quot; &amp;quot;time&amp;quot; ) type Project struct{} func</description>
+    </item>
+    
+    <item>
+      <title>Golang - 关于传参是传值还是传引用</title>
+      <link>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</link>
+      <pubDate>Thu, 13 Dec 2018 08:51:41 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</guid>
+      <description>对于我这种学 Go 没多久的新手缺少实战经验的人来说，翻翻别人博客学习一下别人的总结是避免躺坑最快捷的方式之一，但有些人的博客写的示例代码，会刷新</description>
+    </item>
+    
+    <item>
+      <title>Golang - 牢记 defer 三个特性</title>
+      <link>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</link>
+      <pubDate>Mon, 10 Dec 2018 14:18:15 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</guid>
+      <description>光读书是记不牢的，必须要上手多写累积经验，多点刷题写写笔记，才记得住。 这不，我刚开始看 Go 的面试题，做到关于 defer 的输出的时候，就基本蒙了。 实际上</description>
+    </item>
+    
+    <item>
+      <title>Golang - for ... range 的一个小细节</title>
+      <link>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</link>
+      <pubDate>Mon, 10 Dec 2018 03:41:25 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</guid>
+      <description>昨天晚上看到一道 Go 的基础面试题，看到这道题，觉得还是很容易躺坑，就记录一下吧。 package main import &amp;quot;fmt&amp;quot; type Student struct { Name string Age int } func main() { stus := []Student{ { &amp;quot;Lee&amp;quot;, 32, }, { &amp;quot;Huang&amp;quot;, 40, }, { &amp;quot;Zhao&amp;quot;, 35, },</description>
+    </item>
+    
+  </channel>
+</rss>

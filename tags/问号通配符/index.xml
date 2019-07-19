@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>问号通配符 on NERVGEEK</title>
+    <link>/tags/%E9%97%AE%E5%8F%B7%E9%80%9A%E9%85%8D%E7%AC%A6/</link>
+    <description>Recent content in 问号通配符 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 Mar 2016 08:17:24 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E9%97%AE%E5%8F%B7%E9%80%9A%E9%85%8D%E7%AC%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java之泛型中的通配符（）以及泛型限定</title>
+      <link>/2016/03/2016-03-01-javae4b98be6b39be59e8be4b8ade79a84e9809ae9858de7aca6efbc88efbc89e4bba5e58f8ae6b39be59e8be99990e5ae9a/</link>
+      <pubDate>Tue, 01 Mar 2016 08:17:24 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-01-javae4b98be6b39be59e8be4b8ade79a84e9809ae9858de7aca6efbc88efbc89e4bba5e58f8ae6b39be59e8be99990e5ae9a/</guid>
+      <description>问号通配符 Java的泛型中除了常用的T t之外，还有另一种通配符——&amp;lt;?&amp;gt;，问号通配符和T t通配符并没有非常大的区别，唯一的区别就</description>
+    </item>
+    
+  </channel>
+</rss>

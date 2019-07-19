@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>range on NERVGEEK</title>
+    <link>/tags/range/</link>
+    <description>Recent content in range on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Dec 2018 03:41:25 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/range/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang - for ... range 的一个小细节</title>
+      <link>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</link>
+      <pubDate>Mon, 10 Dec 2018 03:41:25 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</guid>
+      <description>昨天晚上看到一道 Go 的基础面试题，看到这道题，觉得还是很容易躺坑，就记录一下吧。 package main import &amp;quot;fmt&amp;quot; type Student struct { Name string Age int } func main() { stus := []Student{ { &amp;quot;Lee&amp;quot;, 32, }, { &amp;quot;Huang&amp;quot;, 40, }, { &amp;quot;Zhao&amp;quot;, 35, },</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reaver on NERVGEEK</title>
+    <link>/tags/reaver/</link>
+    <description>Recent content in reaver on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 13 Oct 2015 11:27:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/reaver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>aircrack-ng扫描&#43;reaver跑pin破解开启wps功能的Wifi</title>
+      <link>/2015/10/2015-10-13-aircrack-nge689abe68f8freavere8b791pine7a0b4e8a7a3e5bc80e590afwpse58a9fe883bde79a84wifi/</link>
+      <pubDate>Tue, 13 Oct 2015 11:27:42 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-aircrack-nge689abe68f8freavere8b791pine7a0b4e8a7a3e5bc80e590afwpse58a9fe883bde79a84wifi/</guid>
+      <description>插上无线网卡，先运行下列代码，避免无线网卡被使用。 airmon-ng check kill 再运行 airmon-ng start wlan0(无线网卡) 准备完毕开始扫描附近wifi airodump-ng wlan0mon 出现以下画面 在MB这</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi下跑aircrack和reaver破解路由器PIN码</title>
+      <link>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</link>
+      <pubDate>Tue, 13 Oct 2015 01:17:57 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</guid>
+      <description>最近心血来潮，想把小区里的无线信号测试个遍。基于目前大多数路由器都支持wps,想必各位基友们都知道aircrack和reaver这两个工具，</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发 Develop on NERVGEEK</title>
+    <link>/categories/%E5%BC%80%E5%8F%91-develop/</link>
+    <description>Recent content in 开发 Develop on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 24 Jun 2019 14:21:38 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/%E5%BC%80%E5%8F%91-develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go 面试题</title>
+      <link>/2019/06/golang-interview-question/</link>
+      <pubDate>Mon, 24 Jun 2019 14:21:38 +0000</pubDate>
+      
+      <guid>/2019/06/golang-interview-question/</guid>
+      <description>有些题目是在网上摘录，有些是把自己不懂的列为题目。 1. 描述一下你参加过的项目 答： 2. HTTP1.1 定义了几种方法？分别有什么用？ 答： 定义了八种方法（GET/</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 下的 go-micro 安装笔记（go mod 模式）</title>
+      <link>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</link>
+      <pubDate>Thu, 09 May 2019 03:42:53 +0000</pubDate>
+      
+      <guid>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</guid>
+      <description>初次安装 go-micro ，遇到不少问题。 第一步先安装 go-micro: &amp;lt;code class=&amp;quot;&amp;quot;&amp;gt;go get github.com/micro/go-micro ### 第二步安装 grpc 和 protobuf: 参考本博客文章： [Windows 10 安装 Golang gRpc](https://www.nervgeek.com/2019/04/28/windows-10-%E5%AE%89%E8%A3%85-golang-grpc/) ### 第三步安装 protoc 的 micro 插件 用这个插件生成的代码会有</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 安装 Golang gRpc</title>
+      <link>/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/</link>
+      <pubDate>Sun, 28 Apr 2019 07:20:42 +0000</pubDate>
+      
+      <guid>/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/</guid>
+      <description>安装 Protobuf Protobuf 会基于 .proto 文件生成各种 grpc 代码文件。 前往：Github 地址 下载相对应平台的包，并把 bin 目录加入到环境变量里。 打开命令行，输入 protoc 检验一下。 安</description>
+    </item>
+    
+    <item>
+      <title>Go 基础面试题 —— 简短声明</title>
+      <link>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-e7ae80e79fade5a3b0e6988e/</link>
+      <pubDate>Mon, 01 Apr 2019 09:50:47 +0000</pubDate>
+      
+      <guid>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-e7ae80e79fade5a3b0e6988e/</guid>
+      <description>假设声明x并且未声明y，则下面哪些条款是正确的？ x, _ := f() x, _ = f() x, y := f() x, y = f() 基础知识点：简短声明的左边必须存在一个新变量。 输出： x, _ := f()</description>
+    </item>
+    
+    <item>
+      <title>Go 基础面试题 —— slice 的切片、append、range</title>
+      <link>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-slice-e79a84e58887e78987e38081appende38081range/</link>
+      <pubDate>Mon, 01 Apr 2019 08:58:35 +0000</pubDate>
+      
+      <guid>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-slice-e79a84e58887e78987e38081appende38081range/</guid>
+      <description>执行以下代码时将打印什么？ package main import ( &amp;quot;fmt&amp;quot; ) func main() { s := []int{1, 2, 3} ss := s[1:] ss = append(ss, 4) for _, v := range ss { v += 10 } for i := range ss { ss[i] += 10 } fmt.Println(s) } 基础知识点：slice 是引</description>
+    </item>
+    
+    <item>
+      <title>闲来摸鱼 - 使用 Gitea 、Drone 、Docker Registry 搭建 CI\CD 环境</title>
+      <link>/2018/12/2018-12-24-e997b2e69da5e691b8e9b1bce4bdbfe794a8-gitea-e38081drone-e38081docker-registry-e690ade5bbba-cicd-e78eafe5a283/</link>
+      <pubDate>Mon, 24 Dec 2018 16:09:40 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-24-e997b2e69da5e691b8e9b1bce4bdbfe794a8-gitea-e38081drone-e38081docker-registry-e690ade5bbba-cicd-e78eafe5a283/</guid>
+      <description>占坑</description>
+    </item>
+    
+    <item>
+      <title>Golang - 刷题（1）</title>
+      <link>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</link>
+      <pubDate>Fri, 14 Dec 2018 09:20:28 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</guid>
+      <description>下面的程序运行后为什么会爆异常。 原题 Main 里面的 sleep 原本是 time.Sleep(time.Second * 100000000000000) ，不过原因太明显了（constant 100000000000000000000000 overflows time.Duration ），我就改为 10 秒。 package main import ( &amp;quot;fmt&amp;quot; &amp;quot;time&amp;quot; ) type Project struct{} func</description>
+    </item>
+    
+    <item>
+      <title>Golang - 关于传参是传值还是传引用</title>
+      <link>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</link>
+      <pubDate>Thu, 13 Dec 2018 08:51:41 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</guid>
+      <description>对于我这种学 Go 没多久的新手缺少实战经验的人来说，翻翻别人博客学习一下别人的总结是避免躺坑最快捷的方式之一，但有些人的博客写的示例代码，会刷新</description>
+    </item>
+    
+    <item>
+      <title>Golang - 牢记 defer 三个特性</title>
+      <link>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</link>
+      <pubDate>Mon, 10 Dec 2018 14:18:15 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</guid>
+      <description>光读书是记不牢的，必须要上手多写累积经验，多点刷题写写笔记，才记得住。 这不，我刚开始看 Go 的面试题，做到关于 defer 的输出的时候，就基本蒙了。 实际上</description>
+    </item>
+    
+    <item>
+      <title>Golang - for ... range 的一个小细节</title>
+      <link>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</link>
+      <pubDate>Mon, 10 Dec 2018 03:41:25 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</guid>
+      <description>昨天晚上看到一道 Go 的基础面试题，看到这道题，觉得还是很容易躺坑，就记录一下吧。 package main import &amp;quot;fmt&amp;quot; type Student struct { Name string Age int } func main() { stus := []Student{ { &amp;quot;Lee&amp;quot;, 32, }, { &amp;quot;Huang&amp;quot;, 40, }, { &amp;quot;Zhao&amp;quot;, 35, },</description>
+    </item>
+    
+    <item>
+      <title>微信支付 - 保证接口的幂等性</title>
+      <link>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</link>
+      <pubDate>Sun, 07 Oct 2018 04:09:50 +0000</pubDate>
+      
+      <guid>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</guid>
+      <description>在用户重新发起支付之前，先根据现有微信订单号主动去查询订单信息： &amp;lt;code class=&amp;quot;language-python &amp;quot;&amp;gt;# 如果已存在微信订单id，则去查询订单状态 if order_info.wx_pay_id: try: r = pay.order.query(out_trade_no=order_info.wx_pay_id) if r[&amp;quot;return_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot; and r[&amp;quot;result_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot;: try:</description>
+    </item>
+    
+    <item>
+      <title>Electron 使用 SQLite3 数据库</title>
+      <link>/2018/01/2018-01-16-electron-e4bdbfe794a8-sqlite3-e695b0e68daee5ba93/</link>
+      <pubDate>Tue, 16 Jan 2018 07:37:08 +0000</pubDate>
+      
+      <guid>/2018/01/2018-01-16-electron-e4bdbfe794a8-sqlite3-e695b0e68daee5ba93/</guid>
+      <description>直接通过 npm install &amp;ndash;save sqlite3 安装 sqlite3 是无法正常在 electron 上使用的，翻遍了很多教程，都是相对比较旧的，有些命令甚至在4.0之后都没有了。 直接贴上解决方法了： npm config set</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 16.04 配置 Fluentd 收集 Docker 容器日志保存到 Mongodb</title>
+      <link>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</link>
+      <pubDate>Tue, 18 Apr 2017 01:18:19 +0000</pubDate>
+      
+      <guid>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</guid>
+      <description>一个容器运行起来，我们判断容器是否正常运行，一般都是去查看日志。默认 Docker 产生的日志文件都保持在本机， Ubuntu 下 Docker 保存路径是 /var/lib/dock</description>
+    </item>
+    
+    <item>
+      <title>CentOS 7.0 配置 DockerM Web 环境</title>
+      <link>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</link>
+      <pubDate>Tue, 14 Feb 2017 05:50:38 +0000</pubDate>
+      
+      <guid>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</guid>
+      <description>一、安装 Docker 1、安装 yum-utils sudo yum &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install -y yum-utils 2、设置 yum 使用稳定的 repository yum-config-manager &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ --add-repo &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ https:&amp;lt;span class=&amp;quot;hljs-comment&amp;quot;&amp;gt;//docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo 3、创建缓存 yum makecache fast 4、安装 Docker yum -y &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install docker-&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;engine 二、安装 Rabbit MQ 1、安装 Erlang yum install erlang 2</description>
+    </item>
+    
+    <item>
+      <title>Docker-py 2.0 新建容器参数笔记</title>
+      <link>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</link>
+      <pubDate>Tue, 03 Jan 2017 09:25:10 +0000</pubDate>
+      
+      <guid>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</guid>
+      <description>&amp;hellip;期末事多，博客都忘了&amp;hellip; docker-py升级到了 2.0 版本，功能变化不算很大，使用方法倒是变了一圈，以前使用 Client 方法</description>
+    </item>
+    
+    <item>
+      <title>基于 Yii2 的练手小项目</title>
+      <link>/2016/12/2016-12-13-e59fbae4ba8e-yii2-e79a84e7bb83e6898be5b08fe9a1b9e79bae/</link>
+      <pubDate>Tue, 13 Dec 2016 08:59:33 +0000</pubDate>
+      
+      <guid>/2016/12/2016-12-13-e59fbae4ba8e-yii2-e79a84e7bb83e6898be5b08fe9a1b9e79bae/</guid>
+      <description>Yii2 框架挺好用的，就是和BS前端框架关系太大，源代码都内嵌了BS的样式，导致我用Semantic UI 需要做很多改动，而且要稍微修改一下源代码。 做</description>
+    </item>
+    
+    <item>
+      <title>Python 中的 @staticmethod 和 @classmethod</title>
+      <link>/2016/11/2016-11-16-python-e4b8ade79a84-staticmethod-e5928c-classmethod/</link>
+      <pubDate>Wed, 16 Nov 2016 13:07:30 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-16-python-e4b8ade79a84-staticmethod-e5928c-classmethod/</guid>
+      <description>class Method(): var1 = &amp;lsquo;hello&amp;rsquo; def init(self, var2 = &amp;ldquo;object var&amp;rdquo;): self.var2 = &amp;lsquo;var2&amp;rsquo; def show(self): print self.var2 @staticmethod def staticFunc(): print &amp;lsquo;static method&amp;rsquo; @classmethod def classFunc(cls): print cls.var1 print &amp;lsquo;class method&amp;rsquo; staticmethod和classmethod的相同点: 1.都可以通过类或</description>
+    </item>
+    
+    <item>
+      <title>MySQL 根据 datatime 获取每隔分钟一条信息</title>
+      <link>/2016/11/2016-11-14-mysql-e6a0b9e68dae-datatime-e88eb7e58f96e6af8fe99a94e58886e9929fe4b880e69da1e4bfa1e681af/</link>
+      <pubDate>Mon, 14 Nov 2016 14:44:45 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-14-mysql-e6a0b9e68dae-datatime-e88eb7e58f96e6af8fe99a94e58886e9929fe4b880e69da1e4bfa1e681af/</guid>
+      <description>目前做的 Docker 监控脚本，用的是自带 docker-api 每秒获取一次各容器占用信息，在脚本里设置了每十秒写入一次数据库，但网页的 Chart 显示也是十秒间距，那要看 最近六小时</description>
+    </item>
+    
+    <item>
+      <title>Python连接、操作Rabbit MQ队列</title>
+      <link>/2016/11/2016-11-09-pythone8bf9ee68ea5e38081e6938de4bd9crabbit-mqe9989fe58897/</link>
+      <pubDate>Wed, 09 Nov 2016 09:25:45 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-09-pythone8bf9ee68ea5e38081e6938de4bd9crabbit-mqe9989fe58897/</guid>
+      <description>在网上，非常少关于 Python 连接操作 Rabbit MQ 的详细信息，pika 文档也是没有汉化，避免以后忘记用法又找一遍教程的尴尬，还是先记下来了，而且最近也没更新什</description>
+    </item>
+    
+    <item>
+      <title>探索Docker-py中stats函数返回的JSON信息</title>
+      <link>/2016/10/2016-10-06-e68ea2e7b4a2docker-pye4b8adstatse587bde695b0e8bf94e59b9ee79a84jsone4bfa1e681af/</link>
+      <pubDate>Thu, 06 Oct 2016 05:53:38 +0000</pubDate>
+      
+      <guid>/2016/10/2016-10-06-e68ea2e7b4a2docker-pye4b8adstatse587bde695b0e8bf94e59b9ee79a84jsone4bfa1e681af/</guid>
+      <description>{ &amp;rsquo;blkio_stats&amp;rsquo;: { &amp;rsquo;io_service_time_recursive&amp;rsquo;: [ ], &amp;rsquo;sectors_recursive&amp;rsquo;: [ ], &amp;rsquo;io_service_bytes_recursive&amp;rsquo;: [ { &amp;rsquo;major&amp;rsquo;: 8, &amp;rsquo;value&amp;rsquo;: 81920, &amp;rsquo;minor&amp;rsquo;: 0, &amp;rsquo;op&amp;rsquo;: u&amp;rsquo;Read&amp;rsquo; }, { &amp;rsquo;major&amp;rsquo;: 8, &amp;rsquo;value&amp;rsquo;: 0, &amp;rsquo;minor&amp;rsquo;: 0, u&amp;rsquo;op&amp;rsquo;: u&amp;rsquo;Write&amp;rsquo; }, { u&amp;rsquo;major&amp;rsquo;: 8, u&amp;rsquo;value&amp;rsquo;: 0, u&amp;rsquo;minor&amp;rsquo;: 0, u&amp;rsquo;op&amp;rsquo;: u&amp;rsquo;Sync&amp;rsquo; }, { u&amp;rsquo;major&amp;rsquo;: 8, u&amp;rsquo;value&amp;rsquo;: 81920, u&amp;rsquo;minor&amp;rsquo;: 0, u&amp;rsquo;op&amp;rsquo;: u&amp;rsquo;Async&amp;rsquo; }, { u&amp;rsquo;major&amp;rsquo;: 8, u&amp;rsquo;value&amp;rsquo;: 81920, u&amp;rsquo;minor&amp;rsquo;: 0, u&amp;rsquo;op&amp;rsquo;: u&amp;rsquo;Total&amp;rsquo; } ], u&amp;rsquo;io_serviced_recursive&amp;rsquo;: [ { u&amp;rsquo;major&amp;rsquo;: 8, u&amp;rsquo;value&amp;rsquo;: 4, u&amp;rsquo;minor&amp;rsquo;:</description>
+    </item>
+    
+    <item>
+      <title>基于Docker API 构建的工具[转]</title>
+      <link>/2016/09/2016-09-28-e59fbae4ba8edocker-api-e69e84e5bbbae79a84e5b7a5e585b7/</link>
+      <pubDate>Wed, 28 Sep 2016 14:05:46 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-28-e59fbae4ba8edocker-api-e69e84e5bbbae79a84e5b7a5e585b7/</guid>
+      <description>Docker 是一个流行的新技术来让开发团队将应用嵌入虚拟化的容器内，以便于构建和部署。我们之前已经看到Docker怎样降低DevOps 工作流的复杂性，</description>
+    </item>
+    
+    <item>
+      <title>Python之MySQL的Select操作返回Dict类型</title>
+      <link>/2016/09/2016-09-24-pythone4b98bmysqle79a84selecte6938de4bd9ce8bf94e59b9edicte7b1bbe59e8b/</link>
+      <pubDate>Sat, 24 Sep 2016 12:17:53 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-24-pythone4b98bmysqle79a84selecte6938de4bd9ce8bf94e59b9edicte7b1bbe59e8b/</guid>
+      <description>之前不知道 Select 操作可以获取 Dict 类型，每次取出 Select 返回的 Tuple 都是用下标来取的。只要修改过数据库那下标又不一样，那就要大幅修改 Jinja2 和代码了。假如取出的是 Dict</description>
+    </item>
+    
+    <item>
+      <title>OpenStack镜像制作(Windows和Linux)</title>
+      <link>/2016/09/2016-09-13-openstacke9959ce5838fe588b6e4bd9cwindowse5928clinux/</link>
+      <pubDate>Tue, 13 Sep 2016 01:08:46 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-13-openstacke9959ce5838fe588b6e4bd9cwindowse5928clinux/</guid>
+      <description>Linux 镜像制作 Windows 镜像制作 OpenStack镜像都是安装好的镜像，以达到创建启动即可用。创建一个镜像非常简单，简单来说就类似VMware新建虚拟机</description>
+    </item>
+    
+    <item>
+      <title>OpenStack 问题集合 - 不定时更新</title>
+      <link>/2016/09/2016-09-09-openstack-e997aee9a298e99b86e59088-e4b88de5ae9ae697b6e69bb4e696b0/</link>
+      <pubDate>Fri, 09 Sep 2016 16:00:30 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-09-openstack-e997aee9a298e99b86e59088-e4b88de5ae9ae697b6e69bb4e696b0/</guid>
+      <description>一、安装 Windows 7 x64 位时报 0x0000005d 错误 配置 /etc/nova/nova.conf 文件： virt_type = kvm cpu_mode=host-model 重启 openstack-nova-compute 服务，再新建虚拟机。</description>
+    </item>
+    
+    <item>
+      <title>OpenStack Mitaka手动安装 – 实例操作</title>
+      <link>/2016/09/2016-09-09-openstack-mitakae6898be58aa8e5ae89e8a385-e5ae9ee4be8be6938de4bd9c/</link>
+      <pubDate>Fri, 09 Sep 2016 00:18:39 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-09-openstack-mitakae6898be58aa8e5ae89e8a385-e5ae9ee4be8be6938de4bd9c/</guid>
+      <description>0x01 新建实例 0x01 新建实例 1、打开新建界面 2、填写实例信息 填写实例名称(注意不要带小数点)。 选择镜像(其余镜像是我另外下载的)。 选择实例类型(m1</description>
+    </item>
+    
+    <item>
+      <title>OpenStack Mitaka手动安装 - 搭建Compute节点</title>
+      <link>/2016/09/2016-09-08-openstack-mitakae6898be58aa8e5ae89e8a385-e690ade5bbbacomputee88a82e782b9/</link>
+      <pubDate>Thu, 08 Sep 2016 15:13:07 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-08-openstack-mitakae6898be58aa8e5ae89e8a385-e690ade5bbbacomputee88a82e782b9/</guid>
+      <description>0x02 系统安装 0x03 系统配置和安装必备软件 0x04 安装 Nova 0x05 安装 Neutron 0x01 安装准备 环境： VMware 12 prohttps://www.nervgeek.com/pages/1451.html 虚拟机名称 内存 CPU核数 compute 4G 4核 硬盘容量 网卡一 网卡二 40G 192.168.188.129 10.0.0.3 虚拟机的网</description>
+    </item>
+    
+    <item>
+      <title>OpenStack Mitaka手动安装 - 搭建Controller节点</title>
+      <link>/2016/09/2016-09-07-openstack-mitakae6898be58aa8e5ae89e8a385-controllere88a82e782b9/</link>
+      <pubDate>Wed, 07 Sep 2016 09:55:23 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-07-openstack-mitakae6898be58aa8e5ae89e8a385-controllere88a82e782b9/</guid>
+      <description>0x02 系统安装 0x03 系统配置和安装必备软件 0x04 安装 Mariadb 和 RabbitMQ 0x05 安装 Keystone 0x06 安装 Glance 0x07 安装 Nova 0x08 安装 Neutron 0x09 安装 Dashboard 0x10 路由配置 前言：我也是个OpenStack新手，搭建纯</description>
+    </item>
+    
+    <item>
+      <title>让Python脚本不能同时执行两个（不能同时在后台执行）——单实例</title>
+      <link>/2016/08/2016-08-17-e8aea9pythone8849ae69cace4b88de883bde5908ce697b6e689a7e8a18ce4b8a4e4b8aaefbc88e4b88de883bde5908ce697b6e59ca8e5908ee58fb0e689a7e8a18c/</link>
+      <pubDate>Wed, 17 Aug 2016 13:15:17 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-17-e8aea9pythone8849ae69cace4b88de883bde5908ce697b6e689a7e8a18ce4b8a4e4b8aaefbc88e4b88de883bde5908ce697b6e59ca8e5908ee58fb0e689a7e8a18c/</guid>
+      <description>最近在做一个队列的东西，Python 轮询监听队列内的数据，为了测试，客户端我循环 500 个数据发送过去，结果我在服务端查看输出，只有零零碎碎的一部</description>
+    </item>
+    
+    <item>
+      <title>单节点版Docker管理平台(开发中)</title>
+      <link>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</link>
+      <pubDate>Tue, 16 Aug 2016 15:49:11 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</guid>
+      <description>最近在着手Docker资源管理平台的开发，花了几天系统地学习了Docker，并看了下Docker自带的Restful API，贯彻我的“Lea</description>
+    </item>
+    
+    <item>
+      <title>学习网站收集</title>
+      <link>/2016/08/2016-08-03-e5ada6e4b9a0e7bd91e7ab99e694b6e99b86/</link>
+      <pubDate>Wed, 03 Aug 2016 15:24:14 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-03-e5ada6e4b9a0e7bd91e7ab99e694b6e99b86/</guid>
+      <description>Python、Javascript、Git教程：http://www.liaoxuefeng.com/ （廖雪峰的官方网站） Python yield 使用浅析：ht</description>
+    </item>
+    
+    <item>
+      <title>编译Python脚本</title>
+      <link>/2016/07/2016-07-28-e7bc96e8af91pythone8849ae69cac/</link>
+      <pubDate>Thu, 28 Jul 2016 06:26:26 +0000</pubDate>
+      
+      <guid>/2016/07/2016-07-28-e7bc96e8af91pythone8849ae69cac/</guid>
+      <description>Python可以以用解释器执行，也可以编译之后再执行，当然编译之后的效率会大大提高。 编译之后的格式为.pyc。 我们需要编译day2.py文件</description>
+    </item>
+    
+    <item>
+      <title>在CentOS6.4部署django环境(python&#43;nginx&#43;uwsgi&#43;mysql)(另外再加一个Redis和Redis-py的配置)</title>
+      <link>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</link>
+      <pubDate>Fri, 24 Jun 2016 12:20:27 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</guid>
+      <description>最近想学学python web，虽然Windows也能部署开发环境，但Linux还是主流，所以直接在Linux上部署环境学习python了。 0x01</description>
+    </item>
+    
+    <item>
+      <title>DNS原理入门</title>
+      <link>/2016/06/2016-06-18-dnse58e9fe79086e585a5e997a8/</link>
+      <pubDate>Sat, 18 Jun 2016 02:41:54 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-18-dnse58e9fe79086e585a5e997a8/</guid>
+      <description>昨天是Linux笔试，老师出了好几道我不是很懂的题，果然是基础不扎实啊。其中简答题需要我们把DNS的查询流程写出来，简直难到我了，所以现在学</description>
+    </item>
+    
+    <item>
+      <title>Windows 2000 DHCP 配置用户类</title>
+      <link>/2016/06/2016-06-03-windows-2000-dhcp-e9858de7bdaee794a8e688b7e7b1bb/</link>
+      <pubDate>Fri, 03 Jun 2016 11:17:48 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-03-windows-2000-dhcp-e9858de7bdaee794a8e688b7e7b1bb/</guid>
+      <description>最近要考那个傻逼高新证，看了下书，做了两道习题，那个用户类设置卡住了，经过多次折腾，终于设置成功。 第一步：服务器右键 -&amp;gt; 定义用户类。 ![1K]UW2I6`BHINMA5J%IVEC 第二步：</description>
+    </item>
+    
+    <item>
+      <title>Python语法学习</title>
+      <link>/2016/05/2016-05-28-pythone8afade6b395e5ada6e4b9a0/</link>
+      <pubDate>Sat, 28 May 2016 15:35:34 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-28-pythone8afade6b395e5ada6e4b9a0/</guid>
+      <description>花了十来分钟看了下python的基本语法。把大概特征都用了一下。 用的是python的2.7版本，有个比较经典的问题就是中文输出出现乱码甚至程</description>
+    </item>
+    
+    <item>
+      <title>在Docker中下载、启动有shadowsocks代理的镜像</title>
+      <link>/2016/05/2016-05-25-e59ca8dockere4b8ade4b88be8bdbde38081e590afe58aa8e69c89shadowsockse4bba3e79086e79a84e9959ce5838f/</link>
+      <pubDate>Wed, 25 May 2016 13:44:22 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e59ca8dockere4b8ade4b88be8bdbde38081e590afe58aa8e69c89shadowsockse4bba3e79086e79a84e9959ce5838f/</guid>
+      <description>测试环境是阿里云的云服务器，目标是成功把ip更改为服务器的ip，即为代理成功。 服务器系统：ubuntu 14.10 64位 Docker信息： Client: Version: 1.11.1 API version: 1.23</description>
+    </item>
+    
+    <item>
+      <title>开启Docker Remote API</title>
+      <link>/2016/05/2016-05-25-e5bc80e590afdocker-remote-api/</link>
+      <pubDate>Wed, 25 May 2016 13:14:16 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e5bc80e590afdocker-remote-api/</guid>
+      <description>一直使用ss-link家的VPN，总感觉他们应该是使用了docker来即时部署环境，容器内部端口绑定物理机外部端口，然后把ip、端口、账号密</description>
+    </item>
+    
+    <item>
+      <title>关于安卓中4种启动模式（standard、singleTop、singleTask、singleInstance）的区别</title>
+      <link>/2016/05/2016-05-04-e585b3e4ba8ee5ae89e58d93e4b8ad4e7a78de590afe58aa8e6a8a1e5bc8fefbc88standarde38081singletope38081singletaske38081singleinstanceefbc89e79a84e58cba/</link>
+      <pubDate>Wed, 04 May 2016 08:40:55 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-04-e585b3e4ba8ee5ae89e58d93e4b8ad4e7a78de590afe58aa8e6a8a1e5bc8fefbc88standarde38081singletope38081singletaske38081singleinstanceefbc89e79a84e58cba/</guid>
+      <description>1、standard ： 系统的默认模式，一次跳转即会生成一个新的实例。假设有一个activity命名为A1，执行语句： startActivity(new Intent(A1.this, A1.class)); 后A1将跳转到另外</description>
+    </item>
+    
+    <item>
+      <title>Activity的singleTop启动模式</title>
+      <link>/2016/05/2016-05-04-activitye79a84singletope590afe58aa8e6a8a1e5bc8f/</link>
+      <pubDate>Wed, 04 May 2016 08:15:57 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-04-activitye79a84singletope590afe58aa8e6a8a1e5bc8f/</guid>
+      <description>在AndroidManifest.xml里把android:launchMode=&amp;ldquo;standard&amp;rdquo;改成andro</description>
+    </item>
+    
+    <item>
+      <title>Activity的标准启动模式</title>
+      <link>/2016/05/2016-05-04-activitye79a84e6a087e58786e590afe58aa8e6a8a1e5bc8f/</link>
+      <pubDate>Wed, 04 May 2016 07:43:49 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-04-activitye79a84e6a087e58786e590afe58aa8e6a8a1e5bc8f/</guid>
+      <description>我们安卓程序Activity默认的启动方式是标准启动方式，可以在AndroidManifest.xml内配置。 [默认是standard模式，</description>
+    </item>
+    
+    <item>
+      <title>在Activity之间使用Intent传值和Bundle传值的区别和方式</title>
+      <link>/2016/05/2016-05-04-e59ca8activitye4b98be997b4e4bdbfe794a8intente4bca0e580bce5928cbundlee4bca0e580bce79a84e58cbae588abe5928ce696b9e5bc8f/</link>
+      <pubDate>Wed, 04 May 2016 06:48:23 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-04-e59ca8activitye4b98be997b4e4bdbfe794a8intente4bca0e580bce5928cbundlee4bca0e580bce79a84e58cbae588abe5928ce696b9e5bc8f/</guid>
+      <description>1.Bundle类的作用 Bundle类用作携带数据，它类似于Map，用于存放key-value名值对形式的值。相对于Map，它提供了各种常用</description>
+    </item>
+    
+    <item>
+      <title>Android获取Activity返回参数</title>
+      <link>/2016/05/2016-05-04-androide88eb7e58f96activitye8bf94e59b9ee58f82e695b0/</link>
+      <pubDate>Wed, 04 May 2016 06:43:29 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-04-androide88eb7e58f96activitye8bf94e59b9ee58f82e695b0/</guid>
+      <description>我们可以使用Intent、Bundle给另一个Acvitity传递参数，但是有时候退出另一个Acitivity的时候，也需要给上一级Acti</description>
+    </item>
+    
+    <item>
+      <title>Java通过Http(URL)获取PHP后台发出的JSON</title>
+      <link>/2016/04/2016-04-23-javae9809ae8bf87httpurle88eb7e58f96phpe5908ee58fb0e58f91e587bae79a84json/</link>
+      <pubDate>Sat, 23 Apr 2016 11:00:55 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-23-javae9809ae8bf87httpurle88eb7e58f96phpe5908ee58fb0e58f91e587bae79a84json/</guid>
+      <description>最近做的匿名版，网页部分已经没什么大问题了，该优化的也优化了，该实现的功能也基本实现了，所以考虑开始制作一个安卓APP，首先需要做的是PHP</description>
+    </item>
+    
+    <item>
+      <title>Redis之php操作——String</title>
+      <link>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</link>
+      <pubDate>Mon, 18 Apr 2016 14:07:02 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</guid>
+      <description>使用PHP对Redis进行操作： connect(&#39;127.0.0.1&#39;, 6379); //验证密码 $redis-&amp;gt;auth(&amp;quot;asdasd&amp;quot;); /**String操作*/ //set方法，设置一个key和value $redis-&amp;gt;set(&amp;quot;Set&amp;quot;, &amp;quot;Redis!&amp;quot;); //get方法，根</description>
+    </item>
+    
+    <item>
+      <title>CentOS 6.7 minimal搭建配置一键LNMP的Redis</title>
+      <link>/2016/04/2016-04-18-centos-6-7-minimale690ade5bbbae9858de7bdaee4b880e994aelnmpe79a84redis/</link>
+      <pubDate>Mon, 18 Apr 2016 04:24:15 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-18-centos-6-7-minimale690ade5bbbae9858de7bdaee4b880e994aelnmpe79a84redis/</guid>
+      <description>一键LNMP自带非常多扩展，其中肯定有Redis，安装方法非常简单，进lnmp解压出来的文件夹(我在/root下载安装lnmp1.2，文件夹</description>
+    </item>
+    
+    <item>
+      <title>CentOS 6.7 安装配置Redis</title>
+      <link>/2016/04/2016-04-17-centos-6-7-e5ae89e8a385e9858de7bdaeredis/</link>
+      <pubDate>Sun, 17 Apr 2016 11:51:37 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-17-centos-6-7-e5ae89e8a385e9858de7bdaeredis/</guid>
+      <description>Redis是一种可持久化、开源、支持网络、基于内存的key-value存储系统，有点类似memcached，性能极高，支持超过100K+ 每秒</description>
+    </item>
+    
+    <item>
+      <title>解决Deepin 15.1.1 深度商店下载软件一直显示等待下载</title>
+      <link>/2016/04/2016-04-16-e8a7a3e586b3deepin-15-1-1-e6b7b1e5baa6e59586e5ba97e4b88be8bdbde8bdafe4bbb6e4b880e79bb4e698bee7a4bae7ad89e5be85e4b88be8bdbd/</link>
+      <pubDate>Sat, 16 Apr 2016 14:50:47 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-16-e8a7a3e586b3deepin-15-1-1-e6b7b1e5baa6e59586e5ba97e4b88be8bdbde8bdafe4bbb6e4b880e79bb4e698bee7a4bae7ad89e5be85e4b88be8bdbd/</guid>
+      <description>最近给老旧的笔记本换上Linux系统成为主力系统，要求是简便容易上手还能玩DotA2的，国内的Deepin就是非常不错的选择。 不仅界面简洁好</description>
+    </item>
+    
+    <item>
+      <title>JQuery、Bootstrap 3.0 以及JQuery.form.js兼容性以及解决办法</title>
+      <link>/2016/04/jquery-bootstrap3-and-jquery-form-js-compatibility-and-solutions/</link>
+      <pubDate>Fri, 15 Apr 2016 09:43:32 +0000</pubDate>
+      
+      <guid>/2016/04/jquery-bootstrap3-and-jquery-form-js-compatibility-and-solutions/</guid>
+      <description>随着网页的设计越来越美丽，很多人都发现老旧的IE 6、7、8都无法呈现出最好的画面，甚至无法使用部分功能从而使用Chrome之类的浏览器。但这</description>
+    </item>
+    
+    <item>
+      <title>php上传文件过大导致POST空值</title>
+      <link>/2016/03/2016-03-22-phpe4b88ae4bca0e69687e4bbb6e8bf87e5a4a7e5afbce887b4poste7a9bae580bc/</link>
+      <pubDate>Tue, 22 Mar 2016 06:12:37 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-22-phpe4b88ae4bca0e69687e4bbb6e8bf87e5a4a7e5afbce887b4poste7a9bae580bc/</guid>
+      <description>最近在写一个匿名版程序，有一个图片上传功能，程序规定了图片大小不允许超过3M，可是在发1M~2M的图片时，也会上传失败，导致程序报错。 Notice: Undefined index:</description>
+    </item>
+    
+    <item>
+      <title>一键LNMP的命令以及配置文件的存放地址</title>
+      <link>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</link>
+      <pubDate>Thu, 17 Mar 2016 07:32:19 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</guid>
+      <description>一般人快速搭建网站都会选择一键LNMP来快速搭建环境，本博客就是基于那个一键LNMP搭建起来的，日常维护使用非常方便。 管理命令： * **LNM</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Kylin 15.10 上安装 wine</title>
+      <link>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</link>
+      <pubDate>Wed, 16 Mar 2016 15:04:31 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</guid>
+      <description>笔记本是一台配置很差的电脑，跑Windows已觉卡顿，所以打算安装Ubuntu来延续这台电脑的服役时间。 本来打算安装国产的Linux系统——</description>
+    </item>
+    
+    <item>
+      <title>修改WampServer的MySQL空密码</title>
+      <link>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</link>
+      <pubDate>Fri, 04 Mar 2016 07:26:06 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</guid>
+      <description>在Windows下开发PHP，搭建Linux虚拟机无疑性能开销太大，自己在Windows下搭建PHP运行环境也非常麻烦、不稳定，因此很多人会</description>
+    </item>
+    
+    <item>
+      <title>Java之泛型中的通配符（）以及泛型限定</title>
+      <link>/2016/03/2016-03-01-javae4b98be6b39be59e8be4b8ade79a84e9809ae9858de7aca6efbc88efbc89e4bba5e58f8ae6b39be59e8be99990e5ae9a/</link>
+      <pubDate>Tue, 01 Mar 2016 08:17:24 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-01-javae4b98be6b39be59e8be4b8ade79a84e9809ae9858de7aca6efbc88efbc89e4bba5e58f8ae6b39be59e8be99990e5ae9a/</guid>
+      <description>问号通配符 Java的泛型中除了常用的T t之外，还有另一种通配符——&amp;lt;?&amp;gt;，问号通配符和T t通配符并没有非常大的区别，唯一的区别就</description>
+    </item>
+    
+    <item>
+      <title>Java之在接口中使用泛型</title>
+      <link>/2016/03/2016-03-01-javae4b98be59ca8e68ea5e58fa3e4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Tue, 01 Mar 2016 07:24:52 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-01-javae4b98be59ca8e68ea5e58fa3e4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>在接口上使用泛型并不多见，但还是需要学会看懂。 interface Inter&amp;lt;t&amp;gt;{ void show(T t); } class Intermpl&amp;lt;t&amp;gt; implements Inter&amp;lt;t&amp;gt;{ public void show(T t){ System.out.println(t); } } class Demo{ public static void main(String[] args){ Intermpl&amp;lt;string&amp;gt; imS = new Intermpl&amp;lt;string&amp;gt;(); imS.show(&amp;quot;a&amp;quot;); Intermpl&amp;lt;integer&amp;gt; imI = new Intermpl&amp;lt;integer&amp;gt;(); imI.show(123); } }</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap 栅格系统的精妙之处</title>
+      <link>/2016/03/2016-03-01-bootstrap-e6a085e6a0bce7b3bbe7bb9fe79a84e7b2bee5a699e4b98be5a484/</link>
+      <pubDate>Tue, 01 Mar 2016 07:05:32 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-01-bootstrap-e6a085e6a0bce7b3bbe7bb9fe79a84e7b2bee5a699e4b98be5a484/</guid>
+      <description>从接触 Bootstrap 已经有很长时间了，给人的感觉是快速，简单，易上手，其中栅格系统是一个亮点： 一直感觉像 CSS 栅格系统之类的东西拿过来用就好了，不用深究背后</description>
+    </item>
+    
+    <item>
+      <title>在网页中使用本地Font Awesome矢量图标</title>
+      <link>/2016/02/2016-02-29-e59ca8e7bd91e9a1b5e4b8ade4bdbfe794a8e69cace59cb0font-awesomee79fa2e9878fe59bbee6a087/</link>
+      <pubDate>Mon, 29 Feb 2016 04:49:38 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-29-e59ca8e7bd91e9a1b5e4b8ade4bdbfe794a8e69cace59cb0font-awesomee79fa2e9878fe59bbee6a087/</guid>
+      <description>__ 下载地址：font-awesome __ 使用参考：FontAwesome 4.4.0 中完整的585个图标样式CSS参考（本站提供的是4.5.0版本，新增</description>
+    </item>
+    
+    <item>
+      <title>IntelliJ IDEA 15 联网激活</title>
+      <link>/2016/02/2016-02-28-intellij-idea-15-e88194e7bd91e6bf80e6b4bb/</link>
+      <pubDate>Sun, 28 Feb 2016 11:40:35 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-28-intellij-idea-15-e88194e7bd91e6bf80e6b4bb/</guid>
+      <description>直接利用iteblog博客提供的License server（服务器地址为http://www.iteblog.com/idea/key.ph</description>
+    </item>
+    
+    <item>
+      <title>Java之在方法中使用泛型</title>
+      <link>/2016/02/2016-02-25-javae4b98be59ca8e696b9e6b395e4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Thu, 25 Feb 2016 11:20:29 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b98be59ca8e696b9e6b395e4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>在上一篇文章中，我们定义了泛型类，让类可以接受多种类型的输入： class Tools&amp;lt;SomeThing&amp;gt;{ private SomeThing st; public void setSomeThing(SomeThing st){ this.st = st; } public SomeThing getSomeThing(){ return st; } } 但有时候类并不是所有方法都适合传入的类</description>
+    </item>
+    
+    <item>
+      <title>Java之在自定义类中使用泛型</title>
+      <link>/2016/02/2016-02-25-javae4b98be59ca8e887aae5ae9ae4b989e7b1bbe4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Thu, 25 Feb 2016 09:23:12 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b98be59ca8e887aae5ae9ae4b989e7b1bbe4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>集合可以使用泛型来指定基本数据类型，但集合也是一个类，意味着我们自己的自定义类也能使用泛型。 假如有以下这样的代码： class Dog{ } class Cat{ } class Tools{ private Dog d; private Cat</description>
+    </item>
+    
+    <item>
+      <title>Java中的泛型概念</title>
+      <link>/2016/02/2016-02-25-javae4b8ade79a84e6b39be59e8be6a682e5bfb5/</link>
+      <pubDate>Thu, 25 Feb 2016 05:21:19 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b8ade79a84e6b39be59e8be6a682e5bfb5/</guid>
+      <description>泛型是Java在JDK 1.5的时候推出的一个新特性，主要解决了集合中类型转换错误的问题，例如有下面的一组代码： ArrayList al = new ArrayList(); al.add(&amp;quot;123&amp;quot;); al.add(4); Iterator it = al.iterator(); while(it.hasNext()){ String s =</description>
+    </item>
+    
+    <item>
+      <title>Java中集合类之TreeSet</title>
+      <link>/2016/02/2016-02-23-javae4b8ade99b86e59088e7b1bbe4b98btreeset/</link>
+      <pubDate>Tue, 23 Feb 2016 06:29:48 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-23-javae4b8ade99b86e59088e7b1bbe4b98btreeset/</guid>
+      <description>TreeSet是一个使用二叉树排序的有序集合，存进TreeSet的基本类型按照字典排序，因为TreeSet中继承了Comparable接口和</description>
+    </item>
+    
+    <item>
+      <title>Java中集合类之HashSet</title>
+      <link>/2016/02/2016-02-21-javae4b8ade99b86e59088e7b1bbe4b98bhashset/</link>
+      <pubDate>Sun, 21 Feb 2016 13:55:25 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-21-javae4b8ade99b86e59088e7b1bbe4b98bhashset/</guid>
+      <description>我在 https://www.nervgeek.com/pages/937.html 这篇文章中讲了集合类的概念以及List的基本使用方法，这篇文章就介绍一下Set下面的HashSet的概念以及基本使用方法。 HashSe</description>
+    </item>
+    
+    <item>
+      <title>Java的ArrayList练习-去除重复类</title>
+      <link>/2016/02/2016-02-21-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de7b1bb/</link>
+      <pubDate>Sun, 21 Feb 2016 11:45:19 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-21-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de7b1bb/</guid>
+      <description>前面好几个练习往集合立马塞的都是int、String等基本数据类型，但集合类和数组最大的区别就是集合类能存放类，所以这次练习我们就尝试存放类</description>
+    </item>
+    
+    <item>
+      <title>Java的ArrayList练习-去除重复元素</title>
+      <link>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</link>
+      <pubDate>Sat, 20 Feb 2016 14:20:38 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</guid>
+      <description>上一篇文章学习到ArrayList，那现在来做一个小练习巩固一下。 package com.company; import java.util.*; public class Main { public static void main(String[] args) { ArrayListDemo(); } public static void ArrayListDemo(){ ArrayList al = new ArrayList(); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java02&amp;quot;); al.add(&amp;quot;java03&amp;quot;); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java04&amp;quot;); al.add(&amp;quot;java02&amp;quot;); sop(&amp;q</description>
+    </item>
+    
+    <item>
+      <title>Java中集合类的概念以及使用方法</title>
+      <link>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</link>
+      <pubDate>Fri, 19 Feb 2016 12:38:16 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</guid>
+      <description>集合类，或者叫集合框架。集合类可以用于储存对象，例如一个人他有姓名、年龄、身高、体重等数据，封装之后就是一个对象。假如人多了，需要存储起来，</description>
+    </item>
+    
+    <item>
+      <title>Java的基本数据类型对象与包装类</title>
+      <link>/2016/02/2016-02-18-javae79a84e59fbae69cace695b0e68daee7b1bbe59e8be5afb9e8b1a1e4b88ee58c85e8a385e7b1bb/</link>
+      <pubDate>Thu, 18 Feb 2016 15:45:27 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-18-javae79a84e59fbae69cace695b0e68daee7b1bbe59e8be5afb9e8b1a1e4b88ee58c85e8a385e7b1bb/</guid>
+      <description>“万物皆对象”，Java是一个面向对象的语言，但我们平时使用int，string等基本数据类型却是不面向对象的，在日常开发环境中时有不便，所</description>
+    </item>
+    
+    <item>
+      <title>Android SDK Manager国内无法下载更新解决办法</title>
+      <link>/2016/02/2016-02-18-android-sdk-managere59bbde58685e697a0e6b395e4b88be8bdbde69bb4e696b0e8a7a3e586b3e58a9ee6b395/</link>
+      <pubDate>Thu, 18 Feb 2016 05:22:40 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-18-android-sdk-managere59bbde58685e697a0e6b395e4b88be8bdbde69bb4e696b0e8a7a3e586b3e58a9ee6b395/</guid>
+      <description>![G`4%4W]3@Y3A6S4{54K$WX 点击 Tools -&amp;gt; **Options ，在HTTP Proxy Server和HTTP Proxy Port填写下面服务器信息。 ** Android SDK 在线更新镜像服务器资源： 大连东软信息学院镜像服务器地址:</description>
+    </item>
+    
+    <item>
+      <title>Java中序列化Serializable的作用</title>
+      <link>/2016/02/2016-02-15-javae4b8ade5ba8fe58897e58c96serializablee79a84e4bd9ce794a8/</link>
+      <pubDate>Mon, 15 Feb 2016 13:59:30 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-15-javae4b8ade5ba8fe58897e58c96serializablee79a84e4bd9ce794a8/</guid>
+      <description>序列化是什么： 序列化就是将一个对象的状态（各个属性量）保存起来，然后在适当的时候再获得。 序列化分为两大部分：序列化和反序列化。 序列化是这个过</description>
+    </item>
+    
+    <item>
+      <title>Android Studio 离线升级教程</title>
+      <link>/2016/02/2016-02-13-android-studio-e7a6bbe7babfe58d87e7baa7e69599e7a88b/</link>
+      <pubDate>Sat, 13 Feb 2016 15:52:20 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-13-android-studio-e7a6bbe7babfe58d87e7baa7e69599e7a88b/</guid>
+      <description>Android Studio 2.0已经出到Perview 9了，对于喜欢尝鲜的我立马就考虑升级了。但由于国内GTW的原因，自带的升级往往不能使用，所以还是非常推荐离线</description>
+    </item>
+    
+    <item>
+      <title>Android中使用Bundle传递数据包</title>
+      <link>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</link>
+      <pubDate>Sat, 13 Feb 2016 08:44:52 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</guid>
+      <description>在不同的Activity中传递参数除了可以使用Intent以外，还可以使用Bundle来传递。相比起Intent，使用Bundle提高了复用</description>
+    </item>
+    
+    <item>
+      <title>30分钟上手Html</title>
+      <link>/2016/02/2016-02-12-30e58886e9929fe4b88ae6898bhtml/</link>
+      <pubDate>Fri, 12 Feb 2016 13:17:41 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-12-30e58886e9929fe4b88ae6898bhtml/</guid>
+      <description>HTML html的基本结构 不管html文件复杂程度大小，它的基本结构式都是： &amp;lt;元素 属性=“属性值”……&amp;gt; 内容 &amp;lt;/元素&amp;gt; 如果</description>
+    </item>
+    
+    <item>
+      <title>Android中的在不同Activity中传递参数</title>
+      <link>/2016/02/2016-02-12-androide4b8ade79a84e59ca8e4b88de5908cactivitye4b8ade4bca0e98092e58f82e695b0/</link>
+      <pubDate>Fri, 12 Feb 2016 12:53:20 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-12-androide4b8ade79a84e59ca8e4b88de5908cactivitye4b8ade4bca0e98092e58f82e695b0/</guid>
+      <description>日常跳转Activity的时候，新的Activity经常会用到上一个Activity的数据，在安卓中可以使用Intent提供的方法传递各种参</description>
+    </item>
+    
+    <item>
+      <title>Android中的切换不同Activity的生命周期</title>
+      <link>/2016/02/2016-02-01-androide4b8ade79a84e58887e68da2e4b88de5908cactivitye79a84e7949fe591bde591a8e69c9f/</link>
+      <pubDate>Mon, 01 Feb 2016 14:52:02 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-01-androide4b8ade79a84e58887e68da2e4b88de5908cactivitye79a84e7949fe591bde591a8e69c9f/</guid>
+      <description>在 Android中的Activity生命周期 这篇文章中，我们已经看到一个Activity的生命周期。 但一个程序很少只有一个Activity，</description>
+    </item>
+    
+    <item>
+      <title>Android中的Activity生命周期</title>
+      <link>/2016/02/2016-02-01-androide4b8ade79a84activitye7949fe591bde591a8e69c9f/</link>
+      <pubDate>Mon, 01 Feb 2016 12:08:25 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-01-androide4b8ade79a84activitye7949fe591bde591a8e69c9f/</guid>
+      <description>先放一张图了解一下Activity的生命周期： 先占个位，生命周期图找日详细写一写。 本人英语渣，粗略翻译。 上图可知，Activity有七个函数</description>
+    </item>
+    
+    <item>
+      <title>Android-使用帮助文档</title>
+      <link>/2016/01/android-help-document/</link>
+      <pubDate>Sat, 30 Jan 2016 08:26:25 +0000</pubDate>
+      
+      <guid>/2016/01/android-help-document/</guid>
+      <description>1 . 打开SDK Manager，找到Documentation for Android SDK： 2 . 打开SDK下载文件夹，API网页路径为docs/referenc</description>
+    </item>
+    
+    <item>
+      <title>Java中的自定义异常</title>
+      <link>/2016/01/custom-exceptions-in-java/</link>
+      <pubDate>Fri, 29 Jan 2016 09:14:57 +0000</pubDate>
+      
+      <guid>/2016/01/custom-exceptions-in-java/</guid>
+      <description>1 . 自定义异常类只需要直接继承Exception即可完成。 示例代码： class MyException extends Exception{ public MyException(String errormsg){ super(errormsg); } } public class ExceptionDemo03 { public static void main(String[] args) { try{ throw new MyException(&amp;</description>
+    </item>
+    
+    <item>
+      <title>Java中的throw关键字</title>
+      <link>/2016/01/the-throw-keyword-in-java/</link>
+      <pubDate>Fri, 29 Jan 2016 08:15:11 +0000</pubDate>
+      
+      <guid>/2016/01/the-throw-keyword-in-java/</guid>
+      <description>1 . 使用throw关键字会抛出一个异常，抛出时直接抛出异常类的实例化对象即可。 示例代码： public class ExceptionDemo02 { public static void main(String[] args) { try{ throw new Exception(&amp;qu</description>
+    </item>
+    
+    <item>
+      <title>Java中的throws关键字</title>
+      <link>/2016/01/2016-01-28-javae4b8ade79a84throwse585b3e994aee5ad97/</link>
+      <pubDate>Thu, 28 Jan 2016 16:16:05 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-28-javae4b8ade79a84throwse585b3e994aee5ad97/</guid>
+      <description>1 . throws可以在定义一个方法的时候声明，使用throws声明之后的方法将异常抛给调用者处理，方法本身不会处理。 代码示例： class ExceptionDemo01 { public static void main(String[]</description>
+    </item>
+    
+    <item>
+      <title>Java中的异常处理</title>
+      <link>/2016/01/2016-01-28-javae4b8ade79a84e5bc82e5b8b8e5a484e79086/</link>
+      <pubDate>Thu, 28 Jan 2016 08:29:20 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-28-javae4b8ade79a84e5bc82e5b8b8e5a484e79086/</guid>
+      <description>1 . 程序中有些流程可能会报出异常，如果不正确处理异常，将导致程序中断执行，造成损失。 2 . try后面可以跟多个catch，但不管多少个，最后只</description>
+    </item>
+    
+    <item>
+      <title>Linux中的iptables的查看、添加、删除和修改</title>
+      <link>/2016/01/2016-01-27-linuxe4b8ade79a84iptablese79a84e69fa5e79c8be38081e6b7bbe58aa0e38081e588a0e999a4e5928ce4bfaee694b9/</link>
+      <pubDate>Wed, 27 Jan 2016 12:05:09 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-27-linuxe4b8ade79a84iptablese79a84e69fa5e79c8be38081e6b7bbe58aa0e38081e588a0e999a4e5928ce4bfaee694b9/</guid>
+      <description>这里只列出比较常用的参数，详细的man iptables 1、查看 iptables -nvL --line-number * -L 查看当前表的所有规则，默认查看的是filter表，如果要查看NAT表，可以加上-t</description>
+    </item>
+    
+    <item>
+      <title>Java中的接口应用例子</title>
+      <link>/2016/01/2016-01-26-javae4b8ade79a84e68ea5e58fa3e5ba94e794a8e4be8be5ad90/</link>
+      <pubDate>Tue, 26 Jan 2016 12:02:19 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-26-javae4b8ade79a84e68ea5e58fa3e5ba94e794a8e4be8be5ad90/</guid>
+      <description>interface UsbStatus{ void search(); void startWork(); void stopWork(); void error(); } class UsbDevice implements UsbStatus{ public String Device; public UsbDevice(String Device){ this.Device = Device; } public void search(){ System.out.println(&amp;ldquo;检测到 &amp;ldquo;+Device+&amp;rdquo; 已插入！&amp;rdquo;)</description>
+    </item>
+    
+    <item>
+      <title>Java中的StringBuilder</title>
+      <link>/2016/01/2016-01-25-javae4b8ade79a84stringbuilder/</link>
+      <pubDate>Mon, 25 Jan 2016 09:25:09 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-25-javae4b8ade79a84stringbuilder/</guid>
+      <description>1 . StringBuilder和StringBuffer在使用方法上是极其相像的，最大的区别是StringBuilder是非线程安全，Str</description>
+    </item>
+    
+    <item>
+      <title>Java中的StringBuffer</title>
+      <link>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</link>
+      <pubDate>Sun, 24 Jan 2016 15:14:15 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</guid>
+      <description>Java中除了String字符串类型，还有一个和String不一样的字符串，叫StringBuffer，字符串缓冲区。StringBuffe</description>
+    </item>
+    
+    <item>
+      <title>Java中String类型的常用方法</title>
+      <link>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</link>
+      <pubDate>Sun, 24 Jan 2016 12:04:44 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</guid>
+      <description>1 . 计算字符串长度 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; System.out.println(str.lenght()); } } 2 . 字符串转换为数组 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; char strArr[] = str.toCharArray(); for(int count = 0;count &amp;lt; strArr.lenght;count++){ System.out.println(strArr[count]+&amp;quot;-&amp;quot;); } } } 3 . 取出字符串指定位置的</description>
+    </item>
+    
+    <item>
+      <title>Java中的接口以及接口和抽象类的区别</title>
+      <link>/2016/01/2016-01-24-javae4b8ade79a84e68ea5e58fa3/</link>
+      <pubDate>Sun, 24 Jan 2016 08:50:34 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8ade79a84e68ea5e58fa3/</guid>
+      <description>1 . 接口可以理解成一个特殊的类，其组成全都是全局常量以及公共的抽象方法所组成。 2 . 使用interface关键字来修饰。 3 . 接口必须经过子类来</description>
+    </item>
+    
+    <item>
+      <title>Java中的抽象类</title>
+      <link>/2016/01/2016-01-23-javae4b8ade79a84e68abde8b1a1e7b1bb/</link>
+      <pubDate>Sat, 23 Jan 2016 09:16:42 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-23-javae4b8ade79a84e68abde8b1a1e7b1bb/</guid>
+      <description>1 . 一个类之中包含了抽象方法，该类就是抽象类。 2 . 抽象方法即是：被声明却未被实现并使用abstract关键字修饰的方法。 3 . 不能对抽象类直接</description>
+    </item>
+    
+    <item>
+      <title>Java中的final关键字</title>
+      <link>/2016/01/2016-01-23-javae4b8ade79a84finale585b3e994aee5ad97/</link>
+      <pubDate>Sat, 23 Jan 2016 08:11:16 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-23-javae4b8ade79a84finale585b3e994aee5ad97/</guid>
+      <description>1 . final可译为完结器，意译为最终。 2 . final可修饰类、方法、属性。 final修饰之后的类不能被继承。 final修饰之后的方法不能被</description>
+    </item>
+    
+    <item>
+      <title>Java中的匿名对象</title>
+      <link>/2016/01/2016-01-22-javae4b8ade79a84e58cbfe5908de5afb9e8b1a1/</link>
+      <pubDate>Fri, 22 Jan 2016 07:46:37 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-22-javae4b8ade79a84e58cbfe5908de5afb9e8b1a1/</guid>
+      <description>匿名对象有两个特点： 1 . 匿名对象是没有别其它对象所引用 2 . 使用一次就变成垃圾，被Java的垃圾回收器收回。 第一种匿名对象的应用： 匿名对象应用</description>
+    </item>
+    
+    <item>
+      <title>Docker入门以及搭建WordPress与MySQL</title>
+      <link>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</link>
+      <pubDate>Thu, 21 Jan 2016 08:23:00 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</guid>
+      <description>上年因为比赛所需稍微接触了一下(真的只有一下)Docker，那个时候连启动都不知道，只是去维基了下Docker罢了。 回到正题，我搭建Dock</description>
+    </item>
+    
+    <item>
+      <title>15个多线程面试题之一</title>
+      <link>/2016/01/2016-01-20-15e4b8aae5a49ae7babfe7a88be99da2e8af95e9a298e4b98be4b880/</link>
+      <pubDate>Wed, 20 Jan 2016 07:58:09 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-20-15e4b8aae5a49ae7babfe7a88be99da2e8af95e9a298e4b98be4b880/</guid>
+      <description>1. 有T1、T2、T3三个线程，如何怎样保证T2在T1执行完后执行，T3在T2执行完后执行？ 使用join方法。 join方法的功能是使异步执行的</description>
+    </item>
+    
+    <item>
+      <title>Java中的super和this关键字</title>
+      <link>/2016/01/2016-01-15-javae4b8ade79a84supere585b3e994aee5ad97/</link>
+      <pubDate>Fri, 15 Jan 2016 06:50:36 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-15-javae4b8ade79a84supere585b3e994aee5ad97/</guid>
+      <description>suoer关键字用法一： class Person{ public int c; private String name; private int age; protected void setName(String name){ this.name=name; } protected void setAge(int age){ this.age=age; } protected void print(){ System.out.println(&amp;quot;Name=&amp;quot;+name+&amp;quot; Age=&amp;quot;+age); } } public class DemoSuper extends Person{ //继承Person public void print(){ System.out.println(&amp;quot;DemoSuper:&amp;quot;); super.print(); //虽然本方法重</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x06</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x06/</link>
+      <pubDate>Tue, 12 Jan 2016 08:21:01 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x06/</guid>
+      <description>6.运行带有查询参数的语句 对于 不携带任何参数的查询语句，我们可以使用 query方法处理SELECT操作，使用exec方法处理 INSERT，U</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x05</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x05/</link>
+      <pubDate>Tue, 12 Jan 2016 08:06:50 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x05/</guid>
+      <description>5.执行 INSERT, UPDATE, DELETE 操作 5.1. mysql代码: $results = mysql_query(&amp;quot;UPDATE table SET field=&#39;value&#39;&amp;quot;) or die(mysql_error()); $affected_rows = mysql_affected_rows($result); echo $affected_rows.&#39; were affected&#39;; 5.2. PDO代码: $affected_rows = $db-&amp;gt;exec(&amp;quot;UPDATE table SET field=&#39;value&#39;&amp;quot;); echo $affected_rows.&#39; were affected&#39; DELETE ， INSERT 操作同样适用。</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x04</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x04/</link>
+      <pubDate>Tue, 12 Jan 2016 08:00:29 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x04/</guid>
+      <description>4.简单的查询语句（SELECT） 4.1. mysql代码: $result = mysql_query(&#39;SELECT * from table&#39;) or die(mysql_error()); $num_rows = mysql_num_rows($result); while($row = mysql_fetch_assoc($result)) { echo $row[&#39;field1&#39;].&#39; &#39;.$row[&#39;field2&#39;]; //etc... } 4.2. PDO代码: foreach($db-&amp;gt;query(&#39;SELECT * FROM table&#39;) as $row) { echo $row[&#39;field1&#39;].&#39; &#39;.$row[&#39;field2&#39;]; //etc... } query() 方法返回</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x03</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x03/</link>
+      <pubDate>Tue, 12 Jan 2016 07:51:45 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x03/</guid>
+      <description>3.错误处理 3.1. mysql_*函数的错误处理 //connected to mysql $result = mysql_query(&amp;quot;SELECT * FROM table&amp;quot;, $link) or die(mysql_error($link)); OR die()是个不错的错误处理方法，但是会因此结束页面，将错误信息呈现到用</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x02</title>
+      <link>/2016/01/2016-01-10-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x02/</link>
+      <pubDate>Sun, 10 Jan 2016 11:48:11 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-10-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x02/</guid>
+      <description>2.连接MySQL 2.1. 以前的方式 $link = mysql_connect(&#39;localhost&#39;, &#39;user&#39;, &#39;pass&#39;); mysql_select_db(&#39;testdb&#39;, $link); mysql_set_charset(&#39;UTF-8&#39;, $link); 2.2. 新的方式 创建一个PDO对象，参数包括 DSN，username，password 和 一个驱动选</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x01</title>
+      <link>/2016/01/2016-01-05-phpe4b8admysqle695b0e68daee5ba93pdoe69599e7a88b/</link>
+      <pubDate>Tue, 05 Jan 2016 13:41:28 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-05-phpe4b8admysqle695b0e68daee5ba93pdoe69599e7a88b/</guid>
+      <description>1、为什么要使用PDO？ mysql函数已经过时，相当一段时间以来，mysql函数在其他SQL数据库编程接口方面已经有所差别；它不支持预处理，</description>
+    </item>
+    
+    <item>
+      <title>Git命令以及使用办法</title>
+      <link>/2016/01/how-to-use-git/</link>
+      <pubDate>Fri, 01 Jan 2016 09:53:48 +0000</pubDate>
+      
+      <guid>/2016/01/how-to-use-git/</guid>
+      <description>Git 常用命令 创建本地仓库(repository)，将会在文件夹下创建一个 .git 文件夹，.git 文件夹里存储了所有的版本信息、标记等内容 git init here 把本地</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 – PaaS平台各应用平台搭建配置</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0e59084e5ba94e794a8e5b9b3e58fb0e690ade5bbbae9858de7bdae/</link>
+      <pubDate>Wed, 30 Dec 2015 13:24:14 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0e59084e5ba94e794a8e5b9b3e58fb0e690ade5bbbae9858de7bdae/</guid>
+      <description>应用平台安装配置 前提：把Node的公钥添加至PaaS平台；在Node节点root下新建mygit和sourcegit两个文件夹，并从控制节点</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 – PaaS平台Git节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0gite88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:13:10 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0gite88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>**Git **安装 前提：修改eth0的ip；在hosts文件上添加broker节点的ip和域名。 配置yum源 [openshift-base] name=openshift-base baseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies enabled=1 gpgcheck=0</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - PaaS平台Node节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0nodee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:10:16 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0nodee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>**Node **安装 前提：修改eth0的ip；selinux修改为enforcing，然后重启！！！ 配置yum源 [openshift-base] name=openshift-basebaseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies enabled=1 gpgcheck=0</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - PaaS平台Broker节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0brokere88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:08:01 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0brokere88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Broker安装 前提：修改eth0的ip；selinux修改为enforcing，然后重启！！！ 设置源： [openshift-base] name=openshift-base baseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - IaaS平台Compute节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0computee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 12:59:08 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0computee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Compute安装 **前提：修改eth0、eth1的ip（只能有一张网卡设置网关，建议设置外网网关）；selinux修改为permissiv</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - IaaS平台Controller节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 11:34:16 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Controller安装 前提：修改eth0、eth1的ip（只能有一张网卡设置网关，建议设置外网网关）；selinux修改为permissi</description>
+    </item>
+    
+    <item>
+      <title>openstack的常用命令</title>
+      <link>/2015/12/2015-12-10-openstacke79a84e5b8b8e794a8e591bde4bba4/</link>
+      <pubDate>Thu, 10 Dec 2015 10:09:15 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-10-openstacke79a84e5b8b8e794a8e591bde4bba4/</guid>
+      <description>1、查看rabbitmq 队列：rabbitmqctl list_queues 2、查看keystone的用户：keystone user-list 3、查看keystone endpoi</description>
+    </item>
+    
+    <item>
+      <title>何为Hadoop？</title>
+      <link>/2015/11/2015-11-23-e4bd95e4b8bahadoopefbc9f/</link>
+      <pubDate>Mon, 23 Nov 2015 11:43:44 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-23-e4bd95e4b8bahadoopefbc9f/</guid>
+      <description>0x01 Hadoop运行的原理? hadoop主要由三方面组成: 1、HDFS 2、MapReduce 3、Hbase Hadoop框架中最核心的设计就是：</description>
+    </item>
+    
+    <item>
+      <title>解决Ubuntu下VI的上下左右出现ABCD等问题</title>
+      <link>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</link>
+      <pubDate>Mon, 23 Nov 2015 09:53:59 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</guid>
+      <description>依次执行以下两个命令即可解决Ubuntu下vi编辑器上下左右方向键变ABCD的问题。 一、sudo apt-get remove vim-common 二、sudo apt-get install vim 来自为知笔记(Wiz</description>
+    </item>
+    
+    <item>
+      <title>Docker入门教程（一）介绍</title>
+      <link>/2015/11/2015-11-04-dockere585a5e997a8e69599e7a88befbc88e4b880efbc89e4bb8be7bb8d/</link>
+      <pubDate>Wed, 04 Nov 2015 01:08:25 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-04-dockere585a5e997a8e69599e7a88befbc88e4b880efbc89e4bb8be7bb8d/</guid>
+      <description>【编者的话】DockerOne组织翻译了Flux7的Docker入门教程，本文是系列入门教程的第一篇，介绍了Docker的基础概念以及Doc</description>
+    </item>
+    
+    <item>
+      <title>CloudStack搭建简记</title>
+      <link>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</link>
+      <pubDate>Fri, 16 Oct 2015 01:49:04 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</guid>
+      <description>###### 1.CloudStack Management ###### setenforce 0 sed -i &amp;rsquo;s/=enforcing/=disabled/&amp;lsquo; /etc/selinux/config chkconfig &amp;ndash;levels 35 iptables off /etc/init.d/iptables stop sed -i &amp;rsquo;s/=localhost.localdomain/manage.downtown8.com/&amp;lsquo; /etc/sysconfig/network echo &amp;rdquo;192.168.15.2 manage.downtown8.com&amp;rdquo; &amp;gt;&amp;gt;/etc/hosts yum -y install ntp chkconfig ntpd on service ntpd start touch /etc/yum.repos.d/cloudstack.repo cd /etc/yum.repos.d/ #echo -e &amp;rdquo;[cloudstack]\nname=cloudstack\nbaseurl=http://192.168.15.10/cloudstack/nenabled=1ngpgcheck=0&amp;quot; &amp;gt;cloudstack.repo yum -y install mysql-server #[mysqld] sed -i &amp;rdquo;7i\innodb_rollback_on_timeout=1\ninnodb_lock_wait_timeout=600\nmax_connections=350\nlog-bin=mysql-bin\nbinlog-format = &amp;rsquo;ROW&amp;rsquo;&amp;ldquo; /etc/my.cnf service mysqld start chkconfig mysqld on /usr/bin/mysqladmin -u root password &amp;rsquo;downtown#2015&amp;rsquo; yum -y install cloudstack-management cloudstack-setup-databases</description>
+    </item>
+    
+    <item>
+      <title>MySQL基础语句</title>
+      <link>/2015/10/2015-10-14-117/</link>
+      <pubDate>Wed, 14 Oct 2015 06:40:45 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-117/</guid>
+      <description>登陆MySQL： mysql [-h 主机地址] -u 用户名 -p 修改root的登陆密码： 方法一： mysqladmin -u 用户名 -p 旧密码 password 新密码(首先在DOS下进入目录mysql\bin</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi下跑aircrack和reaver破解路由器PIN码</title>
+      <link>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</link>
+      <pubDate>Tue, 13 Oct 2015 01:17:57 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</guid>
+      <description>最近心血来潮，想把小区里的无线信号测试个遍。基于目前大多数路由器都支持wps,想必各位基友们都知道aircrack和reaver这两个工具，</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>defer on NERVGEEK</title>
+    <link>/tags/defer/</link>
+    <description>Recent content in defer on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Dec 2018 14:18:15 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/defer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang - 牢记 defer 三个特性</title>
+      <link>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</link>
+      <pubDate>Mon, 10 Dec 2018 14:18:15 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</guid>
+      <description>光读书是记不牢的，必须要上手多写累积经验，多点刷题写写笔记，才记得住。 这不，我刚开始看 Go 的面试题，做到关于 defer 的输出的时候，就基本蒙了。 实际上</description>
+    </item>
+    
+  </channel>
+</rss>

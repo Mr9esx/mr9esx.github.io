@@ -1,0 +1,1082 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "2015",
+        "name" : "Nmap从探测到漏洞利用备忘录 – Nmap简介(一)",
+        "headline" : "Nmap从探测到漏洞利用备忘录 – Nmap简介(一)",
+        "description" : "在侦查期间，扫描一直是信息收集的初始阶段。 什么是侦查 侦查是尽可能多收集关于目标网络的信息。从黑客的角度来看，信息收集对于一次攻击非常有用，所",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2015",
+        "datePublished": "2015-10-12 06:03:48 \x2b0000 \x2b0000",
+        "dateModified" : "2015-10-12 06:03:48 \x2b0000 \x2b0000",
+        "url" : "\/2015\/10\/introduction-to-namp-one\/",
+        "wordCount" : "4757",
+        "keywords" : [ "Nmap","Blog" ]
+    }
+    </script>
+        
+            
+                <title>Nmap从探测到漏洞利用备忘录 – Nmap简介(一)</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.55.6" />
+        
+
+
+        
+            <meta name="author" content="Mr9esx">
+        
+        
+            
+                <meta name="description" content="Mr9esx&#39;s Blog">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nmap从探测到漏洞利用备忘录 – Nmap简介(一)"/>
+<meta name="twitter:description" content="在侦查期间，扫描一直是信息收集的初始阶段。 什么是侦查 侦查是尽可能多收集关于目标网络的信息。从黑客的角度来看，信息收集对于一次攻击非常有用，所"/>
+
+        <meta property="og:title" content="Nmap从探测到漏洞利用备忘录 – Nmap简介(一)" />
+<meta property="og:description" content="在侦查期间，扫描一直是信息收集的初始阶段。 什么是侦查 侦查是尽可能多收集关于目标网络的信息。从黑客的角度来看，信息收集对于一次攻击非常有用，所" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2015/10/introduction-to-namp-one/" />
+<meta property="article:published_time" content="2015-10-12T06:03:48&#43;00:00"/>
+<meta property="article:modified_time" content="2015-10-12T06:03:48&#43;00:00"/>
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="Nmap从探测到漏洞利用备忘录 – Nmap简介(一)">
+<meta itemprop="description" content="在侦查期间，扫描一直是信息收集的初始阶段。 什么是侦查 侦查是尽可能多收集关于目标网络的信息。从黑客的角度来看，信息收集对于一次攻击非常有用，所">
+
+
+<meta itemprop="datePublished" content="2015-10-12T06:03:48&#43;00:00" />
+<meta itemprop="dateModified" content="2015-10-12T06:03:48&#43;00:00" />
+<meta itemprop="wordCount" content="4757">
+
+
+
+<meta itemprop="keywords" content="Nmap," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">NERVGEEK</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/%E5%BC%80%E5%8F%91-develop/">
+                            <i class="">&nbsp;</i>Develop
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/travel-list/">
+                            <i class="">&nbsp;</i>Travel List
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/dream-list/">
+                            <i class="">&nbsp;</i>Dream List
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.miaoplus.com/">
+                            <i class="">&nbsp;</i>Gallery
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="">&nbsp;</i>About Me
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/%E5%BC%80%E5%8F%91-develop/">
+                            <h3>
+                                <i class="">&nbsp;</i>Develop
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/travel-list/">
+                            <h3>
+                                <i class="">&nbsp;</i>Travel List
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/dream-list/">
+                            <h3>
+                                <i class="">&nbsp;</i>Dream List
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.miaoplus.com/">
+                            <h3>
+                                <i class="">&nbsp;</i>Gallery
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="">&nbsp;</i>About Me
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/06/golang-interview-question/">Go 面试题</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-06-24'>
+                                    June 24, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/">Windows 10 下的 go-micro 安装笔记（go mod 模式）</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-05-09'>
+                                    May 9, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/">Windows 10 安装 Golang gRpc</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-28'>
+                                    April 28, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/2015/10/introduction-to-namp-one/">Nmap从探测到漏洞利用备忘录 – Nmap简介(一)</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2015-10-12'>
+            October 12, 2015</time>
+        <span class="author">Mr9esx
+        
+            <p>10 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    
+
+<p>在侦查期间，扫描一直是信息收集的初始阶段。</p>
+
+<h2 id="什么是侦查"><strong>什么是侦查</strong></h2>
+
+<p>侦查是尽可能多收集关于目标网络的信息。从黑客的角度来看，信息收集对于一次攻击非常有用，所以为了封锁恶意的企图，渗透测试者通常尽力查找这些信息，发现后修复这个缺陷。这也被叫做踩点。通过信息收集，人们通常会发现如下类型的信息：
+-  E-mail 地址
+- 端口号/协议
+- 操作系统信息
+- 运行的服务
+- Traceroute 信息/DNS 信息
+- 防火墙标识和绕过
+- 其他
+所以对于信息收集，扫面是第一个部分。在扫面阶段，Nmap对于发现开放端口，协议号，操作系统信息，防火墙信息等是一个非常有用的工具。
+<!-- more --></p>
+
+<h2 id="nmap-介绍"><strong>Nmap 介绍</strong></h2>
+
+<p>Nmap (网络映射器)是一个开源工具，它使网络探测和安全审计得以专业化。最初由 Gordon “Fyodor” Lyon 发布。官网官方网站是<a href="http://nmap.org/">http://nmap.org</a>. Nmap是一个免费的用来实现网络探测和安全审计的开源程序。许多系统和网络管理员发现它对于一些日常的工作也有帮助。例如查看整个网络的信息，管理服务升级计划以及监控主机和服务的正常运行。
+Nmap采用一种新颖的方式利用原始IP包来决定网络上是什么样的主机，这些主机提供什么样的服务（应用程序名和版本），它们运行着什么样的操作系统（操作系统版本）它们使用什么类型的过滤器/防火墙以及许多其他的特征。它虽然被设计用来快速扫描大型网络，但是在单个主机上也会工作的非常好。Nmap可以运行在所有的主流计算机操作系统上，Linux，Windows，Mac OS X都可以找到官方的安装包。</p>
+
+<h2 id="安装nmap"><strong>安装Nmap</strong></h2>
+
+<p>Nmap 对于不同的环境有着非常好的支持。
+Windows: 从官方网站安装 <a href="http://nmap.org/">http://nmap.org</a>。windows上的所有图形用户界面和命令行都可以从官网上找到。Nmap的图形用户界面采用的是Zenmap。
+Linux (Ubuntu and Debian): 在Linux终端上运行如下命令：<code>apt-get install nmap</code>
+如下的图片中，我已经安装好了Nmap。</p>
+
+<p>基于Red Hat 和 Fedora 的系统: <code>yum install nmap</code>
+基于Gentoo Linux 的系统： <code>emerge nmap</code>
+接下来，我所有的操作将会用Linux终端来演示：</p>
+
+<h2 id="nmap脚本引擎"><strong>Nmap脚本引擎</strong></h2>
+
+<p>Nmap脚本引擎 (NSE) 是Nmap最有力灵活的的一个特性。它允许用户撰写和分享一些简单的脚本来一些较大的网络进行扫描任务。基本上这些脚本是用Lua编程语言来完成的。通常Nmap的脚本引擎可以完成很多事情，下面是其中的一部分：</p>
+
+<h3 id="网络探测"><strong>网络探测</strong></h3>
+
+<p>这是Nmap的基础功能。例如查询目标域名的WhoIs数据，查询目标IP的ARIN, RIPE, 或者 APNIC 来确定所有者，对开放端口执行鉴别查询，SNMP 查询以及列出可用的NFS/SMB/RPC 分享和服务。</p>
+
+<h3 id="漏洞检测"><strong>漏洞检测</strong></h3>
+
+<p>当一个新的漏洞被发现，你会想要在坏家伙行动之前快速扫描你的网络来识别含有漏洞的系统。因为Nmap不是一个专业的漏洞扫描器，而NSE用来处理这种需求的漏洞检查是足够的。现在已经有很多漏洞检测脚本可用，并且他们计划发布更多。
+许多攻击者和一些自动化的蠕虫留下一些后门使得攻击者之后能重入。他们中的等一些可用被Nmap的正则表达式版本检测到。</p>
+
+<h3 id="漏洞利用"><strong>漏洞利用</strong></h3>
+
+<p>作为一个通用的脚本语言，可以使用NSE来执行漏洞利用而不仅仅局限于发现漏洞。这种添加自定义漏洞利用脚本的功能对于一些人（尤指渗透测试者）是很有价值的，尽管他们不打算将Nmap变成一个像Metasploit一样的漏洞利用框架。
+正如下面你将会看到的，我已经使用了（-sc）选项（或者-script），它是一个扫描目标网络的默认脚本。你可以看到我们得到了ssh，rpcbind，netbios-sn，但是端口是过滤的或者关闭的，所以我们可以说这里可能有一个防火墙来封堵我们的请求。稍后我们将会讨论怎么识别防火墙并尝试绕过它们。</p>
+
+<p>现在我已经用探测模式运行了一个ping扫描脚本，它将会尝试所有可能扫描的方法，这样我们将会得到更多的有用的信息。</p>
+
+<p>正如你在图片中看到的，它将会尝试按照脚本规则的所有可能的办法。在下一张途中可以看到更多信息。
+你能看到有趣的协议和端口么？你可以看到dns-bruteforce发现了一个包含一些博客，内容管理系统，sql，记录，邮件以及许多其他信息的主机。所以我们可以执行sql注入，这个博客可能是WordPress，Joomal等等。我们可以利用一些已知的CMS漏洞执行攻击，很明显这些方法将会是一个黑盒测试。
+在下面的一节中，我将会阐述怎么撰写你自己的Nmap脚本引擎，以及怎样用Nmap来利用他们。</p>
+
+<h2 id="基本的扫描技术"><strong>基本的扫描技术</strong></h2>
+
+<p>接下来我将会演示一些基本的扫描技术。但是在那之前，你应该知道一些关于Nmap扫描后状态的的基本知识。
+端口状态：扫描之后，你可能会看到一些端口状态如 open(开放的)，filtered(被过滤的)，closed(关闭的)等等。我来对此解释下。
+- Open(开放的): 应用程序正在这个端口上监听连接。
+- Closed(关闭的): 端口对探测做出了响应，但是现在没有应用程序在监听这个端口。
+- Filtered(过滤的): 端口没有对探测做出响应。同时告诉我们探针可能被一些过滤器（防火墙）终止了。
+- Unfiltered(未被过滤的):端口对探测做出了响应，但是Nmap无法确定它们是关闭还是开放。
+- Open/Filtered: 端口被过滤或者是开放的，Nmap无法做出判断。
+- Closed/Filtered: 端口被过滤或者是关闭的，Nmap无法做出判断。</p>
+
+<h2 id="开始扫描主机"><strong>开始扫描主机</strong></h2>
+
+<h3 id="扫描单个网络"><strong>扫描单个网络</strong></h3>
+
+<p>在你的Nmap(Windows/Linux)上运行如下命令: <code>nmap 192.168.1.1(or) host name</code>。</p>
+
+<h3 id="扫描多个网络目标"><strong>扫描多个网络目标</strong></h3>
+
+<p>你可以用Nmap扫描多个目标来发现主机或者收集信息。
+命令: <code>nmap host1 host2 host3 etc….</code> 它会扫面不同的IP地址和整个子网。</p>
+
+<p>你也可以用相同的命令一次扫描多个网络网站域名。如下图所示。它将会把域名转换成对应的IP地址，并扫描它。</p>
+
+<h3 id="扫描ip地址段">扫描IP地址段</h3>
+
+<p>命令:<code>nmap 192.168.2.1-192.168.2.100</code>
+Nmap 可以用来扫描用CIDR格式表示的整个子网。</p>
+
+<h3 id="使用语法-nmap-cidr格式的网络地址"><strong>使用语法: nmap [CIDR格式的网络地址]</strong></h3>
+
+<p>例如:<code>nmap 192.168.2.1/24</code></p>
+
+<h3 id="扫描目标列表"><strong>扫描目标列表</strong></h3>
+
+<p>如果你有大量的系统需要扫描，你可以将这些IP地址（或主机名）输入到一个文本文件中，用这个文本文件的内容来作为Nmap命令行的输入。
+语法: <code>nmap -iL [list.txt]</code></p>
+
+<h3 id="扫描随机目标"><strong>扫描随机目标</strong></h3>
+
+<p>“-iR” 参数可以用来选择随机的互联网主机来扫描。Nmap将会随机的生成指定数量的目标进行扫描。
+语法: <code>nmap -iR [主机数量]</code>
+除非你有一些这种类型的任务，否则随机扫描不是一个好习惯。</p>
+
+<h3 id="exclude-选项被用来从扫描中排除一些主机"><strong>&rdquo; –exclude &ldquo;选项被用来从扫描中排除一些主机</strong></h3>
+
+<p>语法: <code>nmap [目标] –exclude [主机]</code>
+例如:<code>nmap 192.168.2.1/24 –exclude 192.168.2.10</code></p>
+
+<h3 id="激烈扫描"><strong>激烈扫描</strong></h3>
+
+<p>激烈扫描模式会选择Nmap中最常用的选项来尝试代替输入很长的字符串。它对于路由跟踪也适用。
+命令:<code>nmap –A host</code></p>
+
+<h3 id="用nmap来探测"><strong>用Nmap来探测</strong></h3>
+
+<p>用Nmap来探测对于渗透测试者来说是非常有意思而且非常有用的。在探测中，可以发现服务，端口号，防火墙，协议，操作系统等等。我们解析来一个一个的讨论。</p>
+
+<h3 id="不用ping"><strong>不用ping</strong></h3>
+
+<p>&rdquo; -PN &ldquo;选项告诉Nmap不使用默认的探测检查，而是对目标进行一个完整的端口扫描。当我们扫描一个有防火墙保护而封锁 ping 探针主机的时候是非常有用的。
+语法:<code>nmap –PN Target</code></p>
+
+<p>通过指定这些选项，Nmap将会不用ping来发现那些不能ping通主机开放的端口。</p>
+
+<h3 id="只是扫描的ping"><strong>只是扫描的ping</strong></h3>
+
+<p>“ -Sp ” 选项告诉Nmap仅仅进行ping扫描。 当你有一组IP地址来扫描时，而且你不知道哪一个是可达的，这时这个选项会很有用。通过指定一个特定的目标，你可以得到像MAC地址这样更多的信息。
+语法:<code>nmap –Sp target</code></p>
+
+<h3 id="tcp-syn-扫描"><strong>TCP SYN 扫描</strong></h3>
+
+<p>在我们开始之前，我们必须知道syn包。
+基本上来说，一个syn包是用来在两个通信的主机之间初始化连接。
+TCP SYN ping 发送一个SYN包给目标系统，然后监听目标系统的响应。 这种探测方法对于那些配置好封锁标准ICMP ping的系统来说很有用。
+“ -PS ”选项来实施 TCP SYN ping。
+语法:<code>nmap –PS 目标</code></p>
+
+<p>默认的端口是80端口，你也可以指定其他的端口，例如：–PS22, 23, 25, 443。</p>
+
+<h3 id="tcp-ack-ping-扫描"><strong>TCP Ack Ping 扫描</strong></h3>
+
+<p>这种类型的扫描将只会扫描ACK包。
+“ -PA ”在特定目标上进行一个 TCP ACK ping。
+“ -PA ”选项会导致Nmap发送一个 TCP ACK 包给指定的主机。
+语法:<code>nmap –PA target</code></p>
+
+<p>这种方法将会通过对一个TCP连接作出响应来尝试发现主机，这个TCP连接是一个不存在的连接，它正试图与目标主机建立一个响应。如同其他ping 选项一样，对于封锁标准ICMP ping的情况是非常有用的。</p>
+
+<h3 id="udp-ping-扫描"><strong>UDP Ping 扫描</strong></h3>
+
+<p>“ –PU ”扫描只会对目标进行 udp ping 扫描。这种类型的扫描会发送UDP包来获得一个响应。
+语法:<code>nmap –PU target</code></p>
+
+<p>你可以指定一个扫描的端口号，例如 –PU 22, 80, 25, 等等。在上面的图片中，目标是我的局域网IP，在这个IP的主机中没有任何UDP服务。</p>
+
+<h3 id="sctp-初始-ping"><strong>Sctp 初始 ping</strong></h3>
+
+<p>“ -PY ”参数告诉Nmap进行一个 SCTP 初始 ping. 这个选项将会发送一个包含最小的初始快STCP包。这种探测方法会尝试用SCTP来定位主机。SCTP通常被用在IP拨号服务的系统中。
+语法:<code>nmap –PY 目标</code></p>
+
+<p>在上图中，尽管在这台主机上没有sctp服务，但是我们必须用-pn选项来进行探测。</p>
+
+<h3 id="icmp-回声应答-ping"><strong>ICMP 回声应答 ping</strong></h3>
+
+<p>“ -PE ”参数进行一个ICMP(Internet控制报文协议) 在指定的系统上输出ping。
+语法:<code>nmap –PE 目标</code></p>
+
+<p>这种类型的探测在ICMP数据包可以在有较少传输限制的系统上效果比较好。</p>
+
+<h3 id="icmp时间戳ping扫描"><strong>ICMP时间戳ping扫描</strong></h3>
+
+<p>“ -PP ”选项进行一个ICMP时间戳ping扫描。</p>
+
+<h3 id="icmp地址掩码ping"><strong>ICMP地址掩码ping</strong></h3>
+
+<p>“ -PM ”选项进行一个ICMP地址掩码ping扫描。
+语法:<code>nmap –PM 目标</code></p>
+
+<p>这种非常规的ICMP查询（和 -PP 选项类似）试图用备选的ICMP登记ping指定的主机。这种类型的ping可以偷偷的通过配置好封锁标准回声请求的防火墙。</p>
+
+<h3 id="ip协议ping"><strong>IP协议Ping</strong></h3>
+
+<p>“ -PO ”选项进行一个IP协议ping。
+语法:<code>nmap –PO 协议 目标</code></p>
+
+<p>IP协议ping用指定的协议发送一个包给目标。如果没有指定协议，默认的协议是 1 (ICMP), 2 (IGMP)和4 (IP-in-IP)。</p>
+
+<h3 id="arp-ping"><strong>ARP ping</strong></h3>
+
+<p>“ –PR ”选项被用来实施一个arp ping 扫描。“ -PR ”选项告诉Nmap对目标主机进行一个APR(地址解析协议) ping.
+语法: <code>nmap –PR 目标</code></p>
+
+<p>“ -PR ”选项当扫描整个网络的时候自动使用。这种类型的探测比其他的ping方法更快。
+路由跟踪
+“ –traceroute ”参数可以用来追踪到指定主机的网络路径。
+语法: <code>nmap –traceroute 目标</code></p>
+
+<h3 id="强制使用反向域名解析"><strong>强制使用反向域名解析</strong></h3>
+
+<p>“ -R ”参数告诉Nmap总是对目标IP地址实施一个逆向DNS解析。
+语法: <code>nmap –R 目标</code></p>
+
+<p>“ -R “选项可以用在对一个IP地址块实施探测的时候，Nmap将试图对每个IP地址进行反向向DNS信息解析。</p>
+
+<h3 id="不用反向域名解析"><strong>不用反向域名解析</strong></h3>
+
+<p>“ -n ”参数用来说明不使用反向域名解析。
+语法:<code>nmap –n 目标</code></p>
+
+<p>反向域名解析会明显的降低Nmap扫描的速度。使用“-n”选项会极大的减少扫描时，特别是当扫描大量的主机时。如果你不关心目标系统的DNS信息，更喜欢进行一个能快速产生结果的扫描时，可以使用这个选项。</p>
+
+<h3 id="dns查询方法的取舍"><strong>DNS查询方法的取舍</strong></h3>
+
+<p>“ –system-dns ”选项告诉Nmap使用主机系统的域名解析来替代它自己的内部方法。
+语法:<code>nmap –system-dns 目标</code></p>
+
+<h3 id="手动指定dns服务器"><strong>手动指定DNS服务器</strong></h3>
+
+<p>“ –dns-servers ”选项可以用来在扫面的时候手动指定查询的DNS服务器。
+语法: <code>nmap –dns-servers 服务器1 服务器2 目标</code></p>
+
+<hr />
+
+<p>” –dns-servers “选项允许你指定一个或者更多的替代服务器来宫Nmap查询。这对于没有DNS配置的系统是非常有用的，而且如果你想阻止你的扫描查询出现在你配置在本地DNS服务器的记录文件中，这个选项也是有用的。</p>
+
+<h3 id="列表扫描"><strong>列表扫描</strong></h3>
+
+<p>” -sL “选项将会显示一个列表，并对指定的IP地址执行一个反向DNS查询。
+语法:<code>nmap –sL 目标</code></p>
+
+<p>在下一个I部分中，我将会讨论怎么用不同的方法发现服务，主机和旗标。同时，我们也将会讨论怎么发现防火墙以及怎么通过使用Nmap的NSE来绕过它以及怎么编写你自己的Nmap脚本引擎。Nmap中最重要的部分是知道怎么样发现漏洞和利用他们，拭目以待。</p>
+
+<p>来源： &lt;<a href="http://www.freebuf.com/articles/network/32302.html">http://www.freebuf.com/articles/network/32302.html</a>&gt;</p>
+
+<p> </p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-cyber-security">网络安全 - cyber security</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/nmap">Nmap</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="/2015/10/build-a-blog/"
+                class="button big previous">搭站</a></li>
+    
+
+    
+        <li><a href="/2015/10/namp-zoom-table/"
+                class="button big next">Nmap速查表</a></li>
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/about' style="border-bottom: none;"><img src="/img/main/logo.jpg" class="intro-circle" width="96" alt="Website&#39;s Logo" /></a>
+      
+    
+    
+      <header>
+        <h2>Mr9esx</h2>
+        <p>95年生人，现居广州。<br/>Gopher & Pythonista。<br/>BACKEND & FRONTEND。</p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/mr9esx" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//telegram.me/mr9esx" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:mr9esx1138099359@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/06/golang-interview-question/">Go 面试题</a>
+              </h3>
+              
+              <time class="published" datetime='2019-06-24'>
+                June 24, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/">Windows 10 下的 go-micro 安装笔记（go mod 模式）</a>
+              </h3>
+              
+              <time class="published" datetime='2019-05-09'>
+                May 9, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/">Windows 10 安装 Golang gRpc</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-28'>
+                April 28, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%86%99%E7%9C%9F-photo/">写真-PHOTO</a>
+                <span style="float:right;">9
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%89%81%E6%89%8B%E5%BC%80%E7%AE%B1-show-what-i-buy/">剁手开箱-SHOW-WHAT-I-BUY</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%BC%80%E5%8F%91-develop/">开发-DEVELOP</a>
+                <span style="float:right;">111
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E6%8A%98%E8%85%BE-make-trouble/">折腾-MAKE-TROUBLE</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E6%96%87%E7%AB%A0/">文章</a>
+                <span style="float:right;">14
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-cyber-security/">网络安全-CYBER-SECURITY</a>
+                <span style="float:right;">20
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+
+  <section id="mini-bio">
+    <video src="" id="sidebar-video" type="video/mp4" autoplay autobuffer loop></video>
+  </section>
+
+  
+  <section id="footer">
+    
+
+    <p class="copyright">
+      <svg t="1540987830423" class="icon" style="" viewBox="200 200 580 580" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1025" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="30"><path d="M267.680514 709.995914c-10.559782-78.799883 35.66417-188.681389 73.719233-234.008756-2.291273-27.495282-5.877615-98.126277 15.34157-110.279988 17.533223-10.061679 60.668937 14.544606 88.064598 32.575931l272.16344 1.892792c27.19642-18.031326 72.723028-44.729643 90.853974-34.369102 23.610079 13.5484 16.437397 99.520965 14.644226 117.851152 36.461134 43.833058 60.370075 176.428057 60.370075 234.407238" fill="#BDBDBD" p-id="1027"></path><path d="M809.915361 689.075591c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.468723 0 65.749587 24.905146 67.044654 55.588287zM319.184356 689.075591c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#BDBDBD" p-id="1028"></path><path d="M193.562798 664.768168c-10.559782-78.799883 35.66417-188.681389 73.719233-234.008756-2.291273-27.495282-5.877615-98.126277 15.341571-110.279988 17.533223-10.061679 60.668937 14.544606 88.064597 32.575932l272.16344 1.892791c27.19642-18.031326 72.723028-44.729643 90.853974-34.369102 23.610079 13.5484 16.437397 99.520965 14.644226 117.851152 36.461134 43.833058 60.370075 176.428057 60.370075 234.407239" fill="#FFFFFF" p-id="1029"></path><path d="M814.996011 672.737815h-12.552194c0-30.284658-6.375717-77.803677-16.337776-121.039012-11.85485-51.802705-26.997179-90.555112-42.53799-109.283782-1.095826-1.295068-1.593929-2.988618-1.394688-4.682168 4.781788-47.917502 3.187859-103.306547-11.555988-111.774297-4.184065-2.390894-22.414632-6.87382-84.279015 34.169861-0.996206 0.697344-2.291273 1.095826-3.486721 1.095827l-272.16344-1.892792c-1.195447 0-2.390894-0.398482-3.3871-0.996205-59.672731-39.15089-77.504816-34.667964-81.489639-32.376691-12.054091 6.87382-16.835879 47.817881-12.153711 104.302753 0.099621 1.69355-0.398482 3.287479-1.494309 4.582547-37.158478 44.131919-82.585466 152.618737-72.324545 229.127347l-12.452573 1.69355c-4.881409-36.461134 1.793171-83.482051 18.927911-132.495379 14.345364-41.143302 34.667964-79.89571 54.592081-104.402373-1.095826-13.64802-2.390894-37.35772-0.996206-59.274249 1.992412-30.185037 8.368129-48.017122 19.625255-54.49246 15.640432-8.965853 47.020916 1.69355 93.145248 31.679346l268.377858 1.793171c47.61864-31.380484 79.89571-42.737231 95.934624-33.572138 12.153711 6.973441 18.72867 27.395661 20.023737 62.362487 0.896585 23.610079-0.896585 47.61864-1.992411 58.975387 37.258099 48.116743 59.971593 179.516295 59.971592 236.49927z" fill="#6B3437" p-id="1030"></path><path d="M871.680125 679.213153H107.590233c-4.084444 0-7.371923-3.287479-7.371924-7.371923s3.287479-7.371923 7.371924-7.371924h764.089892c4.084444 0 7.371923 3.287479 7.371923 7.371924s-3.287479 7.371923-7.371923 7.371923z" fill="#6B3437" p-id="1031"></path><path d="M330.441483 517.03084a21.717288 14.843467 90 1 0 29.686934 0 21.717288 14.843467 90 1 0-29.686934 0Z" fill="" p-id="1032"></path><path d="M505.076369 364.01362h138.572235s66.247689-42.039887 84.97636-35.76379c18.72867 6.276097 26.598696 28.491487 17.533223 115.559879 0 0 30.882382 57.481078 30.583519 72.523786 0 0-87.865357 127.315108-242.078023 33.572138-78.999124-55.389046-63.856795-152.319875-29.587314-185.892013z" fill="#FEAE02" p-id="1033"></path><path d="M604.298473 517.03084a21.717288 14.843467 90 1 0 29.686934 0 21.717288 14.843467 90 1 0-29.686934 0Z" fill="" p-id="1034"></path><path d="M467.021306 580.688394c-6.076856 0-11.755229-2.689756-15.540812-7.471544-1.394688-1.793171-1.095826-4.283685 0.597724-5.777994 1.793171-1.394688 4.283685-1.095826 5.777994 0.597723 2.291273 2.789376 5.578753 4.383306 9.165094 4.383306 6.475338 0 11.85485-5.279891 11.854849-11.854849 0-2.291273 1.793171-4.084444 4.084444-4.084445s4.084444 1.793171 4.084444 4.084445c0 11.157506-8.965853 20.123358-20.023737 20.123358z" fill="" p-id="1035"></path><path d="M499.099134 580.688394c-11.057885 0-19.924117-8.965853-19.924117-19.924117 0-2.291273 1.793171-4.084444 4.084444-4.084444s4.084444 1.793171 4.084444 4.084444c0 6.475338 5.279891 11.85485 11.85485 11.854849 3.586341 0 6.973441-1.593929 9.165094-4.383305 1.394688-1.793171 3.984823-1.992412 5.777994-0.597724 1.793171 1.394688 1.992412 3.984823 0.597723 5.777994-3.885203 4.482926-9.563576 7.272303-15.640432 7.272303z" fill="" p-id="1036"></path><path d="M495.712034 390.313455c-4.283685 11.755229-8.56737 17.234361-18.72867 17.234361-10.1613 0-14.644226-7.969647-18.429808-18.529429-4.781788-13.149917 4.682168-25.801732 18.330188-25.403249 16.636638 0.498103 23.610079 13.5484 18.82829 26.698317zM545.123845 383.240393c-3.088238 5.977235-6.176476 8.666991-13.5484 8.666991-7.272303 0-10.559782-4.084444-13.249538-9.364335-3.48672-6.674579 3.3871-13.050297 13.249538-12.851056 12.054091 0.298862 17.03512 6.87382 13.5484 13.5484zM441.916918 383.240393c-3.088238 5.977235-6.176476 8.666991-13.5484 8.666991-7.272303 0-10.559782-4.084444-13.249538-9.364335-3.48672-6.674579 3.3871-13.050297 13.249538-12.851056 12.054091 0.298862 17.03512 6.87382 13.5484 13.5484z" fill="#F97700" p-id="1037"></path><path d="M467.320167 534.663683h33.372897c5.379512 0 8.268509 6.276097 4.781788 10.360541l-17.134741 16.437397c-2.490515 2.888997-7.073062 2.888997-9.563576 0l-16.238156-16.437397c-3.48672-4.084444-0.597724-10.360541 4.781788-10.360541z" fill="" p-id="1038"></path><path d="M667.457924 364.511723c18.031326-11.95447 46.423193-27.993385 67.243895-34.269482-0.199241-0.099621-0.398482-0.199241-0.597723-0.398482-18.031326-10.26092-63.259072 16.537017-90.555113 34.568343h23.908941z" fill="#FEE6A5" p-id="1039"></path><path d="M295.873139 437.433992c-2.291273-27.19642-18.230567-96.432727 9.563577-109.184162-6.276097-0.896585-12.651814-1.095826-16.736259 1.195447-21.219185 12.153711-16.736258 80.593054-14.444985 108.088335-38.154684 45.327366-84.378636 155.109252-73.719233 234.008756l24.606285 0.298862c-9.862438-78.799883 32.775173-189.478354 70.730615-234.407238z" fill="#F1E8E3" p-id="1040"></path><path d="M302.84658 672.737815c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#FFFFFF" p-id="1041"></path><path d="M239.089406 718.862146c-33.372896 0-55.389046-6.076856-67.243896-18.629049-6.973441-7.371923-10.1613-16.736258-9.563576-27.893764 0.896585-16.337776 9.862438-31.878587 25.104388-44.032299 14.146123-11.257126 31.878587-17.732464 48.415604-17.732464 38.353925 0 72.025683 28.292246 73.519992 61.764763 0.498103 11.356747-2.888997 20.920323-10.161299 28.491487-11.356747 12.054091-31.579726 18.031326-60.071213 18.031326z m-3.28748-95.137659c-32.476311 0-59.174628 26.598696-60.469695 49.41181-0.398482 7.471544 1.593929 13.448779 5.977235 18.230567 9.165094 9.663197 28.591108 14.544606 57.77994 14.544606 24.407043 0 41.940267-4.781788 50.706878-13.946882 4.682168-4.881409 6.87382-11.057885 6.475338-18.828291-1.195447-26.797938-28.88997-49.41181-60.469696-49.41181z" fill="#6B3437" p-id="1042"></path><path d="M295.474657 671.84123c-0.597724-7.073062-3.187859-14.644226-8.168888-21.518047 0.498103 2.390894 0.796965 4.781788 0.996206 7.172682 1.095826 25.602491-16.636638 33.472517-49.611052 33.472517s-57.182216-6.574959-55.588287-34.966825c0.099621-1.992412 1.295068-3.287479 1.69355-5.180271-3.785582 5.578753-7.272303 11.356747-8.168888 18.927911-3.685962 30.284658 27.893764 37.45734 62.163246 37.457341 28.591108 0.099621 58.875766-9.165094 56.684113-35.365308z" fill="#F1E8E3" p-id="1043"></path><path d="M745.859325 440.721471s23.80932 35.166067 32.077828 71.228719c0 0-3.187859 6.574959-10.659402 13.448779 0 0-1.494309-37.158478-21.418426-84.677498z" fill="#E0930A" p-id="1044"></path><path d="M777.937153 511.95019s-5.777994 8.56737-10.659402 13.448779c-4.881409 4.881409 0 0 0 0s15.34157 82.087363 12.552194 140.564646l24.207802 2.590135c-0.099621 0-5.578753-106.892888-26.100594-156.60356" fill="#F1E8E3" p-id="1045"></path><path d="M793.677206 672.737815c1.295068 28.790349-26.698317 39.648993-63.757175 39.648993s-72.125304-7.770406-70.332133-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#FFFFFF" p-id="1046"></path><path d="M729.920031 718.862146c-33.372896 0-55.389046-6.076856-67.243895-18.629049-6.973441-7.371923-10.1613-16.736258-9.563576-27.893764 0.896585-16.337776 9.862438-31.878587 25.104387-44.032299 14.146123-11.257126 31.878587-17.732464 48.415605-17.732464 38.353925 0 72.025683 28.292246 73.519992 61.764763 0.498103 11.356747-2.888997 20.920323-10.1613 28.491487-11.356747 12.054091-31.579726 18.031326-60.071213 18.031326z m-3.287479-95.137659c-32.476311 0-59.174628 26.598696-60.469696 49.41181-0.398482 7.471544 1.593929 13.448779 5.977235 18.230567 9.165094 9.663197 28.591108 14.544606 57.77994 14.544606 24.407043 0 41.940267-4.781788 50.706878-13.946882 4.682168-4.881409 6.87382-11.057885 6.475338-18.828291-1.195447-26.797938-28.88997-49.41181-60.469695-49.41181z" fill="#6B3437" p-id="1047"></path><path d="M786.504524 671.641989c-0.597724-7.073062-3.48672-14.743847-8.46775-21.717288 0.498103 2.390894 0.796965 4.781788 0.996206 7.172682 1.095826 25.602491-16.437397 33.771379-49.411811 33.771379s-57.281837-6.574959-55.687907-34.966826c0.099621-1.992412 1.095826-2.988618 1.494309-4.881409-3.785582 5.578753-7.073062 10.1613-7.969647 17.732465-3.685962 30.384279 26.399455 38.254305 62.262866 38.353925 34.667964 0.298862 58.875766-9.264714 56.783734-35.464928z" fill="#F1E8E3" p-id="1048"></path><path d="M250.246911 566.143788c-3.088238 2.988618-6.176476 4.383306-13.548399 4.383306s-10.559782-1.992412-13.249538-4.682167c-3.48672-3.287479 3.3871-6.574959 13.249538-6.375718 11.95447 0.099621 17.03512 3.3871 13.548399 6.674579zM247.158673 595.731102c-3.088238 4.582547-6.176476 6.674579-13.5484 6.674579s-10.559782-3.088238-13.249538-7.172682c-3.48672-5.18027 3.3871-10.061679 13.249538-9.862438 11.95447 0.099621 17.03512 5.18027 13.5484 10.360541zM791.186691 588.658041c-3.088238 4.582547-6.176476 6.674579-13.548399 6.674579s-10.559782-3.088238-13.249538-7.172682c-3.48672-5.18027 3.3871-10.061679 13.249538-9.862438 12.054091 0.099621 17.03512 5.18027 13.548399 10.360541z" fill="#F97700" p-id="1049"></path></svg>
+      <br />
+      Another Blog <a href="https://www.miaoplus.com" target="_blank">Miao+</a>
+    </p>
+
+    <p class="copyright">
+      <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="86px" height="30px" viewBox="232 265 280 140" enable-background="new 0 0 800 800" xml:space="preserve"><g><path fill="#00A0FF" d="M282.639,281.223L282.639,281.223L282.639,281.223L282.639,281.223L282.639,281.223c-2.473-1.861-5.034-3.52-7.664-4.983c-1.904-1.059-4.295-0.564-5.604,1.177l-16.492,21.912l-1.176,1.563c-1.786,2.373-4.638,3.665-7.605,3.529c-1.082-0.049-2.164-0.039-3.242,0.029c-8.289,0.525-16.308,4.525-21.694,11.681c-4.33,5.753-6.229,12.576-5.879,19.245c0.063,1.201,0.757,2.298,1.851,2.796c2.27,1.032,4.017,3.137,4.454,5.83c0.618,3.809-1.722,7.551-5.418,8.659c-4.357,1.306-8.832-1.363-9.814-5.724c-0.532-2.362,0.079-4.711,1.463-6.48c0.768-0.981,1.154-2.203,1.044-3.444c-0.758-8.552,1.52-17.402,7.09-24.802c7.026-9.334,17.717-14.274,28.562-14.337c2.09-0.012,4.052-1.011,5.309-2.681l15.188-20.178c1.189-1.579,0.421-3.848-1.476-4.405c-25.43-7.46-53.905,0.934-70.96,23.146c-22.099,28.781-16.729,70.279,11.987,92.462c2.687,2.076,5.482,3.909,8.36,5.508c1.893,1.052,4.274,0.537,5.577-1.193l16.492-21.911l1.176-1.563c1.786-2.373,4.638-3.665,7.605-3.529c1.082,0.049,2.164,0.039,3.242-0.029c8.289-0.525,16.308-4.525,21.694-11.681c4.33-5.753,6.229-12.576,5.879-19.245c-0.063-1.201-0.757-2.298-1.851-2.796c-2.27-1.032-4.017-3.137-4.454-5.83c-0.618-3.809,1.722-7.551,5.418-8.658c4.357-1.306,8.832,1.363,9.814,5.724c0.532,2.362-0.079,4.711-1.463,6.48c-0.768,0.981-1.154,2.203-1.044,3.444c0.758,8.552-1.52,17.402-7.09,24.802c-7.026,9.334-17.717,14.274-28.562,14.337c-2.09,0.012-4.052,1.011-5.309,2.681l-15.187,20.177c-1.18,1.568-0.439,3.842,1.444,4.396c25.633,7.534,54.368-1.045,71.384-23.652C317.614,344.545,311.773,303.151,282.639,281.223z"/><g><path fill="#00A0FF" d="M391.613,299.257l-0.001-1.567c-0.001-1.133-0.92-2.052-2.053-2.052h-51.424c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h43.629c1.255,0,2.221,1.107,2.034,2.348c-1.224,8.113-5.061,23.285-17.051,37.854c-0.847,1.029-2.419,1.011-3.241-0.039c-10.032-12.828-13.119-25.98-13.962-30.826c-0.184-1.061-1.166-1.792-2.237-1.678l-1.643,0.174l-1.449,0.151c-1.188,0.124-2.026,1.228-1.808,2.403c1.028,5.558,4.773,20.841,16.549,35.388c0.683,0.843,0.625,2.076-0.175,2.81c-14.336,13.149-27.229,16.031-31.841,16.657c-1.027,0.14-1.794,1.009-1.789,2.046l0.015,3.169c0.006,1.22,1.065,2.174,2.276,2.032c5.484-0.645,20.116-3.743,36.284-18.613c0.799-0.734,2.014-0.734,2.81,0.003c7.813,7.235,17.799,14.211,31.266,18.495c1.091,0.347,2.259-0.287,2.582-1.385l0.887-3.007c0.318-1.078-0.297-2.198-1.367-2.539c-12.252-3.908-21.285-10.2-28.378-16.651c-0.818-0.744-0.859-2.006-0.141-2.846C391.369,325.431,391.615,300.395,391.613,299.257z"/><path fill="#00A0FF" d="M427.31,292.355h-3.137c-1.134,0-2.053,0.919-2.053,2.053v10.999c0,1.134-0.919,2.053-2.053,2.053h-7.379c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h7.379c1.134,0,2.053,0.919,2.053,2.053v15.933c0,1.134-0.919,2.053-2.053,2.053h-7.379c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h7.379c1.134,0,2.053,0.919,2.053,2.053v15.065c0,3.27-1.307,8.606-9.648,9.31c-1.078,0.091-1.921,0.965-1.921,2.047v3.125c0,1.196,1.017,2.157,2.209,2.055c8.099-0.693,16.603-5.292,16.603-16.537v-15.065c0-1.134,0.919-2.053,2.053-2.053h6.557c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-6.557c-1.134,0-2.053-0.919-2.053-2.053v-15.933c0-1.134,0.919-2.053,2.053-2.053h6.557c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-6.557c-1.134,0-2.053-0.919-2.053-2.053v-10.999C429.363,293.274,428.444,292.355,427.31,292.355z"/><path fill="#00A0FF" d="M443.648,373.092c0,1.134,0.919,2.053,2.053,2.053h23.138c10.239,0,18.569-7.94,18.569-17.7v-48.63c0-1.134-0.919-2.053-2.053-2.053h-39.654c-1.134,0-2.053,0.919-2.053,2.053V373.092z M468.839,367.902h-15.895c-1.134,0-2.053-0.919-2.053-2.053v-21.81c0-1.134,0.919-2.053,2.053-2.053h25.167c1.134,0,2.053,0.919,2.053,2.053v13.406C480.165,363.211,475.084,367.902,468.839,367.902z M480.165,316.059v16.631c0,1.134-0.919,2.053-2.053,2.053h-25.167c-1.134,0-2.053-0.919-2.053-2.053v-16.631c0-1.134,0.919-2.053,2.053-2.053h25.167C479.246,314.006,480.165,314.925,480.165,316.059z"/><path fill="#00A0FF" d="M475.171,292.301h-20.44c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h20.44c1.134,0,2.053-0.919,2.053-2.053v-3.137C477.224,293.22,476.305,292.301,475.171,292.301z"/><path fill="#00A0FF" d="M553.303,295.487H510.73c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h42.573c1.134,0,2.053-0.919,2.053-2.053v-3.137C555.356,296.406,554.437,295.487,553.303,295.487z"/><path fill="#00A0FF" d="M535.11,331.8h29.657c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-65.51c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h20.274c1.638,0,2.617,1.824,1.711,3.189l-13.492,24.343c-0.363,0.545-0.632,1.08-0.821,1.633c-1.129,3.299-0.601,6.838,1.451,9.71c2.15,3.01,5.706,4.806,9.509,4.806h36.976c1.662,0,3.181-0.829,4.061-2.218c0.863-1.359,0.969-3.039,0.283-4.495l-8.586-16.643c-0.52-1.008-1.759-1.403-2.766-0.883l-2.788,1.439c-1.008,0.52-1.403,1.758-0.883,2.766l5.055,9.796c0.705,1.367-0.287,2.995-1.825,2.995h-29.528c-1.492,0-2.81-0.647-3.616-1.775c-0.367-0.512-0.899-1.53-0.589-2.798c0.052-0.212,0.157-0.413,0.278-0.596l16.397-28.72C531.416,332.757,533.199,331.8,535.11,331.8z"/></g></g></svg>
+      <br />
+      CDN by <a href="https://www.upyun.com/" targer="_blank">UpYun</a>
+    </p>
+
+    <p class="copyright">
+      
+        &copy; 2014 - 2019
+        
+        <a href="https://www.nervgeek.com" target="_blank">NERVGEEK</a>
+        
+        <br />
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>.
+      <br />
+      备案号: <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备19082652号-1</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+      <script src="/js/randomSidebarVideo.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

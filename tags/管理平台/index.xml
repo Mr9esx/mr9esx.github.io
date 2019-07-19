@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>管理平台 on NERVGEEK</title>
+    <link>/tags/%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</link>
+    <description>Recent content in 管理平台 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Aug 2016 15:49:11 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>单节点版Docker管理平台(开发中)</title>
+      <link>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</link>
+      <pubDate>Tue, 16 Aug 2016 15:49:11 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</guid>
+      <description>最近在着手Docker资源管理平台的开发，花了几天系统地学习了Docker，并看了下Docker自带的Restful API，贯彻我的“Lea</description>
+    </item>
+    
+  </channel>
+</rss>

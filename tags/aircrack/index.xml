@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aircrack on NERVGEEK</title>
+    <link>/tags/aircrack/</link>
+    <description>Recent content in aircrack on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 13 Oct 2015 01:17:57 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/aircrack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi下跑aircrack和reaver破解路由器PIN码</title>
+      <link>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</link>
+      <pubDate>Tue, 13 Oct 2015 01:17:57 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</guid>
+      <description>最近心血来潮，想把小区里的无线信号测试个遍。基于目前大多数路由器都支持wps,想必各位基友们都知道aircrack和reaver这两个工具，</description>
+    </item>
+    
+  </channel>
+</rss>

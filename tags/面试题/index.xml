@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>面试题 on NERVGEEK</title>
+    <link>/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+    <description>Recent content in 面试题 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 14 Dec 2018 09:20:28 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang - 刷题（1）</title>
+      <link>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</link>
+      <pubDate>Fri, 14 Dec 2018 09:20:28 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</guid>
+      <description>下面的程序运行后为什么会爆异常。 原题 Main 里面的 sleep 原本是 time.Sleep(time.Second * 100000000000000) ，不过原因太明显了（constant 100000000000000000000000 overflows time.Duration ），我就改为 10 秒。 package main import ( &amp;quot;fmt&amp;quot; &amp;quot;time&amp;quot; ) type Project struct{} func</description>
+    </item>
+    
+  </channel>
+</rss>

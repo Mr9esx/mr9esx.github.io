@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WampServer on NERVGEEK</title>
+    <link>/tags/wampserver/</link>
+    <description>Recent content in WampServer on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 04 Mar 2016 07:26:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/wampserver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>修改WampServer的MySQL空密码</title>
+      <link>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</link>
+      <pubDate>Fri, 04 Mar 2016 07:26:06 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</guid>
+      <description>在Windows下开发PHP，搭建Linux虚拟机无疑性能开销太大，自己在Windows下搭建PHP运行环境也非常麻烦、不稳定，因此很多人会</description>
+    </item>
+    
+  </channel>
+</rss>

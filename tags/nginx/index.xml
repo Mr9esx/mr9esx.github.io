@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginx on NERVGEEK</title>
+    <link>/tags/nginx/</link>
+    <description>Recent content in nginx on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Jun 2016 12:20:27 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在CentOS6.4部署django环境(python&#43;nginx&#43;uwsgi&#43;mysql)(另外再加一个Redis和Redis-py的配置)</title>
+      <link>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</link>
+      <pubDate>Fri, 24 Jun 2016 12:20:27 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</guid>
+      <description>最近想学学python web，虽然Windows也能部署开发环境，但Linux还是主流，所以直接在Linux上部署环境学习python了。 0x01</description>
+    </item>
+    
+    <item>
+      <title>一键LNMP的命令以及配置文件的存放地址</title>
+      <link>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</link>
+      <pubDate>Thu, 17 Mar 2016 07:32:19 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</guid>
+      <description>一般人快速搭建网站都会选择一键LNMP来快速搭建环境，本博客就是基于那个一键LNMP搭建起来的，日常维护使用非常方便。 管理命令： * **LNM</description>
+    </item>
+    
+  </channel>
+</rss>

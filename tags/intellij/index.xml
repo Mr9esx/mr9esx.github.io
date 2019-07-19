@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IntelliJ on NERVGEEK</title>
+    <link>/tags/intellij/</link>
+    <description>Recent content in IntelliJ on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Feb 2016 11:40:35 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IntelliJ IDEA 15 联网激活</title>
+      <link>/2016/02/2016-02-28-intellij-idea-15-e88194e7bd91e6bf80e6b4bb/</link>
+      <pubDate>Sun, 28 Feb 2016 11:40:35 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-28-intellij-idea-15-e88194e7bd91e6bf80e6b4bb/</guid>
+      <description>直接利用iteblog博客提供的License server（服务器地址为http://www.iteblog.com/idea/key.ph</description>
+    </item>
+    
+  </channel>
+</rss>

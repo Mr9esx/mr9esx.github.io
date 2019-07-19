@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLite3 on NERVGEEK</title>
+    <link>/tags/sqlite3/</link>
+    <description>Recent content in SQLite3 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Jan 2018 07:37:08 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sqlite3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Electron 使用 SQLite3 数据库</title>
+      <link>/2018/01/2018-01-16-electron-e4bdbfe794a8-sqlite3-e695b0e68daee5ba93/</link>
+      <pubDate>Tue, 16 Jan 2018 07:37:08 +0000</pubDate>
+      
+      <guid>/2018/01/2018-01-16-electron-e4bdbfe794a8-sqlite3-e695b0e68daee5ba93/</guid>
+      <description>直接通过 npm install &amp;ndash;save sqlite3 安装 sqlite3 是无法正常在 electron 上使用的，翻遍了很多教程，都是相对比较旧的，有些命令甚至在4.0之后都没有了。 直接贴上解决方法了： npm config set</description>
+    </item>
+    
+  </channel>
+</rss>

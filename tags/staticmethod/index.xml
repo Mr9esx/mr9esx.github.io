@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>@staticmethod on NERVGEEK</title>
+    <link>/tags/staticmethod/</link>
+    <description>Recent content in @staticmethod on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Nov 2016 13:07:30 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/staticmethod/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python 中的 @staticmethod 和 @classmethod</title>
+      <link>/2016/11/2016-11-16-python-e4b8ade79a84-staticmethod-e5928c-classmethod/</link>
+      <pubDate>Wed, 16 Nov 2016 13:07:30 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-16-python-e4b8ade79a84-staticmethod-e5928c-classmethod/</guid>
+      <description>class Method(): var1 = &amp;lsquo;hello&amp;rsquo; def init(self, var2 = &amp;ldquo;object var&amp;rdquo;): self.var2 = &amp;lsquo;var2&amp;rsquo; def show(self): print self.var2 @staticmethod def staticFunc(): print &amp;lsquo;static method&amp;rsquo; @classmethod def classFunc(cls): print cls.var1 print &amp;lsquo;class method&amp;rsquo; staticmethod和classmethod的相同点: 1.都可以通过类或</description>
+    </item>
+    
+  </channel>
+</rss>

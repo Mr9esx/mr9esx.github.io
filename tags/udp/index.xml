@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UDP on NERVGEEK</title>
+    <link>/tags/udp/</link>
+    <description>Recent content in UDP on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 15 Oct 2015 10:37:11 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/udp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UDP协议分析</title>
+      <link>/2015/10/2015-10-15-udpe58d8fe8aeaee58886e69e90/</link>
+      <pubDate>Thu, 15 Oct 2015 10:37:11 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-15-udpe58d8fe8aeaee58886e69e90/</guid>
+      <description>UDP 是User Datagram Protocol的简称， 中文名是用户数据报协议，是OSI中一种无连接的传输层协议，提供面向事务的简单不可靠信息传送服务。 4.1 UD</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>指针 on NERVGEEK</title>
+    <link>/tags/%E6%8C%87%E9%92%88/</link>
+    <description>Recent content in 指针 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 13 Dec 2018 08:51:41 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%8C%87%E9%92%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang - 关于传参是传值还是传引用</title>
+      <link>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</link>
+      <pubDate>Thu, 13 Dec 2018 08:51:41 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</guid>
+      <description>对于我这种学 Go 没多久的新手缺少实战经验的人来说，翻翻别人博客学习一下别人的总结是避免躺坑最快捷的方式之一，但有些人的博客写的示例代码，会刷新</description>
+    </item>
+    
+  </channel>
+</rss>

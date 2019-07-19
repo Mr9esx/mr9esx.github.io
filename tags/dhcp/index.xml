@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DHCP on NERVGEEK</title>
+    <link>/tags/dhcp/</link>
+    <description>Recent content in DHCP on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 03 Jun 2016 11:17:48 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/dhcp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 2000 DHCP 配置用户类</title>
+      <link>/2016/06/2016-06-03-windows-2000-dhcp-e9858de7bdaee794a8e688b7e7b1bb/</link>
+      <pubDate>Fri, 03 Jun 2016 11:17:48 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-03-windows-2000-dhcp-e9858de7bdaee794a8e688b7e7b1bb/</guid>
+      <description>最近要考那个傻逼高新证，看了下书，做了两道习题，那个用户类设置卡住了，经过多次折腾，终于设置成功。 第一步：服务器右键 -&amp;gt; 定义用户类。 ![1K]UW2I6`BHINMA5J%IVEC 第二步：</description>
+    </item>
+    
+    <item>
+      <title>DHCP协议分析</title>
+      <link>/2015/10/2015-10-16-dhcpe58d8fe8aeaee58886e69e90/</link>
+      <pubDate>Fri, 16 Oct 2015 01:31:34 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-16-dhcpe58d8fe8aeaee58886e69e90/</guid>
+      <description>DHCP(Dynamic Host Configuration Protocol，动态主机配置协议)是一个局域网的网络协议，使用UDP协议工作，主要有两个用途：给内部网络或网络服务供应商自动分配IP</description>
+    </item>
+    
+  </channel>
+</rss>

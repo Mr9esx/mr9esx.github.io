@@ -1,0 +1,1231 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "2019",
+        "name" : "Go 面试题",
+        "headline" : "Go 面试题",
+        "description" : "牢固基础知识点。有些回答是基于我个人项目经验，并不是唯一答案。",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-06-24 14:21:38 \x2b0000 \x2b0000",
+        "dateModified" : "2019-06-24 14:21:38 \x2b0000 \x2b0000",
+        "url" : "\/2019\/06\/golang-interview-question\/",
+        "wordCount" : "6132",
+        "keywords" : [ "golang","interview question","Blog" ]
+    }
+    </script>
+        
+            
+                <title>Go 面试题</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.55.6" />
+        
+
+
+        
+            <meta name="author" content="Mr9esx">
+        
+        
+            <meta name="description" content="牢固基础知识点。有些回答是基于我个人项目经验，并不是唯一答案。">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go 面试题"/>
+<meta name="twitter:description" content="牢固基础知识点。有些回答是基于我个人项目经验，并不是唯一答案。"/>
+
+        <meta property="og:title" content="Go 面试题" />
+<meta property="og:description" content="牢固基础知识点。有些回答是基于我个人项目经验，并不是唯一答案。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2019/06/golang-interview-question/" />
+<meta property="article:published_time" content="2019-06-24T14:21:38&#43;00:00"/>
+<meta property="article:modified_time" content="2019-06-24T14:21:38&#43;00:00"/>
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="Go 面试题">
+<meta itemprop="description" content="牢固基础知识点。有些回答是基于我个人项目经验，并不是唯一答案。">
+
+
+<meta itemprop="datePublished" content="2019-06-24T14:21:38&#43;00:00" />
+<meta itemprop="dateModified" content="2019-06-24T14:21:38&#43;00:00" />
+<meta itemprop="wordCount" content="6132">
+
+
+
+<meta itemprop="keywords" content="golang,interview question," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">NERVGEEK</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/%E5%BC%80%E5%8F%91-develop/">
+                            <i class="">&nbsp;</i>Develop
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/travel-list/">
+                            <i class="">&nbsp;</i>Travel List
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/dream-list/">
+                            <i class="">&nbsp;</i>Dream List
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.miaoplus.com/">
+                            <i class="">&nbsp;</i>Gallery
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="">&nbsp;</i>About Me
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/%E5%BC%80%E5%8F%91-develop/">
+                            <h3>
+                                <i class="">&nbsp;</i>Develop
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/travel-list/">
+                            <h3>
+                                <i class="">&nbsp;</i>Travel List
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/dream-list/">
+                            <h3>
+                                <i class="">&nbsp;</i>Dream List
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.miaoplus.com/">
+                            <h3>
+                                <i class="">&nbsp;</i>Gallery
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="">&nbsp;</i>About Me
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/06/golang-interview-question/">Go 面试题</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-06-24'>
+                                    June 24, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/">Windows 10 下的 go-micro 安装笔记（go mod 模式）</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-05-09'>
+                                    May 9, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/">Windows 10 安装 Golang gRpc</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-28'>
+                                    April 28, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/2019/06/golang-interview-question/">Go 面试题</a></h2>
+        
+        
+            <p>牢固基础知识点。有些回答是基于我个人项目经验，并不是唯一答案。</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2019-06-24'>
+            June 24, 2019</time>
+        <span class="author">Mr9esx
+        
+            <p>13 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    
+
+<p>有些题目是在网上摘录，有些是把自己不懂的列为题目。</p>
+
+<h3 id="1-描述一下你参加过的项目">1. 描述一下你参加过的项目</h3>
+
+<p>答：</p>
+
+<pre><code></code></pre>
+
+<h3 id="2-http1-1-定义了几种方法-分别有什么用">2. HTTP1.1 定义了几种方法？分别有什么用？</h3>
+
+<p>答：</p>
+
+<pre><code>定义了八种方法（GET/POST/PUT/HEAD/DELETE/OPTIONS/TRACE/CONNECT），
+GET、POST、PUT、DELETE在日常开发中较为常用。
+
+GET 一般使用在获取服务器资源上，该接口仅用于获取资源（HTML\音频\图片\视频\css\js等），不向服务器发送资源，所以应该满足幂等性。
+
+POST 一般使用在新增资源的接口上，基本大部分提交操作都是这个方法。一般不具有幂等性。
+
+PUT 比较少见，有些浏览器甚至不允许 PUT 方法，大多数都是靠 POST 设置 X-HTTP-Method-Override 模拟 PUT 提交。PUT 一般用来更新某个资源，应该满足幂等性。
+
+DELETE 也比较少见，和 PUT 也有一些浏览器不支持 DELETE 操作，也是要靠模拟才能正常发送。
+DELETE 一般用来删除某个资源，应该满足幂等性。
+
+HEAD 和 TRACE 我比较少用到。
+
+OPTIONS 一般使用在跨域请求中，判断是否允许访问该资源，返回 'access-control-allow-*' 等字段来控制访问。
+</code></pre>
+
+<h3 id="3-http-状态码分有几类-每个类别分别代表什么">3. HTTP 状态码分有几类？每个类别分别代表什么</h3>
+
+<p>答：</p>
+
+<pre><code>一共五类，1xx\2xx\3xx\4xx\5xx 各为一个大类。
+
+1xx 表示请求已经被接收，继续处理。
+
+2xx 表示请求已经成功被接收。
+
+3xx 表示请求重定向。
+
+4xx 表示客户端请求错误。
+
+5xx 表示服务端出现错误。
+</code></pre>
+
+<h3 id="4-常用-http-状态码有哪些-分别代表什么">4. 常用 HTTP 状态码有哪些？分别代表什么？</h3>
+
+<p>答：</p>
+
+<pre><code>200 OK ：服务器成功处理请求。
+
+204 No Content：当服务器收到 'OPTIONS' 预请求时返回 204。
+
+301 Moved Permanently：永久的重定向，搜索引擎会替换旧域名。
+
+302 Found：暂时的重定向，搜索引擎不会替换旧域名。
+
+400 Bad Request：请求无效，一般是参数缺失，参数错误导致的请求无效。
+
+401 Unauthorized：未授权，用户无有效身份信息访问需要鉴权接口时返回。
+
+403 Forbidden： 禁止，用户没有权限访问该资源。
+
+404 Not Found：未找到，资源不存在。
+
+405 Method Not Allowed：方法未允许，该 URI 不支持该方法访问。
+
+500 Internal Server Error：内部服务器错误，写的代码出现bug。
+
+502 Bad Gateway：错误网关，在实际开发中遇到一般是代理服务器配置错误。
+
+504 Gateway Timeout：网关超时，在实际开发中遇到一般是代理服务器未启动。
+</code></pre>
+
+<h3 id="5-400-跟-500-状态码有什么区别">5. 400 跟 500 状态码有什么区别？</h3>
+
+<p>答：</p>
+
+<pre><code>400 状态码是客户端请求出错，服务器无法接受请求继续处理。
+500 状态码是服务器成功接收请求，但在处理请求过程中出现了错误，有可能是代码没有处理请求中不规范的数据或者代码出现了bug。
+</code></pre>
+
+<h3 id="6-301-跟-302-状态码有什么区别">6. 301 跟 302 状态码有什么区别？</h3>
+
+<p>答：</p>
+
+<pre><code>301 是永久的重定向，一般在舍弃旧域名的时候使用 301 重定向，客户端可以缓存该网页。
+302 是暂时的重定向，只是暂时切换域名的时候使用，客户端必须去请求旧域名。
+最大区别在于搜索引擎对他们的对待，搜索引擎（谷歌）会对 301 重定向的域名与旧域名进行替换，而且 302 容易被 URL 劫持。
+</code></pre>
+
+<h3 id="7-post-和-put-有什么区别">7. POST 和 PUT 有什么区别？</h3>
+
+<p>答：</p>
+
+<pre><code>POST 和 PUT 本质意义只是 HTTP 1.1 的规范要求，在规范里，POST 不具备有幂等性，每次 POST 都会新增一个资源；
+而 PUT 具有幂等性，只对一个资源修改；在实际开发中，POST 一般用来新建一个资源，PUT 用来更改一个资源。
+</code></pre>
+
+<h3 id="8-restful-了解吗-简单描述一下">8. RESTFul 了解吗，简单描述一下</h3>
+
+<p>答：</p>
+
+<pre><code>我在开发云智洗后端的时候参考了阮一峰老师的 《RESTful API 设计指南》，并根据实际情况尽量抽象出每个实体资源.
+在规范中 URL 中不出现动词，用 HTTP 方法来进行 CURD 操作。
+对于一些错误的请求，在返回的 JSON 里提供错误码以及错误原因，方便前端判断提示用户具体错误以及解决办法。
+但实际开发中还是有很多情况无法完全满足 RESTful API，有时候需要做一定取舍。
+</code></pre>
+
+<h3 id="9-restful-的地址里面允许出现动作名称吗">9. RESTFul 的地址里面允许出现动作名称吗？</h3>
+
+<p>答：</p>
+
+<pre><code>RESTful 原则上不允许出现动词，规定使用复数名词。
+</code></pre>
+
+<h3 id="10-restful-风格-如果某种操作无法用-http1-1-定义的方法来表达-该怎么处理">10. RESTFul 风格，如果某种操作无法用 HTTP1.1 定义的方法来表达，该怎么处理？</h3>
+
+<p>答：</p>
+
+<pre><code>可以使用 POST 设置 X-HTTP-Method-Override 模拟 PUT、DELETE、PATCH 提交。
+</code></pre>
+
+<h3 id="11-讲一下当你在浏览器输入网址-然后按下-enter-键的瞬间-背后发生了什么-越详细越好">11. 讲一下当你在浏览器输入网址，然后按下 Enter 键的瞬间，背后发生了什么（越详细越好）</h3>
+
+<p>答：</p>
+
+<pre><code>假设我输入的是 &quot;https://www.aliyun.com&quot;, 在按下回车键的瞬间，浏览器先判断网址是否合法，是否标明协议否则进行补全；
+然后浏览器对网址进行解析，解析的流程是浏览器的 DNS 缓存、操作系统的 Hosts 文件、DNS服务器。
+当找到网址对应的 IP 地址之后，浏览器与 Web 服务的 443 端口进行 TCP 的连接，服务端返回数字证书，浏览器用自己的CA公钥去解密证书。
+然后发送 HTTP 请求，假如访问的是静态 HTML 代理软件直接获取 HTML 文本返回给浏览器进行页面解析，如果是(TODO)
+</code></pre>
+
+<h3 id="12-dns-了解吗-简单描述一下流程">12. DNS 了解吗？简单描述一下流程</h3>
+
+<p>答：</p>
+
+<h3 id="13-https-了解吗-简单描述一下流程">13. HTTPS 了解吗？简单描述一下流程</h3>
+
+<p>答：</p>
+
+<h3 id="14-有没有接触过加密算法-简单描述一下你使用过的加密算法">14. 有没有接触过加密算法？简单描述一下你使用过的加密算法。</h3>
+
+<p>答：</p>
+
+<pre><code>有，在平时签名/验证的时候都会使用到 RSA 加密算法，例如生成 ssh key 的时候，一般都使用 RSA 算法生成的公钥私钥。还有生成 SSL 证书和电子签名的时候，使用的也是 RSA 算法。
+RSA 是一个不对称加密算法，即私钥加密的数据只有对应的公钥能解密，公钥加密的数据只有对应的私钥能解密。
+
+&lt;!-- 还有另一个接触过的算法是 AES 加密算法，AES 加密算法是一个对称加密算法， --&gt;
+</code></pre>
+
+<h3 id="15-非对称加密跟对称加密有什么区别">15. 非对称加密跟对称加密有什么区别？</h3>
+
+<p>答：</p>
+
+<pre><code>对称加密即通信的双方都使用同一个秘钥进行加解密，非对称加密一般会有私钥公钥，私钥加密的数据只有对应的公钥能解密，公钥加密的数据只有对应的私钥能解密。
+</code></pre>
+
+<h3 id="16-分布式有了解吗-怎么解决数据一致性问题">16. 分布式有了解吗？怎么解决数据一致性问题？</h3>
+
+<p>答：</p>
+
+<h3 id="17-redis-有哪些数据结构">17. Redis 有哪些数据结构？</h3>
+
+<p>答：</p>
+
+<pre><code>有 String、List、Set、Hash、Zset 五种类型。
+String 是最常用的类型，通过设置唯一的 Key 来获取值，最常用就是用来缓存用户信息，默认空间为 1M，最大是 512M（整数最长为long int）。相关命令有 set、mset、get、mget、incr 等。
+List 是一个双向链表而不是数组，可以反向查找和遍历，通过 lpush、lpop、rpush、rpop，可以模拟队列和栈的操作。List 的插入和删除非常快，但索引很慢。
+Hash 是一个无序字典，Hash 也能用于缓存用户信息，并且可以只获取部分信息，减少宽带使用，但内存占用较高。
+Set 是一个 string 类型的集合，内部元素都是无序且唯一，可以用于去重操作。
+Zset 是一个 string 类型的有序集合，不仅确保了元素的唯一性且能给每个元素赋予一个 score，可以用于排序或者延迟队列上。相关命令有 zadd、zrange、zrevrange、zcard、zscore、zrank等。
+</code></pre>
+
+<h3 id="18-有用过-redis-哪些高级特性">18. 有用过 Redis 哪些高级特性？</h3>
+
+<p>答：</p>
+
+<pre><code>在云智洗项目的时候使用了 redis 的 geohash 来计算用户和代收点之间的距离并按距离长度进行排序。将经纬度使用 geohash 算法转变为一维的数值，作为 zset 元素的 score，利用 zset 的特性快速算出距离。
+还使用了 set 和 lua 脚本执行实现单机版的分布式锁，用户下单的时候避免网络问题导致的重复提交，根据用户ID和订单单号为 key ，uuid4 生成一个 requestID 为 value 设置一个有超时的元素，释放的时候使用了lua脚本保证 get 与 del 操作是一个原子操作；通过分布式锁保证了下单接口的幂等性。
+对于尚未支付的订单超时控制通过 zrangebyscore、zrem 操作 zset 实现了延时队列，以订单号为 key 时间戳为 score，消息获取进程每 100ms 获取到期订单通过消息队列分发到消费者上操作订单。
+</code></pre>
+
+<h3 id="19-redis-有哪种持久化方式-分别有什么优点跟缺点-原理是怎么样的">19. Redis 有哪种持久化方式，分别有什么优点跟缺点，原理是怎么样的</h3>
+
+<p>答：</p>
+
+<pre><code>Redis 具有 AOF 和 RDB 两种持久化方式。它们可以同时开启，在都开启的情况下 Redis 启动的时候优先加载 AOF 。
+
+RDB 是默认的持久化方式，RDB 有两种备份方式：save 和 bgsave，区别在于是否异步。
+save 是同步备份，可以保证数据的一致性，但会导致 redis 同步阻塞。
+bgsave 会 fork 一个子进程出来执行数据的备份，但内存占用较多。
+配置文件的默认策略是：900 秒至少 1 个 key 变化、300 秒至少 10 个 key 变化和 60 秒至少 10000 个 key 变化。
+RDB 的优点在于 RDB 文件是一个单文件，可以方便备份归档成不同版本，也方便传输到其他服务器上面去。
+缺点在于很容易造成数据丢失。
+
+AOF 持久化是目前最常用的持久化方式，AOF 文件的原理是记录了每一次修改数据的操作，通过重放操作来达到数据的还原。
+AOF 默认关闭，需要在配置文件开启，默认配置是每秒进行一次刷盘，但万一出现问题，你会丢失里 2 秒钟的数据，因为 Redis 会对比上次 fsync 时间是否大于 2 秒。
+如果需要最安全的数据备份，可以设置为 always 策略，但性能会下降较多。
+
+缺点在于 AOF 文件相比 RDB 体积会更大，但 Redis 有 bgrewriteaof 机制，会 fork 一个进程来重写 AOF 文件，优化其体积。
+在 bgrewriteaof 的时候，当 no-appendfsync-on-rewrite 为 no 的情况下，假如刷盘缓慢，子进程会阻塞主进程的 AOF 操作，导致出现大量的错误信息。
+可以把配置改为 yes，主进程的 AOF 操作会暂时写入缓冲区，但如果在此期间发生了问题，也会导致数据丢失。
+</code></pre>
+
+<h3 id="20-redis-跟-memcache-的区别">20. Redis 跟 Memcache 的区别</h3>
+
+<p>答：</p>
+
+<pre><code>Redis 的定位是基于内存的 kv 数据库，而 Memcache 的定位是基于内存的 kv 缓存系统。
+相比之下 Redis 支持五种数据结构的存储，而 Memcache 只支持简单的 key/value 数据结构；Redis 的 value 最大可达 512M ，Memcache 只有 1M。
+但在性能上由于 Memcache 是多线程，相比 Redis 的单线程， Memcache 在高并发的场景下性能比 Redis 要好。相比之下由于 Redis 有持久化，所以不需要缓存预热这个过程。
+Memcached 不支持集群，只能在客户端做一致性哈希来分区存储，Redis 天生支持集群，可以使用哨兵。
+对于两者之间的选型：
+在一些数据结构简单，数据持久化要求不高，并发较大的场景下，可以选择 Memcache 来换取更好的性能体现；
+而需要持久化保存数据，且需要用到复杂的数据结构并使用到一些 Redis 高级特性（队列、去重、统计、Geohash等）的话，优先选择 Redis。
+</code></pre>
+
+<h3 id="21-有了解-redis-事务吗">21. 有了解 Redis 事务吗？</h3>
+
+<p>答：</p>
+
+<pre><code>Redis 只是一系列操作的集合，不保证事务原子性，不支持回滚，但保证事务隔离性（串行化）。
+事务相关 MULTI、EXEC、DISCARD、WATCH、UNWATCH。
+</code></pre>
+
+<h3 id="22-有了解-redis-主从同步原理吗">22. 有了解 Redis 主从同步原理吗？</h3>
+
+<p>答：</p>
+
+<pre><code>有，在 xxx 项目中我部署了 Redis 主从同步备份数据，了解过主从同步的原理。
+Redis 主从同步分为全量同步和增量同步，首次同步的时候是全量同步，主服务器执行 bgsave 生成 rdb 快照并把新的请求缓存起来，然后从服务器收到 rdb 快照之后清空旧数据，加载 rdb 快照，完成之后主服务器再把缓存中的请求发给从服务器，在此之后一直通过异步进行命令的同步来达到主从同步。
+</code></pre>
+
+<h3 id="23-有了解-redis-哨兵机制吗">23. 有了解 Redis 哨兵机制吗？</h3>
+
+<p>答：</p>
+
+<pre><code>（有了解过一点，实际项目开发中没使用过）
+Redis 的哨兵机制是解决主从同步无法在从服务器中选举出一个新的主服务器，以保证服务器的高可用。
+哨兵会不断地检查主从服务器工作是否正常，哨兵每隔一秒就往主服务器、从服务器、其他哨兵进程发送一个 Ping 请求，如果超时没有回复则被标记成主观下线，如果一个主服务器被标记为主观下线，其他哨兵进程也会以每秒一次的频率发送 Ping 请求确定该主服务器是否进入了主观下线的状态。当超过判断阈值（quorum，一般为哨兵数量除二+1）的时候，主服务器即被标记为客观下线。然后开始选举一个哨兵来执行切换，负责主持的哨兵选出一个新的主服务器，发送 SLAVEOF NO ONE 命令让它转变成主服务器，然后让其他从服务器重写配置 slave of ，复制新主服务器的数据。
+</code></pre>
+
+<h3 id="24-golang-的-make-跟-new-有什么区别">24. golang 的 make 跟 new 有什么区别？</h3>
+
+<p>答：</p>
+
+<pre><code>make 只能作用于 slice、map、channel 三种类型的初始化，且返回的是这三个类型的引用，因为这三种类型本身就是引用类型。
+new 用于类型的内存分配，并且分配零值。
+make 返回的是三个引用类型本身；而 new 返回的是指向类型的指针。
+</code></pre>
+
+<h3 id="25-go-和-c-有哪些区别">25. go 和 c 有哪些区别？</h3>
+
+<p>答：</p>
+
+<pre><code>（GC，指针）
+</code></pre>
+
+<h3 id="26-go-的-main-函数跟各个库的-init-执行顺序是怎么样的">26. go 的 main 函数跟各个库的 init 执行顺序是怎么样的？</h3>
+
+<p>答：</p>
+
+<pre><code>init 函数先于 main 函数执行，且先从没有依赖的包开始初始化。
+</code></pre>
+
+<h3 id="27-mysql-主从复制是怎么样实现的">27. MYSQL 主从复制是怎么样实现的？</h3>
+
+<p>答：</p>
+
+<h3 id="28-mysql-有什么调优方法">28. MYSQL 有什么调优方法？</h3>
+
+<p>答：</p>
+
+<h3 id="29-linux-常用命令有哪些">29. Linux 常用命令有哪些？</h3>
+
+<p>答：</p>
+
+<h3 id="30-grep-命令的-参数是干嘛用的">30. grep 命令的***参数是干嘛用的？</h3>
+
+<p>答：</p>
+
+<h3 id="31-linux-如何查看当前有哪些tcp连接">31. Linux 如何查看当前有哪些tcp连接</h3>
+
+<p>答：</p>
+
+<h3 id="32-linux-写出列出目录所有-开头名字的文件">32. Linux 写出列出目录所有***开头名字的文件</h3>
+
+<p>答：</p>
+
+<h3 id="33-linux-写出列出目录所有修改时间在-到-的文件">33. Linux 写出列出目录所有修改时间在_到_的文件</h3>
+
+<p>答：</p>
+
+<h3 id="34-如何调试-mysql-的死锁">34. 如何调试 MySQL 的死锁</h3>
+
+<p>答：</p>
+
+<h3 id="35-什么是-cap-理论">35. 什么是 CAP 理论</h3>
+
+<p>答：</p>
+
+<h3 id="36-什么是惊群效应">36. 什么是惊群效应</h3>
+
+<p>答：</p>
+
+<h3 id="37-如何查看-redis-中-key-的内存占用大小">37. 如何查看 Redis 中 Key 的内存占用大小？</h3>
+
+<p>答：</p>
+
+<pre><code>在 4.0.0 之前，可以使用 'redis-memory-for-key' 查看内存占用。4.0.0 之后新增了 'MEMORY USAGE key' 命令可以查看 key 内存占用字节数。
+</code></pre>
+
+<h3 id="38-redis-的问题排查和性能优化">38. Redis 的问题排查和性能优化</h3>
+
+<p>答：</p>
+
+<pre><code>- 优化建议
+对于高并发的场景我们应该尽量避免在大对象上执行算法复杂度超过O(n)的命令。在使用redis的命令时需要密切注意文档中算法复杂度为O(n)的api。
+Redis原生提供慢查询统计，执行slowlog get {n}命令可以获取最近n条慢查询命令。
+
+- CPU饱和的问题
+单线程的Redis处理命令时只能使用一个CPU，如果Redis把单核CPU使用率跑到接近100%，则会导致CPU饱和问题，这时Redis将无法处理更多的命令，严重影响吞吐量和系统的稳定性。
+对于CPU饱和的问题，首先需要确认当前Redis的并发处理量是否达到极限，如果只有几百或几千qps的Redis实例其cpu使用率就达到饱和是不正常，这个时候需要排查是否是使用了高算法复杂度的命令，或者是否是对内存过度优化。如果qps确实很高，则需要考虑集群化水平扩展来分摊qps压力。
+
+- 持久化相关的阻塞
+对于开启了持久化功能的Redis节点，需要排查是否是持久化导致的阻塞。持久化引起的主线程阻塞的操作有：fork阻塞、AOF刷盘阻塞、HugePage写操作阻塞。
+
+fork阻塞：fork操作发生在RDB和AOF重写时，Redis主线程调用fork操作产生共享内存的子进程，由子进程完成持久化文件重写工作，如果fork操作本身耗时很长，必然会导致主线程阻塞。
+
+AOF刷盘阻塞：在开启AOF持久化功能时，文件刷盘一般采用一秒一次，后台线程每秒对AOF文件做fsync操作，当硬盘压力过大时，fsync操作需要等待，直到写入完成。如果主线程发现距离上一次的fsync成功超过2秒，为了数据安全性它会阻塞直到后台线程执行fsync操作完成。
+
+子进程在执行重新期间利用linux写时复制技术降低内存开销，因此只有写操作时Redis才复制需要修改的内存页，对于开启Transparent HugePages的操作系统，每次写命令引起的复制内存页单位由4K变为2M，放大了512倍，会拖慢写操作的执行时间，导致大量写操作慢查询。
+</code></pre>
+
+<h3 id="39-redis-性能测试">39. Redis 性能测试</h3>
+
+<p>答：</p>
+
+<pre><code>redis-benchmark -n 1000 -t set,get -P 16 -q -c 1 -d  10
+-n指定了请求总数， -P指定了pipeline模式的请求数， c指定了客户端个数 t指定了请求类型,-d指定了请求中value以字节为单位的大小
+</code></pre>
+
+<h3 id="40-base-cap-acid-分别是什么理论">40. BASE、CAP、ACID 分别是什么理论</h3>
+
+<p>答：</p>
+
+<h3 id="41-redis-事务和-pipeline-的区别">41. Redis 事务和 Pipeline 的区别</h3>
+
+<p>答：</p>
+
+<h3 id="42-如何加密用户密码">42. 如何加密用户密码</h3>
+
+<p>答：</p>
+
+<pre><code>有，在开发中常用到的密码加密算法是 MD5、SHA256 和 bcrypt(Be kript) 摘要算法，MD5 和 SHA256都属于消息摘要算法；
+MD5 算法具有不可逆性，任何长度的数据都会得出固定 32 位的摘要，MD5 常使用在明文密码加密的使用上.
+只用 MD5 加密安全性依旧很低，在足够大的彩虹表面前 MD5 如同明文密码，一般都在明文密码的基础上添加盐值。
+MD5 也大量使用在文件完整性校验中。
+
+SHA256 算法和 MD5 一样具有不可逆性，任何长度的数据都会得出固定 64 位的摘要，在日常开发中常在 json web token 的签名中使用。
+在生成加密密码的算法上，目前比较安全的加密算法是 bcrypt，每次生成的密码都不一样。
+bcrypt 虽然速度较慢，但安全性也更高，使用 golang 的 bcrypt 测试加密速度，当 cost 设置为 7 ~ 10 的时候生成速度在可接受访问内(10ms ~ 100ms)。
+</code></pre>
+
+<h3 id="43-redis-如何删除一个有-500-万个-key-的-hash">43. Redis 如何删除一个有 500 万个 key 的 hash</h3>
+
+<p>答：</p>
+
+<pre><code>在 Redis 2.8 之前，可以先把 hash rename 掉，然后使用 HSCAN 在后台每次获取一部分元素，再用 HDEL 删除，重复多次直到 hash 被清空。
+但从 Redis 4.0 版本之后，支持 lazy free 方式来删除，可以使用 unlink 命令来进行，Redis 会把这个大键转移到 redis 的 bio 服务删除。
+</code></pre>
+
+<h3 id="todo">TODO:</h3>
+
+<ul>
+<li>kafka\RabbitMQ\PostgreSQL\MongoDB</li>
+<li>分布式事务\分布式锁</li>
+<li>TCP\UDP\HTTP\HTTPS\QUIC</li>
+</ul>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91-develop">开发 DEVELOP</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/golang">golang</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/interview-question">interview question</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/"
+                class="button big previous">Windows 10 下的 go-micro 安装笔记（go mod 模式）</a></li>
+    
+
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/about' style="border-bottom: none;"><img src="/img/main/logo.jpg" class="intro-circle" width="96" alt="Website&#39;s Logo" /></a>
+      
+    
+    
+      <header>
+        <h2>Mr9esx</h2>
+        <p>95年生人，现居广州。<br/>Gopher & Pythonista。<br/>BACKEND & FRONTEND。</p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/mr9esx" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//telegram.me/mr9esx" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:mr9esx1138099359@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/06/golang-interview-question/">Go 面试题</a>
+              </h3>
+              
+              <time class="published" datetime='2019-06-24'>
+                June 24, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/">Windows 10 下的 go-micro 安装笔记（go mod 模式）</a>
+              </h3>
+              
+              <time class="published" datetime='2019-05-09'>
+                May 9, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/">Windows 10 安装 Golang gRpc</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-28'>
+                April 28, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%86%99%E7%9C%9F-photo/">写真-PHOTO</a>
+                <span style="float:right;">9
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%89%81%E6%89%8B%E5%BC%80%E7%AE%B1-show-what-i-buy/">剁手开箱-SHOW-WHAT-I-BUY</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%BC%80%E5%8F%91-develop/">开发-DEVELOP</a>
+                <span style="float:right;">111
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E6%8A%98%E8%85%BE-make-trouble/">折腾-MAKE-TROUBLE</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E6%96%87%E7%AB%A0/">文章</a>
+                <span style="float:right;">14
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-cyber-security/">网络安全-CYBER-SECURITY</a>
+                <span style="float:right;">20
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+
+  <section id="mini-bio">
+    <video src="" id="sidebar-video" type="video/mp4" autoplay autobuffer loop></video>
+  </section>
+
+  
+  <section id="footer">
+    
+
+    <p class="copyright">
+      <svg t="1540987830423" class="icon" style="" viewBox="200 200 580 580" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1025" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="30"><path d="M267.680514 709.995914c-10.559782-78.799883 35.66417-188.681389 73.719233-234.008756-2.291273-27.495282-5.877615-98.126277 15.34157-110.279988 17.533223-10.061679 60.668937 14.544606 88.064598 32.575931l272.16344 1.892792c27.19642-18.031326 72.723028-44.729643 90.853974-34.369102 23.610079 13.5484 16.437397 99.520965 14.644226 117.851152 36.461134 43.833058 60.370075 176.428057 60.370075 234.407238" fill="#BDBDBD" p-id="1027"></path><path d="M809.915361 689.075591c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.468723 0 65.749587 24.905146 67.044654 55.588287zM319.184356 689.075591c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#BDBDBD" p-id="1028"></path><path d="M193.562798 664.768168c-10.559782-78.799883 35.66417-188.681389 73.719233-234.008756-2.291273-27.495282-5.877615-98.126277 15.341571-110.279988 17.533223-10.061679 60.668937 14.544606 88.064597 32.575932l272.16344 1.892791c27.19642-18.031326 72.723028-44.729643 90.853974-34.369102 23.610079 13.5484 16.437397 99.520965 14.644226 117.851152 36.461134 43.833058 60.370075 176.428057 60.370075 234.407239" fill="#FFFFFF" p-id="1029"></path><path d="M814.996011 672.737815h-12.552194c0-30.284658-6.375717-77.803677-16.337776-121.039012-11.85485-51.802705-26.997179-90.555112-42.53799-109.283782-1.095826-1.295068-1.593929-2.988618-1.394688-4.682168 4.781788-47.917502 3.187859-103.306547-11.555988-111.774297-4.184065-2.390894-22.414632-6.87382-84.279015 34.169861-0.996206 0.697344-2.291273 1.095826-3.486721 1.095827l-272.16344-1.892792c-1.195447 0-2.390894-0.398482-3.3871-0.996205-59.672731-39.15089-77.504816-34.667964-81.489639-32.376691-12.054091 6.87382-16.835879 47.817881-12.153711 104.302753 0.099621 1.69355-0.398482 3.287479-1.494309 4.582547-37.158478 44.131919-82.585466 152.618737-72.324545 229.127347l-12.452573 1.69355c-4.881409-36.461134 1.793171-83.482051 18.927911-132.495379 14.345364-41.143302 34.667964-79.89571 54.592081-104.402373-1.095826-13.64802-2.390894-37.35772-0.996206-59.274249 1.992412-30.185037 8.368129-48.017122 19.625255-54.49246 15.640432-8.965853 47.020916 1.69355 93.145248 31.679346l268.377858 1.793171c47.61864-31.380484 79.89571-42.737231 95.934624-33.572138 12.153711 6.973441 18.72867 27.395661 20.023737 62.362487 0.896585 23.610079-0.896585 47.61864-1.992411 58.975387 37.258099 48.116743 59.971593 179.516295 59.971592 236.49927z" fill="#6B3437" p-id="1030"></path><path d="M871.680125 679.213153H107.590233c-4.084444 0-7.371923-3.287479-7.371924-7.371923s3.287479-7.371923 7.371924-7.371924h764.089892c4.084444 0 7.371923 3.287479 7.371923 7.371924s-3.287479 7.371923-7.371923 7.371923z" fill="#6B3437" p-id="1031"></path><path d="M330.441483 517.03084a21.717288 14.843467 90 1 0 29.686934 0 21.717288 14.843467 90 1 0-29.686934 0Z" fill="" p-id="1032"></path><path d="M505.076369 364.01362h138.572235s66.247689-42.039887 84.97636-35.76379c18.72867 6.276097 26.598696 28.491487 17.533223 115.559879 0 0 30.882382 57.481078 30.583519 72.523786 0 0-87.865357 127.315108-242.078023 33.572138-78.999124-55.389046-63.856795-152.319875-29.587314-185.892013z" fill="#FEAE02" p-id="1033"></path><path d="M604.298473 517.03084a21.717288 14.843467 90 1 0 29.686934 0 21.717288 14.843467 90 1 0-29.686934 0Z" fill="" p-id="1034"></path><path d="M467.021306 580.688394c-6.076856 0-11.755229-2.689756-15.540812-7.471544-1.394688-1.793171-1.095826-4.283685 0.597724-5.777994 1.793171-1.394688 4.283685-1.095826 5.777994 0.597723 2.291273 2.789376 5.578753 4.383306 9.165094 4.383306 6.475338 0 11.85485-5.279891 11.854849-11.854849 0-2.291273 1.793171-4.084444 4.084444-4.084445s4.084444 1.793171 4.084444 4.084445c0 11.157506-8.965853 20.123358-20.023737 20.123358z" fill="" p-id="1035"></path><path d="M499.099134 580.688394c-11.057885 0-19.924117-8.965853-19.924117-19.924117 0-2.291273 1.793171-4.084444 4.084444-4.084444s4.084444 1.793171 4.084444 4.084444c0 6.475338 5.279891 11.85485 11.85485 11.854849 3.586341 0 6.973441-1.593929 9.165094-4.383305 1.394688-1.793171 3.984823-1.992412 5.777994-0.597724 1.793171 1.394688 1.992412 3.984823 0.597723 5.777994-3.885203 4.482926-9.563576 7.272303-15.640432 7.272303z" fill="" p-id="1036"></path><path d="M495.712034 390.313455c-4.283685 11.755229-8.56737 17.234361-18.72867 17.234361-10.1613 0-14.644226-7.969647-18.429808-18.529429-4.781788-13.149917 4.682168-25.801732 18.330188-25.403249 16.636638 0.498103 23.610079 13.5484 18.82829 26.698317zM545.123845 383.240393c-3.088238 5.977235-6.176476 8.666991-13.5484 8.666991-7.272303 0-10.559782-4.084444-13.249538-9.364335-3.48672-6.674579 3.3871-13.050297 13.249538-12.851056 12.054091 0.298862 17.03512 6.87382 13.5484 13.5484zM441.916918 383.240393c-3.088238 5.977235-6.176476 8.666991-13.5484 8.666991-7.272303 0-10.559782-4.084444-13.249538-9.364335-3.48672-6.674579 3.3871-13.050297 13.249538-12.851056 12.054091 0.298862 17.03512 6.87382 13.5484 13.5484z" fill="#F97700" p-id="1037"></path><path d="M467.320167 534.663683h33.372897c5.379512 0 8.268509 6.276097 4.781788 10.360541l-17.134741 16.437397c-2.490515 2.888997-7.073062 2.888997-9.563576 0l-16.238156-16.437397c-3.48672-4.084444-0.597724-10.360541 4.781788-10.360541z" fill="" p-id="1038"></path><path d="M667.457924 364.511723c18.031326-11.95447 46.423193-27.993385 67.243895-34.269482-0.199241-0.099621-0.398482-0.199241-0.597723-0.398482-18.031326-10.26092-63.259072 16.537017-90.555113 34.568343h23.908941z" fill="#FEE6A5" p-id="1039"></path><path d="M295.873139 437.433992c-2.291273-27.19642-18.230567-96.432727 9.563577-109.184162-6.276097-0.896585-12.651814-1.095826-16.736259 1.195447-21.219185 12.153711-16.736258 80.593054-14.444985 108.088335-38.154684 45.327366-84.378636 155.109252-73.719233 234.008756l24.606285 0.298862c-9.862438-78.799883 32.775173-189.478354 70.730615-234.407238z" fill="#F1E8E3" p-id="1040"></path><path d="M302.84658 672.737815c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#FFFFFF" p-id="1041"></path><path d="M239.089406 718.862146c-33.372896 0-55.389046-6.076856-67.243896-18.629049-6.973441-7.371923-10.1613-16.736258-9.563576-27.893764 0.896585-16.337776 9.862438-31.878587 25.104388-44.032299 14.146123-11.257126 31.878587-17.732464 48.415604-17.732464 38.353925 0 72.025683 28.292246 73.519992 61.764763 0.498103 11.356747-2.888997 20.920323-10.161299 28.491487-11.356747 12.054091-31.579726 18.031326-60.071213 18.031326z m-3.28748-95.137659c-32.476311 0-59.174628 26.598696-60.469695 49.41181-0.398482 7.471544 1.593929 13.448779 5.977235 18.230567 9.165094 9.663197 28.591108 14.544606 57.77994 14.544606 24.407043 0 41.940267-4.781788 50.706878-13.946882 4.682168-4.881409 6.87382-11.057885 6.475338-18.828291-1.195447-26.797938-28.88997-49.41181-60.469696-49.41181z" fill="#6B3437" p-id="1042"></path><path d="M295.474657 671.84123c-0.597724-7.073062-3.187859-14.644226-8.168888-21.518047 0.498103 2.390894 0.796965 4.781788 0.996206 7.172682 1.095826 25.602491-16.636638 33.472517-49.611052 33.472517s-57.182216-6.574959-55.588287-34.966825c0.099621-1.992412 1.295068-3.287479 1.69355-5.180271-3.785582 5.578753-7.272303 11.356747-8.168888 18.927911-3.685962 30.284658 27.893764 37.45734 62.163246 37.457341 28.591108 0.099621 58.875766-9.165094 56.684113-35.365308z" fill="#F1E8E3" p-id="1043"></path><path d="M745.859325 440.721471s23.80932 35.166067 32.077828 71.228719c0 0-3.187859 6.574959-10.659402 13.448779 0 0-1.494309-37.158478-21.418426-84.677498z" fill="#E0930A" p-id="1044"></path><path d="M777.937153 511.95019s-5.777994 8.56737-10.659402 13.448779c-4.881409 4.881409 0 0 0 0s15.34157 82.087363 12.552194 140.564646l24.207802 2.590135c-0.099621 0-5.578753-106.892888-26.100594-156.60356" fill="#F1E8E3" p-id="1045"></path><path d="M793.677206 672.737815c1.295068 28.790349-26.698317 39.648993-63.757175 39.648993s-72.125304-7.770406-70.332133-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#FFFFFF" p-id="1046"></path><path d="M729.920031 718.862146c-33.372896 0-55.389046-6.076856-67.243895-18.629049-6.973441-7.371923-10.1613-16.736258-9.563576-27.893764 0.896585-16.337776 9.862438-31.878587 25.104387-44.032299 14.146123-11.257126 31.878587-17.732464 48.415605-17.732464 38.353925 0 72.025683 28.292246 73.519992 61.764763 0.498103 11.356747-2.888997 20.920323-10.1613 28.491487-11.356747 12.054091-31.579726 18.031326-60.071213 18.031326z m-3.287479-95.137659c-32.476311 0-59.174628 26.598696-60.469696 49.41181-0.398482 7.471544 1.593929 13.448779 5.977235 18.230567 9.165094 9.663197 28.591108 14.544606 57.77994 14.544606 24.407043 0 41.940267-4.781788 50.706878-13.946882 4.682168-4.881409 6.87382-11.057885 6.475338-18.828291-1.195447-26.797938-28.88997-49.41181-60.469695-49.41181z" fill="#6B3437" p-id="1047"></path><path d="M786.504524 671.641989c-0.597724-7.073062-3.48672-14.743847-8.46775-21.717288 0.498103 2.390894 0.796965 4.781788 0.996206 7.172682 1.095826 25.602491-16.437397 33.771379-49.411811 33.771379s-57.281837-6.574959-55.687907-34.966826c0.099621-1.992412 1.095826-2.988618 1.494309-4.881409-3.785582 5.578753-7.073062 10.1613-7.969647 17.732465-3.685962 30.384279 26.399455 38.254305 62.262866 38.353925 34.667964 0.298862 58.875766-9.264714 56.783734-35.464928z" fill="#F1E8E3" p-id="1048"></path><path d="M250.246911 566.143788c-3.088238 2.988618-6.176476 4.383306-13.548399 4.383306s-10.559782-1.992412-13.249538-4.682167c-3.48672-3.287479 3.3871-6.574959 13.249538-6.375718 11.95447 0.099621 17.03512 3.3871 13.548399 6.674579zM247.158673 595.731102c-3.088238 4.582547-6.176476 6.674579-13.5484 6.674579s-10.559782-3.088238-13.249538-7.172682c-3.48672-5.18027 3.3871-10.061679 13.249538-9.862438 11.95447 0.099621 17.03512 5.18027 13.5484 10.360541zM791.186691 588.658041c-3.088238 4.582547-6.176476 6.674579-13.548399 6.674579s-10.559782-3.088238-13.249538-7.172682c-3.48672-5.18027 3.3871-10.061679 13.249538-9.862438 12.054091 0.099621 17.03512 5.18027 13.548399 10.360541z" fill="#F97700" p-id="1049"></path></svg>
+      <br />
+      Another Blog <a href="https://www.miaoplus.com" target="_blank">Miao+</a>
+    </p>
+
+    <p class="copyright">
+      <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="86px" height="30px" viewBox="232 265 280 140" enable-background="new 0 0 800 800" xml:space="preserve"><g><path fill="#00A0FF" d="M282.639,281.223L282.639,281.223L282.639,281.223L282.639,281.223L282.639,281.223c-2.473-1.861-5.034-3.52-7.664-4.983c-1.904-1.059-4.295-0.564-5.604,1.177l-16.492,21.912l-1.176,1.563c-1.786,2.373-4.638,3.665-7.605,3.529c-1.082-0.049-2.164-0.039-3.242,0.029c-8.289,0.525-16.308,4.525-21.694,11.681c-4.33,5.753-6.229,12.576-5.879,19.245c0.063,1.201,0.757,2.298,1.851,2.796c2.27,1.032,4.017,3.137,4.454,5.83c0.618,3.809-1.722,7.551-5.418,8.659c-4.357,1.306-8.832-1.363-9.814-5.724c-0.532-2.362,0.079-4.711,1.463-6.48c0.768-0.981,1.154-2.203,1.044-3.444c-0.758-8.552,1.52-17.402,7.09-24.802c7.026-9.334,17.717-14.274,28.562-14.337c2.09-0.012,4.052-1.011,5.309-2.681l15.188-20.178c1.189-1.579,0.421-3.848-1.476-4.405c-25.43-7.46-53.905,0.934-70.96,23.146c-22.099,28.781-16.729,70.279,11.987,92.462c2.687,2.076,5.482,3.909,8.36,5.508c1.893,1.052,4.274,0.537,5.577-1.193l16.492-21.911l1.176-1.563c1.786-2.373,4.638-3.665,7.605-3.529c1.082,0.049,2.164,0.039,3.242-0.029c8.289-0.525,16.308-4.525,21.694-11.681c4.33-5.753,6.229-12.576,5.879-19.245c-0.063-1.201-0.757-2.298-1.851-2.796c-2.27-1.032-4.017-3.137-4.454-5.83c-0.618-3.809,1.722-7.551,5.418-8.658c4.357-1.306,8.832,1.363,9.814,5.724c0.532,2.362-0.079,4.711-1.463,6.48c-0.768,0.981-1.154,2.203-1.044,3.444c0.758,8.552-1.52,17.402-7.09,24.802c-7.026,9.334-17.717,14.274-28.562,14.337c-2.09,0.012-4.052,1.011-5.309,2.681l-15.187,20.177c-1.18,1.568-0.439,3.842,1.444,4.396c25.633,7.534,54.368-1.045,71.384-23.652C317.614,344.545,311.773,303.151,282.639,281.223z"/><g><path fill="#00A0FF" d="M391.613,299.257l-0.001-1.567c-0.001-1.133-0.92-2.052-2.053-2.052h-51.424c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h43.629c1.255,0,2.221,1.107,2.034,2.348c-1.224,8.113-5.061,23.285-17.051,37.854c-0.847,1.029-2.419,1.011-3.241-0.039c-10.032-12.828-13.119-25.98-13.962-30.826c-0.184-1.061-1.166-1.792-2.237-1.678l-1.643,0.174l-1.449,0.151c-1.188,0.124-2.026,1.228-1.808,2.403c1.028,5.558,4.773,20.841,16.549,35.388c0.683,0.843,0.625,2.076-0.175,2.81c-14.336,13.149-27.229,16.031-31.841,16.657c-1.027,0.14-1.794,1.009-1.789,2.046l0.015,3.169c0.006,1.22,1.065,2.174,2.276,2.032c5.484-0.645,20.116-3.743,36.284-18.613c0.799-0.734,2.014-0.734,2.81,0.003c7.813,7.235,17.799,14.211,31.266,18.495c1.091,0.347,2.259-0.287,2.582-1.385l0.887-3.007c0.318-1.078-0.297-2.198-1.367-2.539c-12.252-3.908-21.285-10.2-28.378-16.651c-0.818-0.744-0.859-2.006-0.141-2.846C391.369,325.431,391.615,300.395,391.613,299.257z"/><path fill="#00A0FF" d="M427.31,292.355h-3.137c-1.134,0-2.053,0.919-2.053,2.053v10.999c0,1.134-0.919,2.053-2.053,2.053h-7.379c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h7.379c1.134,0,2.053,0.919,2.053,2.053v15.933c0,1.134-0.919,2.053-2.053,2.053h-7.379c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h7.379c1.134,0,2.053,0.919,2.053,2.053v15.065c0,3.27-1.307,8.606-9.648,9.31c-1.078,0.091-1.921,0.965-1.921,2.047v3.125c0,1.196,1.017,2.157,2.209,2.055c8.099-0.693,16.603-5.292,16.603-16.537v-15.065c0-1.134,0.919-2.053,2.053-2.053h6.557c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-6.557c-1.134,0-2.053-0.919-2.053-2.053v-15.933c0-1.134,0.919-2.053,2.053-2.053h6.557c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-6.557c-1.134,0-2.053-0.919-2.053-2.053v-10.999C429.363,293.274,428.444,292.355,427.31,292.355z"/><path fill="#00A0FF" d="M443.648,373.092c0,1.134,0.919,2.053,2.053,2.053h23.138c10.239,0,18.569-7.94,18.569-17.7v-48.63c0-1.134-0.919-2.053-2.053-2.053h-39.654c-1.134,0-2.053,0.919-2.053,2.053V373.092z M468.839,367.902h-15.895c-1.134,0-2.053-0.919-2.053-2.053v-21.81c0-1.134,0.919-2.053,2.053-2.053h25.167c1.134,0,2.053,0.919,2.053,2.053v13.406C480.165,363.211,475.084,367.902,468.839,367.902z M480.165,316.059v16.631c0,1.134-0.919,2.053-2.053,2.053h-25.167c-1.134,0-2.053-0.919-2.053-2.053v-16.631c0-1.134,0.919-2.053,2.053-2.053h25.167C479.246,314.006,480.165,314.925,480.165,316.059z"/><path fill="#00A0FF" d="M475.171,292.301h-20.44c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h20.44c1.134,0,2.053-0.919,2.053-2.053v-3.137C477.224,293.22,476.305,292.301,475.171,292.301z"/><path fill="#00A0FF" d="M553.303,295.487H510.73c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h42.573c1.134,0,2.053-0.919,2.053-2.053v-3.137C555.356,296.406,554.437,295.487,553.303,295.487z"/><path fill="#00A0FF" d="M535.11,331.8h29.657c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-65.51c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h20.274c1.638,0,2.617,1.824,1.711,3.189l-13.492,24.343c-0.363,0.545-0.632,1.08-0.821,1.633c-1.129,3.299-0.601,6.838,1.451,9.71c2.15,3.01,5.706,4.806,9.509,4.806h36.976c1.662,0,3.181-0.829,4.061-2.218c0.863-1.359,0.969-3.039,0.283-4.495l-8.586-16.643c-0.52-1.008-1.759-1.403-2.766-0.883l-2.788,1.439c-1.008,0.52-1.403,1.758-0.883,2.766l5.055,9.796c0.705,1.367-0.287,2.995-1.825,2.995h-29.528c-1.492,0-2.81-0.647-3.616-1.775c-0.367-0.512-0.899-1.53-0.589-2.798c0.052-0.212,0.157-0.413,0.278-0.596l16.397-28.72C531.416,332.757,533.199,331.8,535.11,331.8z"/></g></g></svg>
+      <br />
+      CDN by <a href="https://www.upyun.com/" targer="_blank">UpYun</a>
+    </p>
+
+    <p class="copyright">
+      
+        &copy; 2014 - 2019
+        
+        <a href="https://www.nervgeek.com" target="_blank">NERVGEEK</a>
+        
+        <br />
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>.
+      <br />
+      备案号: <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备19082652号-1</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+      <script src="/js/randomSidebarVideo.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

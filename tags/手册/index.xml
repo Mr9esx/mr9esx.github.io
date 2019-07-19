@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>手册 on NERVGEEK</title>
+    <link>/tags/%E6%89%8B%E5%86%8C/</link>
+    <description>Recent content in 手册 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 18 Apr 2016 14:07:02 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%89%8B%E5%86%8C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redis之php操作——String</title>
+      <link>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</link>
+      <pubDate>Mon, 18 Apr 2016 14:07:02 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</guid>
+      <description>使用PHP对Redis进行操作： connect(&#39;127.0.0.1&#39;, 6379); //验证密码 $redis-&amp;gt;auth(&amp;quot;asdasd&amp;quot;); /**String操作*/ //set方法，设置一个key和value $redis-&amp;gt;set(&amp;quot;Set&amp;quot;, &amp;quot;Redis!&amp;quot;); //get方法，根</description>
+    </item>
+    
+  </channel>
+</rss>

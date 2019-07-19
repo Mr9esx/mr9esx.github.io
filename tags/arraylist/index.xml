@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArrayList on NERVGEEK</title>
+    <link>/tags/arraylist/</link>
+    <description>Recent content in ArrayList on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 21 Feb 2016 11:45:19 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/arraylist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java的ArrayList练习-去除重复类</title>
+      <link>/2016/02/2016-02-21-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de7b1bb/</link>
+      <pubDate>Sun, 21 Feb 2016 11:45:19 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-21-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de7b1bb/</guid>
+      <description>前面好几个练习往集合立马塞的都是int、String等基本数据类型，但集合类和数组最大的区别就是集合类能存放类，所以这次练习我们就尝试存放类</description>
+    </item>
+    
+    <item>
+      <title>Java的ArrayList练习-去除重复元素</title>
+      <link>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</link>
+      <pubDate>Sat, 20 Feb 2016 14:20:38 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</guid>
+      <description>上一篇文章学习到ArrayList，那现在来做一个小练习巩固一下。 package com.company; import java.util.*; public class Main { public static void main(String[] args) { ArrayListDemo(); } public static void ArrayListDemo(){ ArrayList al = new ArrayList(); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java02&amp;quot;); al.add(&amp;quot;java03&amp;quot;); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java04&amp;quot;); al.add(&amp;quot;java02&amp;quot;); sop(&amp;q</description>
+    </item>
+    
+    <item>
+      <title>Java中集合类的概念以及使用方法</title>
+      <link>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</link>
+      <pubDate>Fri, 19 Feb 2016 12:38:16 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</guid>
+      <description>集合类，或者叫集合框架。集合类可以用于储存对象，例如一个人他有姓名、年龄、身高、体重等数据，封装之后就是一个对象。假如人多了，需要存储起来，</description>
+    </item>
+    
+  </channel>
+</rss>

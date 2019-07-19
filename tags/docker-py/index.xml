@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker-py on NERVGEEK</title>
+    <link>/tags/docker-py/</link>
+    <description>Recent content in Docker-py on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 03 Jan 2017 09:25:10 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/docker-py/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker-py 2.0 新建容器参数笔记</title>
+      <link>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</link>
+      <pubDate>Tue, 03 Jan 2017 09:25:10 +0000</pubDate>
+      
+      <guid>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</guid>
+      <description>&amp;hellip;期末事多，博客都忘了&amp;hellip; docker-py升级到了 2.0 版本，功能变化不算很大，使用方法倒是变了一圈，以前使用 Client 方法</description>
+    </item>
+    
+  </channel>
+</rss>

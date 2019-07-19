@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2015s on NERVGEEK</title>
+    <link>/2015/</link>
+    <description>Recent content in 2015s on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Dec 2015 13:24:14 +0000</lastBuildDate>
+    
+	<atom:link href="/2015/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>先电OpenStack v1.2 – PaaS平台各应用平台搭建配置</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0e59084e5ba94e794a8e5b9b3e58fb0e690ade5bbbae9858de7bdae/</link>
+      <pubDate>Wed, 30 Dec 2015 13:24:14 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0e59084e5ba94e794a8e5b9b3e58fb0e690ade5bbbae9858de7bdae/</guid>
+      <description>应用平台安装配置 前提：把Node的公钥添加至PaaS平台；在Node节点root下新建mygit和sourcegit两个文件夹，并从控制节点</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 – PaaS平台Git节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0gite88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:13:10 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0gite88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>**Git **安装 前提：修改eth0的ip；在hosts文件上添加broker节点的ip和域名。 配置yum源 [openshift-base] name=openshift-base baseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies enabled=1 gpgcheck=0</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - PaaS平台Node节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0nodee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:10:16 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0nodee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>**Node **安装 前提：修改eth0的ip；selinux修改为enforcing，然后重启！！！ 配置yum源 [openshift-base] name=openshift-basebaseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies enabled=1 gpgcheck=0</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - PaaS平台Broker节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0brokere88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 13:08:01 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-paase5b9b3e58fb0brokere88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Broker安装 前提：修改eth0的ip；selinux修改为enforcing，然后重启！！！ 设置源： [openshift-base] name=openshift-base baseurl=ftp://10.1.1.100/paas/openshift-base enabled=1 gpgcheck=0 [openshift-epel] name=openshift-epel baseurl=ftp://10.1.1.100/paas/openshift-epel enabled=1 gpgcheck=0 [openshift-origin] name=openshift-origin baseurl=ftp://10.1.1.100/paas/openshift-origin enabled=1 gpgcheck=0 [openshift-origin-dependencies] name=openshift-origin-dependencies baseurl=ftp://10.1.1.100/paas/openshift-origin-dependencies</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - IaaS平台Compute节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0computee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 12:59:08 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0computee88a82e782b9e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Compute安装 **前提：修改eth0、eth1的ip（只能有一张网卡设置网关，建议设置外网网关）；selinux修改为permissiv</description>
+    </item>
+    
+    <item>
+      <title>先电OpenStack v1.2 - IaaS平台Controller节点搭建配置（脚本版）</title>
+      <link>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</link>
+      <pubDate>Wed, 30 Dec 2015 11:34:16 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-30-e58588e794b5openstack-v1-2-iaase5b9b3e58fb0e690ade5bbbae9858de7bdaeefbc88e8849ae69cace78988efbc89/</guid>
+      <description>Controller安装 前提：修改eth0、eth1的ip（只能有一张网卡设置网关，建议设置外网网关）；selinux修改为permissi</description>
+    </item>
+    
+    <item>
+      <title>openstack的常用命令</title>
+      <link>/2015/12/2015-12-10-openstacke79a84e5b8b8e794a8e591bde4bba4/</link>
+      <pubDate>Thu, 10 Dec 2015 10:09:15 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-10-openstacke79a84e5b8b8e794a8e591bde4bba4/</guid>
+      <description>1、查看rabbitmq 队列：rabbitmqctl list_queues 2、查看keystone的用户：keystone user-list 3、查看keystone endpoi</description>
+    </item>
+    
+    <item>
+      <title>Linus，一生只为寻找欢笑</title>
+      <link>/2015/11/linus-story/</link>
+      <pubDate>Mon, 30 Nov 2015 15:40:11 +0000</pubDate>
+      
+      <guid>/2015/11/linus-story/</guid>
+      <description>每个人桌面上一台电脑，这曾经是无数计算机先驱的梦想，这个梦想很早就实现了，在1997年，乔老师和比老师就说过，「比尔，我们共同控制了100%</description>
+    </item>
+    
+    <item>
+      <title>何为Hadoop？</title>
+      <link>/2015/11/2015-11-23-e4bd95e4b8bahadoopefbc9f/</link>
+      <pubDate>Mon, 23 Nov 2015 11:43:44 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-23-e4bd95e4b8bahadoopefbc9f/</guid>
+      <description>0x01 Hadoop运行的原理? hadoop主要由三方面组成: 1、HDFS 2、MapReduce 3、Hbase Hadoop框架中最核心的设计就是：</description>
+    </item>
+    
+    <item>
+      <title>解决Ubuntu下VI的上下左右出现ABCD等问题</title>
+      <link>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</link>
+      <pubDate>Mon, 23 Nov 2015 09:53:59 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</guid>
+      <description>依次执行以下两个命令即可解决Ubuntu下vi编辑器上下左右方向键变ABCD的问题。 一、sudo apt-get remove vim-common 二、sudo apt-get install vim 来自为知笔记(Wiz</description>
+    </item>
+    
+    <item>
+      <title>Docker入门教程（一）介绍</title>
+      <link>/2015/11/2015-11-04-dockere585a5e997a8e69599e7a88befbc88e4b880efbc89e4bb8be7bb8d/</link>
+      <pubDate>Wed, 04 Nov 2015 01:08:25 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-04-dockere585a5e997a8e69599e7a88befbc88e4b880efbc89e4bb8be7bb8d/</guid>
+      <description>【编者的话】DockerOne组织翻译了Flux7的Docker入门教程，本文是系列入门教程的第一篇，介绍了Docker的基础概念以及Doc</description>
+    </item>
+    
+    <item>
+      <title>社会工程学工具集Social-Engineer Toolkit基础使用教程</title>
+      <link>/2015/10/how-to-use-social-engineer-toolkit/</link>
+      <pubDate>Mon, 26 Oct 2015 11:21:43 +0000</pubDate>
+      
+      <guid>/2015/10/how-to-use-social-engineer-toolkit/</guid>
+      <description>关于社会工程学工具集Social-Engineer Toolkit （SET，以下简称SET）这玩意的名字相信各位也是知道一二了。SET和它的好基友Meta</description>
+    </item>
+    
+    <item>
+      <title>Iptables入门教程</title>
+      <link>/2015/10/iptables-guide/</link>
+      <pubDate>Thu, 22 Oct 2015 05:25:20 +0000</pubDate>
+      
+      <guid>/2015/10/iptables-guide/</guid>
+      <description>0x00 iptables介绍 linux的包过滤功能，即linux防火墙，它由netfilter 和 iptables 两个组件组成。 netfilter 组件也称为内核空间，是内核的一部</description>
+    </item>
+    
+    <item>
+      <title>利用“PHP彩蛋”进行敏感信息获取</title>
+      <link>/2015/10/use-php-eggs-for-sensitive-information-acquisition/</link>
+      <pubDate>Mon, 19 Oct 2015 06:51:57 +0000</pubDate>
+      
+      <guid>/2015/10/use-php-eggs-for-sensitive-information-acquisition/</guid>
+      <description>关于 “ PHP 彩蛋” 的说法也许很多老PHPer已经都知道或听说了，好像是早在 PHP4 版本的时候就有彩蛋了，挺好玩儿的，可能近年来逐渐被人们遗忘了，其实彩</description>
+    </item>
+    
+    <item>
+      <title>诸多漏洞的网站入侵实验</title>
+      <link>/2015/10/2015-10-18-e8afb8e5a49ae6bc8fe6b49ee79a84e7bd91e7ab99e585a5e4beb5e5ae9ee9aa8c/</link>
+      <pubDate>Sun, 18 Oct 2015 13:06:16 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-18-e8afb8e5a49ae6bc8fe6b49ee79a84e7bd91e7ab99e585a5e4beb5e5ae9ee9aa8c/</guid>
+      <description>先使用w3af扫描网站漏洞，发现一个有GET注入点的网址。 换上sqlmap扫描有注入点的网址，加上&amp;ndash;tables参数，发现能爆库</description>
+    </item>
+    
+    <item>
+      <title>史上最全Linux提权后获取敏感信息方法</title>
+      <link>/2015/10/2015-10-18-e58fb2e4b88ae69c80e585a8linuxe68f90e69d83e5908ee88eb7e58f96e6958fe6849fe4bfa1e681afe696b9e6b395/</link>
+      <pubDate>Sun, 18 Oct 2015 07:26:07 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-18-e58fb2e4b88ae69c80e585a8linuxe68f90e69d83e5908ee88eb7e58f96e6958fe6849fe4bfa1e681afe696b9e6b395/</guid>
+      <description>在本文开始之前，我想指出我不是专家。据我所知，在这个庞大的区域,没有一个“神奇”的答案.分享，共享（我的出发点）。下面是一个混合的命令做同样</description>
+    </item>
+    
+    <item>
+      <title>CloudStack搭建简记</title>
+      <link>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</link>
+      <pubDate>Fri, 16 Oct 2015 01:49:04 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</guid>
+      <description>###### 1.CloudStack Management ###### setenforce 0 sed -i &amp;rsquo;s/=enforcing/=disabled/&amp;lsquo; /etc/selinux/config chkconfig &amp;ndash;levels 35 iptables off /etc/init.d/iptables stop sed -i &amp;rsquo;s/=localhost.localdomain/manage.downtown8.com/&amp;lsquo; /etc/sysconfig/network echo &amp;rdquo;192.168.15.2 manage.downtown8.com&amp;rdquo; &amp;gt;&amp;gt;/etc/hosts yum -y install ntp chkconfig ntpd on service ntpd start touch /etc/yum.repos.d/cloudstack.repo cd /etc/yum.repos.d/ #echo -e &amp;rdquo;[cloudstack]\nname=cloudstack\nbaseurl=http://192.168.15.10/cloudstack/nenabled=1ngpgcheck=0&amp;quot; &amp;gt;cloudstack.repo yum -y install mysql-server #[mysqld] sed -i &amp;rdquo;7i\innodb_rollback_on_timeout=1\ninnodb_lock_wait_timeout=600\nmax_connections=350\nlog-bin=mysql-bin\nbinlog-format = &amp;rsquo;ROW&amp;rsquo;&amp;ldquo; /etc/my.cnf service mysqld start chkconfig mysqld on /usr/bin/mysqladmin -u root password &amp;rsquo;downtown#2015&amp;rsquo; yum -y install cloudstack-management cloudstack-setup-databases</description>
+    </item>
+    
+    <item>
+      <title>DHCP协议分析</title>
+      <link>/2015/10/2015-10-16-dhcpe58d8fe8aeaee58886e69e90/</link>
+      <pubDate>Fri, 16 Oct 2015 01:31:34 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-16-dhcpe58d8fe8aeaee58886e69e90/</guid>
+      <description>DHCP(Dynamic Host Configuration Protocol，动态主机配置协议)是一个局域网的网络协议，使用UDP协议工作，主要有两个用途：给内部网络或网络服务供应商自动分配IP</description>
+    </item>
+    
+    <item>
+      <title>ICMP协议分析</title>
+      <link>/2015/10/2015-10-15-icmpe58d8fe8aeaee58886e69e90/</link>
+      <pubDate>Thu, 15 Oct 2015 10:40:00 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-15-icmpe58d8fe8aeaee58886e69e90/</guid>
+      <description>ICMP是（Internet Control Message Protocol）Internet控制报文协议。它是TCP/IP协议族的一个子协议，用于在IP主机、路由器之</description>
+    </item>
+    
+    <item>
+      <title>UDP协议分析</title>
+      <link>/2015/10/2015-10-15-udpe58d8fe8aeaee58886e69e90/</link>
+      <pubDate>Thu, 15 Oct 2015 10:37:11 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-15-udpe58d8fe8aeaee58886e69e90/</guid>
+      <description>UDP 是User Datagram Protocol的简称， 中文名是用户数据报协议，是OSI中一种无连接的传输层协议，提供面向事务的简单不可靠信息传送服务。 4.1 UD</description>
+    </item>
+    
+    <item>
+      <title>TCP协议分析</title>
+      <link>/2015/10/2015-10-15-tcpe58d8fe8aeaee58886e69e90/</link>
+      <pubDate>Thu, 15 Oct 2015 10:35:03 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-15-tcpe58d8fe8aeaee58886e69e90/</guid>
+      <description>TCP，全称Transfer Control Protocol，中文名为传输控制协议，它工作在OSI的传输层，提供面向连接的可靠传输服务。 TCP的工作主要是</description>
+    </item>
+    
+    <item>
+      <title>IP协议分析</title>
+      <link>/2015/10/2015-10-15-ipe58d8fe8aeaee58886e69e90/</link>
+      <pubDate>Thu, 15 Oct 2015 10:27:16 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-15-ipe58d8fe8aeaee58886e69e90/</guid>
+      <description>网际协议(Internet Protocol，IP)，或称互联网协议，是用于报文交换网络的一种面向数据的协议。 IP是在TCP/IP协议中网络层</description>
+    </item>
+    
+    <item>
+      <title>ARP协议剖析</title>
+      <link>/2015/10/2015-10-15-arpe58d8fe8aeaee58996e69e90/</link>
+      <pubDate>Thu, 15 Oct 2015 07:40:43 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-15-arpe58d8fe8aeaee58996e69e90/</guid>
+      <description>地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址(MAC地址)的一个TCP/IP协议，属于链路层协议。</description>
+    </item>
+    
+    <item>
+      <title>Crunch生成字典&#43;Medusa暴力破解FTP\SSH等</title>
+      <link>/2015/10/2015-10-14-crunche7949fe68890e5ad97e585b8medusae69ab4e58a9be7a0b4e8a7a3ftpsshe7ad89/</link>
+      <pubDate>Wed, 14 Oct 2015 07:32:43 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-crunche7949fe68890e5ad97e585b8medusae69ab4e58a9be7a0b4e8a7a3ftpsshe7ad89/</guid>
+      <description>0x01、使用Crunch生成字典 Crunch是Kali自带的一个字典生成软件，使用方便，生成迅速。 例如我需要生成一个6位的密码，密码组合元</description>
+    </item>
+    
+    <item>
+      <title>MySQL基础语句</title>
+      <link>/2015/10/2015-10-14-117/</link>
+      <pubDate>Wed, 14 Oct 2015 06:40:45 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-117/</guid>
+      <description>登陆MySQL： mysql [-h 主机地址] -u 用户名 -p 修改root的登陆密码： 方法一： mysqladmin -u 用户名 -p 旧密码 password 新密码(首先在DOS下进入目录mysql\bin</description>
+    </item>
+    
+    <item>
+      <title>利用metasploit进行信息收集</title>
+      <link>/2015/10/2015-10-14-e588a9e794a8metasploite8bf9be8a18ce4bfa1e681afe694b6e99b86/</link>
+      <pubDate>Wed, 14 Oct 2015 06:20:13 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-e588a9e794a8metasploite8bf9be8a18ce4bfa1e681afe694b6e99b86/</guid>
+      <description>在进行信息收集的时候，我们既要全面详细的获取目标的信息，又要尽量隐藏自己不被发现。Metasploit作为一个非常全面的渗透工具，用来收集信</description>
+    </item>
+    
+    <item>
+      <title>aircrack-ng扫描&#43;reaver跑pin破解开启wps功能的Wifi</title>
+      <link>/2015/10/2015-10-13-aircrack-nge689abe68f8freavere8b791pine7a0b4e8a7a3e5bc80e590afwpse58a9fe883bde79a84wifi/</link>
+      <pubDate>Tue, 13 Oct 2015 11:27:42 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-aircrack-nge689abe68f8freavere8b791pine7a0b4e8a7a3e5bc80e590afwpse58a9fe883bde79a84wifi/</guid>
+      <description>插上无线网卡，先运行下列代码，避免无线网卡被使用。 airmon-ng check kill 再运行 airmon-ng start wlan0(无线网卡) 准备完毕开始扫描附近wifi airodump-ng wlan0mon 出现以下画面 在MB这</description>
+    </item>
+    
+    <item>
+      <title>Aircrack-ng扫描、抓握手包、跑字典破Wifi密码</title>
+      <link>/2015/10/2015-10-13-aircrack-nge689abe68f8fe38081e68a93e68fa1e6898be58c85e38081e8b791e5ad97e585b8e7a0b4wifie5af86e7a081/</link>
+      <pubDate>Tue, 13 Oct 2015 10:10:31 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-aircrack-nge689abe68f8fe38081e68a93e68fa1e6898be58c85e38081e8b791e5ad97e585b8e7a0b4wifie5af86e7a081/</guid>
+      <description>简记： 插上网卡，先运行 airmon-ng check kill 再运行 airmon-ng start wlan0(无线网卡) 准备完毕开始扫描附近wifi airodump-ng wlan0mon 会显示以下结果 重要的几个信息： BSSID：网卡物</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi下跑aircrack和reaver破解路由器PIN码</title>
+      <link>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</link>
+      <pubDate>Tue, 13 Oct 2015 01:17:57 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/</guid>
+      <description>最近心血来潮，想把小区里的无线信号测试个遍。基于目前大多数路由器都支持wps,想必各位基友们都知道aircrack和reaver这两个工具，</description>
+    </item>
+    
+    <item>
+      <title>sqlmap用户手册</title>
+      <link>/2015/10/2015-10-12-sqlmape794a8e688b7e6898be5868c/</link>
+      <pubDate>Mon, 12 Oct 2015 08:36:39 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-12-sqlmape794a8e688b7e6898be5868c/</guid>
+      <description>当给sqlmap这么一个url的时候，它会： 1、判断可注入的参数 2、判断可以用那种SQL注入技术来注入 3、识别出哪种数据库 4、根据用户选择，</description>
+    </item>
+    
+    <item>
+      <title>Nmap速查表</title>
+      <link>/2015/10/namp-zoom-table/</link>
+      <pubDate>Mon, 12 Oct 2015 08:21:06 +0000</pubDate>
+      
+      <guid>/2015/10/namp-zoom-table/</guid>
+      <description>基本语法： nmap [扫描方式] [命令选项] {目标} 扫描目标格式： IPv4 地址： 192.168.1.1 IPv6 地址：AABB:CCDD::FF%eth0 主机名：www.target</description>
+    </item>
+    
+    <item>
+      <title>Nmap从探测到漏洞利用备忘录 – Nmap简介(一)</title>
+      <link>/2015/10/introduction-to-namp-one/</link>
+      <pubDate>Mon, 12 Oct 2015 06:03:48 +0000</pubDate>
+      
+      <guid>/2015/10/introduction-to-namp-one/</guid>
+      <description>在侦查期间，扫描一直是信息收集的初始阶段。 什么是侦查 侦查是尽可能多收集关于目标网络的信息。从黑客的角度来看，信息收集对于一次攻击非常有用，所</description>
+    </item>
+    
+    <item>
+      <title>搭站</title>
+      <link>/2015/10/build-a-blog/</link>
+      <pubDate>Sun, 11 Oct 2015 23:27:14 +0000</pubDate>
+      
+      <guid>/2015/10/build-a-blog/</guid>
+      <description>无聊玩起搭搭站也是常有的事了，但经常在搭的时候，忘记上次是怎么做，该做什么了。我只能迷迷糊糊地谷歌百度了大半天才解决了相当白痴的问题。 所以现</description>
+    </item>
+    
+  </channel>
+</rss>

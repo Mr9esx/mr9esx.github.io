@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>String on NERVGEEK</title>
+    <link>/tags/string/</link>
+    <description>Recent content in String on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 25 Jan 2016 09:25:09 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/string/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的StringBuilder</title>
+      <link>/2016/01/2016-01-25-javae4b8ade79a84stringbuilder/</link>
+      <pubDate>Mon, 25 Jan 2016 09:25:09 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-25-javae4b8ade79a84stringbuilder/</guid>
+      <description>1 . StringBuilder和StringBuffer在使用方法上是极其相像的，最大的区别是StringBuilder是非线程安全，Str</description>
+    </item>
+    
+    <item>
+      <title>Java中的StringBuffer</title>
+      <link>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</link>
+      <pubDate>Sun, 24 Jan 2016 15:14:15 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</guid>
+      <description>Java中除了String字符串类型，还有一个和String不一样的字符串，叫StringBuffer，字符串缓冲区。StringBuffe</description>
+    </item>
+    
+    <item>
+      <title>Java中String类型的常用方法</title>
+      <link>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</link>
+      <pubDate>Sun, 24 Jan 2016 12:04:44 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</guid>
+      <description>1 . 计算字符串长度 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; System.out.println(str.lenght()); } } 2 . 字符串转换为数组 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; char strArr[] = str.toCharArray(); for(int count = 0;count &amp;lt; strArr.lenght;count++){ System.out.println(strArr[count]+&amp;quot;-&amp;quot;); } } } 3 . 取出字符串指定位置的</description>
+    </item>
+    
+  </channel>
+</rss>

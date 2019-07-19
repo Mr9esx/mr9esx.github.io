@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intent on NERVGEEK</title>
+    <link>/tags/intent/</link>
+    <description>Recent content in intent on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Feb 2016 08:44:52 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/intent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android中使用Bundle传递数据包</title>
+      <link>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</link>
+      <pubDate>Sat, 13 Feb 2016 08:44:52 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</guid>
+      <description>在不同的Activity中传递参数除了可以使用Intent以外，还可以使用Bundle来传递。相比起Intent，使用Bundle提高了复用</description>
+    </item>
+    
+    <item>
+      <title>Android中的在不同Activity中传递参数</title>
+      <link>/2016/02/2016-02-12-androide4b8ade79a84e59ca8e4b88de5908cactivitye4b8ade4bca0e98092e58f82e695b0/</link>
+      <pubDate>Fri, 12 Feb 2016 12:53:20 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-12-androide4b8ade79a84e59ca8e4b88de5908cactivitye4b8ade4bca0e98092e58f82e695b0/</guid>
+      <description>日常跳转Activity的时候，新的Activity经常会用到上一个Activity的数据，在安卓中可以使用Intent提供的方法传递各种参</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>super on NERVGEEK</title>
+    <link>/tags/super/</link>
+    <description>Recent content in super on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 15 Jan 2016 06:50:36 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/super/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的super和this关键字</title>
+      <link>/2016/01/2016-01-15-javae4b8ade79a84supere585b3e994aee5ad97/</link>
+      <pubDate>Fri, 15 Jan 2016 06:50:36 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-15-javae4b8ade79a84supere585b3e994aee5ad97/</guid>
+      <description>suoer关键字用法一： class Person{ public int c; private String name; private int age; protected void setName(String name){ this.name=name; } protected void setAge(int age){ this.age=age; } protected void print(){ System.out.println(&amp;quot;Name=&amp;quot;+name+&amp;quot; Age=&amp;quot;+age); } } public class DemoSuper extends Person{ //继承Person public void print(){ System.out.println(&amp;quot;DemoSuper:&amp;quot;); super.print(); //虽然本方法重</description>
+    </item>
+    
+  </channel>
+</rss>

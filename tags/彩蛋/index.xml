@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>彩蛋 on NERVGEEK</title>
+    <link>/tags/%E5%BD%A9%E8%9B%8B/</link>
+    <description>Recent content in 彩蛋 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 19 Oct 2015 06:51:57 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%BD%A9%E8%9B%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>利用“PHP彩蛋”进行敏感信息获取</title>
+      <link>/2015/10/use-php-eggs-for-sensitive-information-acquisition/</link>
+      <pubDate>Mon, 19 Oct 2015 06:51:57 +0000</pubDate>
+      
+      <guid>/2015/10/use-php-eggs-for-sensitive-information-acquisition/</guid>
+      <description>关于 “ PHP 彩蛋” 的说法也许很多老PHPer已经都知道或听说了，好像是早在 PHP4 版本的时候就有彩蛋了，挺好玩儿的，可能近年来逐渐被人们遗忘了，其实彩</description>
+    </item>
+    
+  </channel>
+</rss>

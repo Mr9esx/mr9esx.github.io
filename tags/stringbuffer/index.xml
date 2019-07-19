@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stringbuffer on NERVGEEK</title>
+    <link>/tags/stringbuffer/</link>
+    <description>Recent content in stringbuffer on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 Jan 2016 15:14:15 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/stringbuffer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的StringBuffer</title>
+      <link>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</link>
+      <pubDate>Sun, 24 Jan 2016 15:14:15 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</guid>
+      <description>Java中除了String字符串类型，还有一个和String不一样的字符串，叫StringBuffer，字符串缓冲区。StringBuffe</description>
+    </item>
+    
+  </channel>
+</rss>

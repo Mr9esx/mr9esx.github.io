@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on NERVGEEK</title>
+    <link>/tags/java/</link>
+    <description>Recent content in Java on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 23 Apr 2016 11:00:55 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java通过Http(URL)获取PHP后台发出的JSON</title>
+      <link>/2016/04/2016-04-23-javae9809ae8bf87httpurle88eb7e58f96phpe5908ee58fb0e58f91e587bae79a84json/</link>
+      <pubDate>Sat, 23 Apr 2016 11:00:55 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-23-javae9809ae8bf87httpurle88eb7e58f96phpe5908ee58fb0e58f91e587bae79a84json/</guid>
+      <description>最近做的匿名版，网页部分已经没什么大问题了，该优化的也优化了，该实现的功能也基本实现了，所以考虑开始制作一个安卓APP，首先需要做的是PHP</description>
+    </item>
+    
+    <item>
+      <title>Java之泛型中的通配符（）以及泛型限定</title>
+      <link>/2016/03/2016-03-01-javae4b98be6b39be59e8be4b8ade79a84e9809ae9858de7aca6efbc88efbc89e4bba5e58f8ae6b39be59e8be99990e5ae9a/</link>
+      <pubDate>Tue, 01 Mar 2016 08:17:24 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-01-javae4b98be6b39be59e8be4b8ade79a84e9809ae9858de7aca6efbc88efbc89e4bba5e58f8ae6b39be59e8be99990e5ae9a/</guid>
+      <description>问号通配符 Java的泛型中除了常用的T t之外，还有另一种通配符——&amp;lt;?&amp;gt;，问号通配符和T t通配符并没有非常大的区别，唯一的区别就</description>
+    </item>
+    
+    <item>
+      <title>Java之在接口中使用泛型</title>
+      <link>/2016/03/2016-03-01-javae4b98be59ca8e68ea5e58fa3e4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Tue, 01 Mar 2016 07:24:52 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-01-javae4b98be59ca8e68ea5e58fa3e4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>在接口上使用泛型并不多见，但还是需要学会看懂。 interface Inter&amp;lt;t&amp;gt;{ void show(T t); } class Intermpl&amp;lt;t&amp;gt; implements Inter&amp;lt;t&amp;gt;{ public void show(T t){ System.out.println(t); } } class Demo{ public static void main(String[] args){ Intermpl&amp;lt;string&amp;gt; imS = new Intermpl&amp;lt;string&amp;gt;(); imS.show(&amp;quot;a&amp;quot;); Intermpl&amp;lt;integer&amp;gt; imI = new Intermpl&amp;lt;integer&amp;gt;(); imI.show(123); } }</description>
+    </item>
+    
+    <item>
+      <title>Java之在方法中使用泛型</title>
+      <link>/2016/02/2016-02-25-javae4b98be59ca8e696b9e6b395e4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Thu, 25 Feb 2016 11:20:29 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b98be59ca8e696b9e6b395e4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>在上一篇文章中，我们定义了泛型类，让类可以接受多种类型的输入： class Tools&amp;lt;SomeThing&amp;gt;{ private SomeThing st; public void setSomeThing(SomeThing st){ this.st = st; } public SomeThing getSomeThing(){ return st; } } 但有时候类并不是所有方法都适合传入的类</description>
+    </item>
+    
+    <item>
+      <title>Java之在自定义类中使用泛型</title>
+      <link>/2016/02/2016-02-25-javae4b98be59ca8e887aae5ae9ae4b989e7b1bbe4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Thu, 25 Feb 2016 09:23:12 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b98be59ca8e887aae5ae9ae4b989e7b1bbe4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>集合可以使用泛型来指定基本数据类型，但集合也是一个类，意味着我们自己的自定义类也能使用泛型。 假如有以下这样的代码： class Dog{ } class Cat{ } class Tools{ private Dog d; private Cat</description>
+    </item>
+    
+    <item>
+      <title>Java中的泛型概念</title>
+      <link>/2016/02/2016-02-25-javae4b8ade79a84e6b39be59e8be6a682e5bfb5/</link>
+      <pubDate>Thu, 25 Feb 2016 05:21:19 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b8ade79a84e6b39be59e8be6a682e5bfb5/</guid>
+      <description>泛型是Java在JDK 1.5的时候推出的一个新特性，主要解决了集合中类型转换错误的问题，例如有下面的一组代码： ArrayList al = new ArrayList(); al.add(&amp;quot;123&amp;quot;); al.add(4); Iterator it = al.iterator(); while(it.hasNext()){ String s =</description>
+    </item>
+    
+    <item>
+      <title>Java中集合类之TreeSet</title>
+      <link>/2016/02/2016-02-23-javae4b8ade99b86e59088e7b1bbe4b98btreeset/</link>
+      <pubDate>Tue, 23 Feb 2016 06:29:48 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-23-javae4b8ade99b86e59088e7b1bbe4b98btreeset/</guid>
+      <description>TreeSet是一个使用二叉树排序的有序集合，存进TreeSet的基本类型按照字典排序，因为TreeSet中继承了Comparable接口和</description>
+    </item>
+    
+    <item>
+      <title>Java中集合类之HashSet</title>
+      <link>/2016/02/2016-02-21-javae4b8ade99b86e59088e7b1bbe4b98bhashset/</link>
+      <pubDate>Sun, 21 Feb 2016 13:55:25 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-21-javae4b8ade99b86e59088e7b1bbe4b98bhashset/</guid>
+      <description>我在 https://www.nervgeek.com/pages/937.html 这篇文章中讲了集合类的概念以及List的基本使用方法，这篇文章就介绍一下Set下面的HashSet的概念以及基本使用方法。 HashSe</description>
+    </item>
+    
+    <item>
+      <title>Java的ArrayList练习-去除重复类</title>
+      <link>/2016/02/2016-02-21-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de7b1bb/</link>
+      <pubDate>Sun, 21 Feb 2016 11:45:19 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-21-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de7b1bb/</guid>
+      <description>前面好几个练习往集合立马塞的都是int、String等基本数据类型，但集合类和数组最大的区别就是集合类能存放类，所以这次练习我们就尝试存放类</description>
+    </item>
+    
+    <item>
+      <title>Java的ArrayList练习-去除重复元素</title>
+      <link>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</link>
+      <pubDate>Sat, 20 Feb 2016 14:20:38 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</guid>
+      <description>上一篇文章学习到ArrayList，那现在来做一个小练习巩固一下。 package com.company; import java.util.*; public class Main { public static void main(String[] args) { ArrayListDemo(); } public static void ArrayListDemo(){ ArrayList al = new ArrayList(); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java02&amp;quot;); al.add(&amp;quot;java03&amp;quot;); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java04&amp;quot;); al.add(&amp;quot;java02&amp;quot;); sop(&amp;q</description>
+    </item>
+    
+    <item>
+      <title>Java中集合类的概念以及使用方法</title>
+      <link>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</link>
+      <pubDate>Fri, 19 Feb 2016 12:38:16 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</guid>
+      <description>集合类，或者叫集合框架。集合类可以用于储存对象，例如一个人他有姓名、年龄、身高、体重等数据，封装之后就是一个对象。假如人多了，需要存储起来，</description>
+    </item>
+    
+    <item>
+      <title>Java的基本数据类型对象与包装类</title>
+      <link>/2016/02/2016-02-18-javae79a84e59fbae69cace695b0e68daee7b1bbe59e8be5afb9e8b1a1e4b88ee58c85e8a385e7b1bb/</link>
+      <pubDate>Thu, 18 Feb 2016 15:45:27 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-18-javae79a84e59fbae69cace695b0e68daee7b1bbe59e8be5afb9e8b1a1e4b88ee58c85e8a385e7b1bb/</guid>
+      <description>“万物皆对象”，Java是一个面向对象的语言，但我们平时使用int，string等基本数据类型却是不面向对象的，在日常开发环境中时有不便，所</description>
+    </item>
+    
+    <item>
+      <title>Java中序列化Serializable的作用</title>
+      <link>/2016/02/2016-02-15-javae4b8ade5ba8fe58897e58c96serializablee79a84e4bd9ce794a8/</link>
+      <pubDate>Mon, 15 Feb 2016 13:59:30 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-15-javae4b8ade5ba8fe58897e58c96serializablee79a84e4bd9ce794a8/</guid>
+      <description>序列化是什么： 序列化就是将一个对象的状态（各个属性量）保存起来，然后在适当的时候再获得。 序列化分为两大部分：序列化和反序列化。 序列化是这个过</description>
+    </item>
+    
+    <item>
+      <title>Android中使用Bundle传递数据包</title>
+      <link>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</link>
+      <pubDate>Sat, 13 Feb 2016 08:44:52 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</guid>
+      <description>在不同的Activity中传递参数除了可以使用Intent以外，还可以使用Bundle来传递。相比起Intent，使用Bundle提高了复用</description>
+    </item>
+    
+    <item>
+      <title>Android中的在不同Activity中传递参数</title>
+      <link>/2016/02/2016-02-12-androide4b8ade79a84e59ca8e4b88de5908cactivitye4b8ade4bca0e98092e58f82e695b0/</link>
+      <pubDate>Fri, 12 Feb 2016 12:53:20 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-12-androide4b8ade79a84e59ca8e4b88de5908cactivitye4b8ade4bca0e98092e58f82e695b0/</guid>
+      <description>日常跳转Activity的时候，新的Activity经常会用到上一个Activity的数据，在安卓中可以使用Intent提供的方法传递各种参</description>
+    </item>
+    
+    <item>
+      <title>Android中的Activity生命周期</title>
+      <link>/2016/02/2016-02-01-androide4b8ade79a84activitye7949fe591bde591a8e69c9f/</link>
+      <pubDate>Mon, 01 Feb 2016 12:08:25 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-01-androide4b8ade79a84activitye7949fe591bde591a8e69c9f/</guid>
+      <description>先放一张图了解一下Activity的生命周期： 先占个位，生命周期图找日详细写一写。 本人英语渣，粗略翻译。 上图可知，Activity有七个函数</description>
+    </item>
+    
+    <item>
+      <title>Android-使用帮助文档</title>
+      <link>/2016/01/android-help-document/</link>
+      <pubDate>Sat, 30 Jan 2016 08:26:25 +0000</pubDate>
+      
+      <guid>/2016/01/android-help-document/</guid>
+      <description>1 . 打开SDK Manager，找到Documentation for Android SDK： 2 . 打开SDK下载文件夹，API网页路径为docs/referenc</description>
+    </item>
+    
+    <item>
+      <title>Java中的自定义异常</title>
+      <link>/2016/01/custom-exceptions-in-java/</link>
+      <pubDate>Fri, 29 Jan 2016 09:14:57 +0000</pubDate>
+      
+      <guid>/2016/01/custom-exceptions-in-java/</guid>
+      <description>1 . 自定义异常类只需要直接继承Exception即可完成。 示例代码： class MyException extends Exception{ public MyException(String errormsg){ super(errormsg); } } public class ExceptionDemo03 { public static void main(String[] args) { try{ throw new MyException(&amp;</description>
+    </item>
+    
+    <item>
+      <title>Java中的throw关键字</title>
+      <link>/2016/01/the-throw-keyword-in-java/</link>
+      <pubDate>Fri, 29 Jan 2016 08:15:11 +0000</pubDate>
+      
+      <guid>/2016/01/the-throw-keyword-in-java/</guid>
+      <description>1 . 使用throw关键字会抛出一个异常，抛出时直接抛出异常类的实例化对象即可。 示例代码： public class ExceptionDemo02 { public static void main(String[] args) { try{ throw new Exception(&amp;qu</description>
+    </item>
+    
+    <item>
+      <title>Java中的throws关键字</title>
+      <link>/2016/01/2016-01-28-javae4b8ade79a84throwse585b3e994aee5ad97/</link>
+      <pubDate>Thu, 28 Jan 2016 16:16:05 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-28-javae4b8ade79a84throwse585b3e994aee5ad97/</guid>
+      <description>1 . throws可以在定义一个方法的时候声明，使用throws声明之后的方法将异常抛给调用者处理，方法本身不会处理。 代码示例： class ExceptionDemo01 { public static void main(String[]</description>
+    </item>
+    
+    <item>
+      <title>Java中的异常处理</title>
+      <link>/2016/01/2016-01-28-javae4b8ade79a84e5bc82e5b8b8e5a484e79086/</link>
+      <pubDate>Thu, 28 Jan 2016 08:29:20 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-28-javae4b8ade79a84e5bc82e5b8b8e5a484e79086/</guid>
+      <description>1 . 程序中有些流程可能会报出异常，如果不正确处理异常，将导致程序中断执行，造成损失。 2 . try后面可以跟多个catch，但不管多少个，最后只</description>
+    </item>
+    
+    <item>
+      <title>Java中的StringBuilder</title>
+      <link>/2016/01/2016-01-25-javae4b8ade79a84stringbuilder/</link>
+      <pubDate>Mon, 25 Jan 2016 09:25:09 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-25-javae4b8ade79a84stringbuilder/</guid>
+      <description>1 . StringBuilder和StringBuffer在使用方法上是极其相像的，最大的区别是StringBuilder是非线程安全，Str</description>
+    </item>
+    
+    <item>
+      <title>Java中的StringBuffer</title>
+      <link>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</link>
+      <pubDate>Sun, 24 Jan 2016 15:14:15 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8ade79a84stringbuffer/</guid>
+      <description>Java中除了String字符串类型，还有一个和String不一样的字符串，叫StringBuffer，字符串缓冲区。StringBuffe</description>
+    </item>
+    
+    <item>
+      <title>Java中String类型的常用方法</title>
+      <link>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</link>
+      <pubDate>Sun, 24 Jan 2016 12:04:44 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</guid>
+      <description>1 . 计算字符串长度 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; System.out.println(str.lenght()); } } 2 . 字符串转换为数组 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; char strArr[] = str.toCharArray(); for(int count = 0;count &amp;lt; strArr.lenght;count++){ System.out.println(strArr[count]+&amp;quot;-&amp;quot;); } } } 3 . 取出字符串指定位置的</description>
+    </item>
+    
+    <item>
+      <title>Java中的接口以及接口和抽象类的区别</title>
+      <link>/2016/01/2016-01-24-javae4b8ade79a84e68ea5e58fa3/</link>
+      <pubDate>Sun, 24 Jan 2016 08:50:34 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8ade79a84e68ea5e58fa3/</guid>
+      <description>1 . 接口可以理解成一个特殊的类，其组成全都是全局常量以及公共的抽象方法所组成。 2 . 使用interface关键字来修饰。 3 . 接口必须经过子类来</description>
+    </item>
+    
+    <item>
+      <title>Java中的抽象类</title>
+      <link>/2016/01/2016-01-23-javae4b8ade79a84e68abde8b1a1e7b1bb/</link>
+      <pubDate>Sat, 23 Jan 2016 09:16:42 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-23-javae4b8ade79a84e68abde8b1a1e7b1bb/</guid>
+      <description>1 . 一个类之中包含了抽象方法，该类就是抽象类。 2 . 抽象方法即是：被声明却未被实现并使用abstract关键字修饰的方法。 3 . 不能对抽象类直接</description>
+    </item>
+    
+    <item>
+      <title>Java中的final关键字</title>
+      <link>/2016/01/2016-01-23-javae4b8ade79a84finale585b3e994aee5ad97/</link>
+      <pubDate>Sat, 23 Jan 2016 08:11:16 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-23-javae4b8ade79a84finale585b3e994aee5ad97/</guid>
+      <description>1 . final可译为完结器，意译为最终。 2 . final可修饰类、方法、属性。 final修饰之后的类不能被继承。 final修饰之后的方法不能被</description>
+    </item>
+    
+    <item>
+      <title>Java中的匿名对象</title>
+      <link>/2016/01/2016-01-22-javae4b8ade79a84e58cbfe5908de5afb9e8b1a1/</link>
+      <pubDate>Fri, 22 Jan 2016 07:46:37 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-22-javae4b8ade79a84e58cbfe5908de5afb9e8b1a1/</guid>
+      <description>匿名对象有两个特点： 1 . 匿名对象是没有别其它对象所引用 2 . 使用一次就变成垃圾，被Java的垃圾回收器收回。 第一种匿名对象的应用： 匿名对象应用</description>
+    </item>
+    
+    <item>
+      <title>Java中的super和this关键字</title>
+      <link>/2016/01/2016-01-15-javae4b8ade79a84supere585b3e994aee5ad97/</link>
+      <pubDate>Fri, 15 Jan 2016 06:50:36 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-15-javae4b8ade79a84supere585b3e994aee5ad97/</guid>
+      <description>suoer关键字用法一： class Person{ public int c; private String name; private int age; protected void setName(String name){ this.name=name; } protected void setAge(int age){ this.age=age; } protected void print(){ System.out.println(&amp;quot;Name=&amp;quot;+name+&amp;quot; Age=&amp;quot;+age); } } public class DemoSuper extends Person{ //继承Person public void print(){ System.out.println(&amp;quot;DemoSuper:&amp;quot;); super.print(); //虽然本方法重</description>
+    </item>
+    
+  </channel>
+</rss>

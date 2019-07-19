@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on NERVGEEK</title>
+    <link>/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Mar 2016 15:04:31 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu Kylin 15.10 上安装 wine</title>
+      <link>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</link>
+      <pubDate>Wed, 16 Mar 2016 15:04:31 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</guid>
+      <description>笔记本是一台配置很差的电脑，跑Windows已觉卡顿，所以打算安装Ubuntu来延续这台电脑的服役时间。 本来打算安装国产的Linux系统——</description>
+    </item>
+    
+    <item>
+      <title>Docker入门以及搭建WordPress与MySQL</title>
+      <link>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</link>
+      <pubDate>Thu, 21 Jan 2016 08:23:00 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</guid>
+      <description>上年因为比赛所需稍微接触了一下(真的只有一下)Docker，那个时候连启动都不知道，只是去维基了下Docker罢了。 回到正题，我搭建Dock</description>
+    </item>
+    
+    <item>
+      <title>解决Ubuntu下VI的上下左右出现ABCD等问题</title>
+      <link>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</link>
+      <pubDate>Mon, 23 Nov 2015 09:53:59 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-23-c71ec2958cbe42d5311a9d9c40fef7d2/</guid>
+      <description>依次执行以下两个命令即可解决Ubuntu下vi编辑器上下左右方向键变ABCD的问题。 一、sudo apt-get remove vim-common 二、sudo apt-get install vim 来自为知笔记(Wiz</description>
+    </item>
+    
+  </channel>
+</rss>

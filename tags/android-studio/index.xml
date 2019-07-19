@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android studio on NERVGEEK</title>
+    <link>/tags/android-studio/</link>
+    <description>Recent content in android studio on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Feb 2016 15:52:20 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/android-studio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Studio 离线升级教程</title>
+      <link>/2016/02/2016-02-13-android-studio-e7a6bbe7babfe58d87e7baa7e69599e7a88b/</link>
+      <pubDate>Sat, 13 Feb 2016 15:52:20 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-13-android-studio-e7a6bbe7babfe58d87e7baa7e69599e7a88b/</guid>
+      <description>Android Studio 2.0已经出到Perview 9了，对于喜欢尝鲜的我立马就考虑升级了。但由于国内GTW的原因，自带的升级往往不能使用，所以还是非常推荐离线</description>
+    </item>
+    
+  </channel>
+</rss>

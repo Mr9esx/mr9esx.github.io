@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bundle on NERVGEEK</title>
+    <link>/tags/bundle/</link>
+    <description>Recent content in bundle on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Feb 2016 08:44:52 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bundle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android中使用Bundle传递数据包</title>
+      <link>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</link>
+      <pubDate>Sat, 13 Feb 2016 08:44:52 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-13-androide4b8ade4bdbfe794a8bundlee4bca0e98092e695b0e68daee58c85/</guid>
+      <description>在不同的Activity中传递参数除了可以使用Intent以外，还可以使用Bundle来传递。相比起Intent，使用Bundle提高了复用</description>
+    </item>
+    
+  </channel>
+</rss>

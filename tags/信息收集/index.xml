@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>信息收集 on NERVGEEK</title>
+    <link>/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</link>
+    <description>Recent content in 信息收集 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 14 Oct 2015 06:20:13 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>利用metasploit进行信息收集</title>
+      <link>/2015/10/2015-10-14-e588a9e794a8metasploite8bf9be8a18ce4bfa1e681afe694b6e99b86/</link>
+      <pubDate>Wed, 14 Oct 2015 06:20:13 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-e588a9e794a8metasploite8bf9be8a18ce4bfa1e681afe694b6e99b86/</guid>
+      <description>在进行信息收集的时候，我们既要全面详细的获取目标的信息，又要尽量隐藏自己不被发现。Metasploit作为一个非常全面的渗透工具，用来收集信</description>
+    </item>
+    
+  </channel>
+</rss>

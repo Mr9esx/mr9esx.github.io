@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>final on NERVGEEK</title>
+    <link>/tags/final/</link>
+    <description>Recent content in final on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 23 Jan 2016 08:11:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/final/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的final关键字</title>
+      <link>/2016/01/2016-01-23-javae4b8ade79a84finale585b3e994aee5ad97/</link>
+      <pubDate>Sat, 23 Jan 2016 08:11:16 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-23-javae4b8ade79a84finale585b3e994aee5ad97/</guid>
+      <description>1 . final可译为完结器，意译为最终。 2 . final可修饰类、方法、属性。 final修饰之后的类不能被继承。 final修饰之后的方法不能被</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>finally on NERVGEEK</title>
+    <link>/tags/finally/</link>
+    <description>Recent content in finally on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 28 Jan 2016 08:29:20 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/finally/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的异常处理</title>
+      <link>/2016/01/2016-01-28-javae4b8ade79a84e5bc82e5b8b8e5a484e79086/</link>
+      <pubDate>Thu, 28 Jan 2016 08:29:20 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-28-javae4b8ade79a84e5bc82e5b8b8e5a484e79086/</guid>
+      <description>1 . 程序中有些流程可能会报出异常，如果不正确处理异常，将导致程序中断执行，造成损失。 2 . try后面可以跟多个catch，但不管多少个，最后只</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CloudStack on NERVGEEK</title>
+    <link>/tags/cloudstack/</link>
+    <description>Recent content in CloudStack on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 16 Oct 2015 01:49:04 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cloudstack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CloudStack搭建简记</title>
+      <link>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</link>
+      <pubDate>Fri, 16 Oct 2015 01:49:04 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</guid>
+      <description>###### 1.CloudStack Management ###### setenforce 0 sed -i &amp;rsquo;s/=enforcing/=disabled/&amp;lsquo; /etc/selinux/config chkconfig &amp;ndash;levels 35 iptables off /etc/init.d/iptables stop sed -i &amp;rsquo;s/=localhost.localdomain/manage.downtown8.com/&amp;lsquo; /etc/sysconfig/network echo &amp;rdquo;192.168.15.2 manage.downtown8.com&amp;rdquo; &amp;gt;&amp;gt;/etc/hosts yum -y install ntp chkconfig ntpd on service ntpd start touch /etc/yum.repos.d/cloudstack.repo cd /etc/yum.repos.d/ #echo -e &amp;rdquo;[cloudstack]\nname=cloudstack\nbaseurl=http://192.168.15.10/cloudstack/nenabled=1ngpgcheck=0&amp;quot; &amp;gt;cloudstack.repo yum -y install mysql-server #[mysqld] sed -i &amp;rdquo;7i\innodb_rollback_on_timeout=1\ninnodb_lock_wait_timeout=600\nmax_connections=350\nlog-bin=mysql-bin\nbinlog-format = &amp;rsquo;ROW&amp;rsquo;&amp;ldquo; /etc/my.cnf service mysqld start chkconfig mysqld on /usr/bin/mysqladmin -u root password &amp;rsquo;downtown#2015&amp;rsquo; yum -y install cloudstack-management cloudstack-setup-databases</description>
+    </item>
+    
+  </channel>
+</rss>

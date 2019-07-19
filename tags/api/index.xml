@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api on NERVGEEK</title>
+    <link>/tags/api/</link>
+    <description>Recent content in api on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 May 2016 13:14:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>开启Docker Remote API</title>
+      <link>/2016/05/2016-05-25-e5bc80e590afdocker-remote-api/</link>
+      <pubDate>Wed, 25 May 2016 13:14:16 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e5bc80e590afdocker-remote-api/</guid>
+      <description>一直使用ss-link家的VPN，总感觉他们应该是使用了docker来即时部署环境，容器内部端口绑定物理机外部端口，然后把ip、端口、账号密</description>
+    </item>
+    
+  </channel>
+</rss>

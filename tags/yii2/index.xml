@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yii2 on NERVGEEK</title>
+    <link>/tags/yii2/</link>
+    <description>Recent content in Yii2 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 13 Dec 2016 08:59:33 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/yii2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>基于 Yii2 的练手小项目</title>
+      <link>/2016/12/2016-12-13-e59fbae4ba8e-yii2-e79a84e7bb83e6898be5b08fe9a1b9e79bae/</link>
+      <pubDate>Tue, 13 Dec 2016 08:59:33 +0000</pubDate>
+      
+      <guid>/2016/12/2016-12-13-e59fbae4ba8e-yii2-e79a84e7bb83e6898be5b08fe9a1b9e79bae/</guid>
+      <description>Yii2 框架挺好用的，就是和BS前端框架关系太大，源代码都内嵌了BS的样式，导致我用Semantic UI 需要做很多改动，而且要稍微修改一下源代码。 做</description>
+    </item>
+    
+  </channel>
+</rss>

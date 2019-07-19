@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2018s on NERVGEEK</title>
+    <link>/2018/</link>
+    <description>Recent content in 2018s on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 24 Dec 2018 16:09:40 +0000</lastBuildDate>
+    
+	<atom:link href="/2018/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>闲来摸鱼 - 使用 Gitea 、Drone 、Docker Registry 搭建 CI\CD 环境</title>
+      <link>/2018/12/2018-12-24-e997b2e69da5e691b8e9b1bce4bdbfe794a8-gitea-e38081drone-e38081docker-registry-e690ade5bbba-cicd-e78eafe5a283/</link>
+      <pubDate>Mon, 24 Dec 2018 16:09:40 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-24-e997b2e69da5e691b8e9b1bce4bdbfe794a8-gitea-e38081drone-e38081docker-registry-e690ade5bbba-cicd-e78eafe5a283/</guid>
+      <description>占坑</description>
+    </item>
+    
+    <item>
+      <title>Golang - 刷题（1）</title>
+      <link>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</link>
+      <pubDate>Fri, 14 Dec 2018 09:20:28 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-14-golang-e588b7e9a298efbc881efbc89/</guid>
+      <description>下面的程序运行后为什么会爆异常。 原题 Main 里面的 sleep 原本是 time.Sleep(time.Second * 100000000000000) ，不过原因太明显了（constant 100000000000000000000000 overflows time.Duration ），我就改为 10 秒。 package main import ( &amp;quot;fmt&amp;quot; &amp;quot;time&amp;quot; ) type Project struct{} func</description>
+    </item>
+    
+    <item>
+      <title>Golang - 关于传参是传值还是传引用</title>
+      <link>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</link>
+      <pubDate>Thu, 13 Dec 2018 08:51:41 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-13-golang-e585b3e4ba8ee4bca0e58f82e698afe4bca0e580bce8bf98e698afe4bca0e5bc95e794a8/</guid>
+      <description>对于我这种学 Go 没多久的新手缺少实战经验的人来说，翻翻别人博客学习一下别人的总结是避免躺坑最快捷的方式之一，但有些人的博客写的示例代码，会刷新</description>
+    </item>
+    
+    <item>
+      <title>Golang - 牢记 defer 三个特性</title>
+      <link>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</link>
+      <pubDate>Mon, 10 Dec 2018 14:18:15 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-e789a2e8aeb0-defer-e4b889e4b8aae789b9e680a7/</guid>
+      <description>光读书是记不牢的，必须要上手多写累积经验，多点刷题写写笔记，才记得住。 这不，我刚开始看 Go 的面试题，做到关于 defer 的输出的时候，就基本蒙了。 实际上</description>
+    </item>
+    
+    <item>
+      <title>Golang - for ... range 的一个小细节</title>
+      <link>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</link>
+      <pubDate>Mon, 10 Dec 2018 03:41:25 +0000</pubDate>
+      
+      <guid>/2018/12/2018-12-10-golang-for-range-e79a84e4b880e4b8aae5b08fe7bb86e88a82/</guid>
+      <description>昨天晚上看到一道 Go 的基础面试题，看到这道题，觉得还是很容易躺坑，就记录一下吧。 package main import &amp;quot;fmt&amp;quot; type Student struct { Name string Age int } func main() { stus := []Student{ { &amp;quot;Lee&amp;quot;, 32, }, { &amp;quot;Huang&amp;quot;, 40, }, { &amp;quot;Zhao&amp;quot;, 35, },</description>
+    </item>
+    
+    <item>
+      <title>微信支付 - 保证接口的幂等性</title>
+      <link>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</link>
+      <pubDate>Sun, 07 Oct 2018 04:09:50 +0000</pubDate>
+      
+      <guid>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</guid>
+      <description>在用户重新发起支付之前，先根据现有微信订单号主动去查询订单信息： &amp;lt;code class=&amp;quot;language-python &amp;quot;&amp;gt;# 如果已存在微信订单id，则去查询订单状态 if order_info.wx_pay_id: try: r = pay.order.query(out_trade_no=order_info.wx_pay_id) if r[&amp;quot;return_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot; and r[&amp;quot;result_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot;: try:</description>
+    </item>
+    
+    <item>
+      <title>开源 API Gateway - Kong 和 Konga 的搭建</title>
+      <link>/2018/09/2018-09-25-e5bc80e6ba90-api-gateway-kong-e5928c-konga-e79a84e690ade5bbba/</link>
+      <pubDate>Tue, 25 Sep 2018 10:06:03 +0000</pubDate>
+      
+      <guid>/2018/09/2018-09-25-e5bc80e6ba90-api-gateway-kong-e5928c-konga-e79a84e690ade5bbba/</guid>
+      <description>写过好几个项目都是传统的单体项目，刚开始实现 demo 的时候，单体写起来还是很爽很快的，但由于后期功能的增加，代码量的剧增以及逻辑耦合严重，单体应用</description>
+    </item>
+    
+    <item>
+      <title>Electron 使用 SQLite3 数据库</title>
+      <link>/2018/01/2018-01-16-electron-e4bdbfe794a8-sqlite3-e695b0e68daee5ba93/</link>
+      <pubDate>Tue, 16 Jan 2018 07:37:08 +0000</pubDate>
+      
+      <guid>/2018/01/2018-01-16-electron-e4bdbfe794a8-sqlite3-e695b0e68daee5ba93/</guid>
+      <description>直接通过 npm install &amp;ndash;save sqlite3 安装 sqlite3 是无法正常在 electron 上使用的，翻遍了很多教程，都是相对比较旧的，有些命令甚至在4.0之后都没有了。 直接贴上解决方法了： npm config set</description>
+    </item>
+    
+  </channel>
+</rss>

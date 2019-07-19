@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>提权 on NERVGEEK</title>
+    <link>/tags/%E6%8F%90%E6%9D%83/</link>
+    <description>Recent content in 提权 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 18 Oct 2015 07:26:07 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%8F%90%E6%9D%83/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>史上最全Linux提权后获取敏感信息方法</title>
+      <link>/2015/10/2015-10-18-e58fb2e4b88ae69c80e585a8linuxe68f90e69d83e5908ee88eb7e58f96e6958fe6849fe4bfa1e681afe696b9e6b395/</link>
+      <pubDate>Sun, 18 Oct 2015 07:26:07 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-18-e58fb2e4b88ae69c80e585a8linuxe68f90e69d83e5908ee88eb7e58f96e6958fe6849fe4bfa1e681afe696b9e6b395/</guid>
+      <description>在本文开始之前，我想指出我不是专家。据我所知，在这个庞大的区域,没有一个“神奇”的答案.分享，共享（我的出发点）。下面是一个混合的命令做同样</description>
+    </item>
+    
+  </channel>
+</rss>

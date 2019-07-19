@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linus on NERVGEEK</title>
+    <link>/tags/linus/</link>
+    <description>Recent content in Linus on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 30 Nov 2015 15:40:11 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/linus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linus，一生只为寻找欢笑</title>
+      <link>/2015/11/linus-story/</link>
+      <pubDate>Mon, 30 Nov 2015 15:40:11 +0000</pubDate>
+      
+      <guid>/2015/11/linus-story/</guid>
+      <description>每个人桌面上一台电脑，这曾经是无数计算机先驱的梦想，这个梦想很早就实现了，在1997年，乔老师和比老师就说过，「比尔，我们共同控制了100%</description>
+    </item>
+    
+  </channel>
+</rss>

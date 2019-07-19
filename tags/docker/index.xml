@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on NERVGEEK</title>
+    <link>/tags/docker/</link>
+    <description>Recent content in Docker on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Apr 2017 01:18:19 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu 16.04 配置 Fluentd 收集 Docker 容器日志保存到 Mongodb</title>
+      <link>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</link>
+      <pubDate>Tue, 18 Apr 2017 01:18:19 +0000</pubDate>
+      
+      <guid>/2017/04/2017-04-18-ubuntu-16-04-e9858de7bdae-fluentd-e694b6e99b86-docker-e5aeb9e599a8e697a5e5bf97e5b9b6e4bf9de68c81e887b3-mongodb/</guid>
+      <description>一个容器运行起来，我们判断容器是否正常运行，一般都是去查看日志。默认 Docker 产生的日志文件都保持在本机， Ubuntu 下 Docker 保存路径是 /var/lib/dock</description>
+    </item>
+    
+    <item>
+      <title>Docker-py 2.0 新建容器参数笔记</title>
+      <link>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</link>
+      <pubDate>Tue, 03 Jan 2017 09:25:10 +0000</pubDate>
+      
+      <guid>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</guid>
+      <description>&amp;hellip;期末事多，博客都忘了&amp;hellip; docker-py升级到了 2.0 版本，功能变化不算很大，使用方法倒是变了一圈，以前使用 Client 方法</description>
+    </item>
+    
+    <item>
+      <title>单节点版Docker管理平台(开发中)</title>
+      <link>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</link>
+      <pubDate>Tue, 16 Aug 2016 15:49:11 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</guid>
+      <description>最近在着手Docker资源管理平台的开发，花了几天系统地学习了Docker，并看了下Docker自带的Restful API，贯彻我的“Lea</description>
+    </item>
+    
+    <item>
+      <title>在Docker中下载、启动有shadowsocks代理的镜像</title>
+      <link>/2016/05/2016-05-25-e59ca8dockere4b8ade4b88be8bdbde38081e590afe58aa8e69c89shadowsockse4bba3e79086e79a84e9959ce5838f/</link>
+      <pubDate>Wed, 25 May 2016 13:44:22 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e59ca8dockere4b8ade4b88be8bdbde38081e590afe58aa8e69c89shadowsockse4bba3e79086e79a84e9959ce5838f/</guid>
+      <description>测试环境是阿里云的云服务器，目标是成功把ip更改为服务器的ip，即为代理成功。 服务器系统：ubuntu 14.10 64位 Docker信息： Client: Version: 1.11.1 API version: 1.23</description>
+    </item>
+    
+    <item>
+      <title>开启Docker Remote API</title>
+      <link>/2016/05/2016-05-25-e5bc80e590afdocker-remote-api/</link>
+      <pubDate>Wed, 25 May 2016 13:14:16 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e5bc80e590afdocker-remote-api/</guid>
+      <description>一直使用ss-link家的VPN，总感觉他们应该是使用了docker来即时部署环境，容器内部端口绑定物理机外部端口，然后把ip、端口、账号密</description>
+    </item>
+    
+    <item>
+      <title>Docker入门以及搭建WordPress与MySQL</title>
+      <link>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</link>
+      <pubDate>Thu, 21 Jan 2016 08:23:00 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</guid>
+      <description>上年因为比赛所需稍微接触了一下(真的只有一下)Docker，那个时候连启动都不知道，只是去维基了下Docker罢了。 回到正题，我搭建Dock</description>
+    </item>
+    
+    <item>
+      <title>Docker入门教程（一）介绍</title>
+      <link>/2015/11/2015-11-04-dockere585a5e997a8e69599e7a88befbc88e4b880efbc89e4bb8be7bb8d/</link>
+      <pubDate>Wed, 04 Nov 2015 01:08:25 +0000</pubDate>
+      
+      <guid>/2015/11/2015-11-04-dockere585a5e997a8e69599e7a88befbc88e4b880efbc89e4bb8be7bb8d/</guid>
+      <description>【编者的话】DockerOne组织翻译了Flux7的Docker入门教程，本文是系列入门教程的第一篇，介绍了Docker的基础概念以及Doc</description>
+    </item>
+    
+  </channel>
+</rss>

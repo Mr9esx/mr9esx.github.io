@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>集合 on NERVGEEK</title>
+    <link>/tags/%E9%9B%86%E5%90%88/</link>
+    <description>Recent content in 集合 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 25 Feb 2016 05:21:19 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E9%9B%86%E5%90%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的泛型概念</title>
+      <link>/2016/02/2016-02-25-javae4b8ade79a84e6b39be59e8be6a682e5bfb5/</link>
+      <pubDate>Thu, 25 Feb 2016 05:21:19 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b8ade79a84e6b39be59e8be6a682e5bfb5/</guid>
+      <description>泛型是Java在JDK 1.5的时候推出的一个新特性，主要解决了集合中类型转换错误的问题，例如有下面的一组代码： ArrayList al = new ArrayList(); al.add(&amp;quot;123&amp;quot;); al.add(4); Iterator it = al.iterator(); while(it.hasNext()){ String s =</description>
+    </item>
+    
+    <item>
+      <title>Java的ArrayList练习-去除重复元素</title>
+      <link>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</link>
+      <pubDate>Sat, 20 Feb 2016 14:20:38 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-20-javae79a84arrayliste7bb83e4b9a0-e58ebbe999a4e9878de5a48de58583e7b4a0/</guid>
+      <description>上一篇文章学习到ArrayList，那现在来做一个小练习巩固一下。 package com.company; import java.util.*; public class Main { public static void main(String[] args) { ArrayListDemo(); } public static void ArrayListDemo(){ ArrayList al = new ArrayList(); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java02&amp;quot;); al.add(&amp;quot;java03&amp;quot;); al.add(&amp;quot;java01&amp;quot;); al.add(&amp;quot;java04&amp;quot;); al.add(&amp;quot;java02&amp;quot;); sop(&amp;q</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNS on NERVGEEK</title>
+    <link>/tags/dns/</link>
+    <description>Recent content in DNS on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 18 Jun 2016 02:41:54 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DNS原理入门</title>
+      <link>/2016/06/2016-06-18-dnse58e9fe79086e585a5e997a8/</link>
+      <pubDate>Sat, 18 Jun 2016 02:41:54 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-18-dnse58e9fe79086e585a5e997a8/</guid>
+      <description>昨天是Linux笔试，老师出了好几道我不是很懂的题，果然是基础不扎实啊。其中简答题需要我们把DNS的查询流程写出来，简直难到我了，所以现在学</description>
+    </item>
+    
+  </channel>
+</rss>

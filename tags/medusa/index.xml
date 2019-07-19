@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medusa on NERVGEEK</title>
+    <link>/tags/medusa/</link>
+    <description>Recent content in Medusa on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 14 Oct 2015 07:32:43 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/medusa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crunch生成字典&#43;Medusa暴力破解FTP\SSH等</title>
+      <link>/2015/10/2015-10-14-crunche7949fe68890e5ad97e585b8medusae69ab4e58a9be7a0b4e8a7a3ftpsshe7ad89/</link>
+      <pubDate>Wed, 14 Oct 2015 07:32:43 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-14-crunche7949fe68890e5ad97e585b8medusae69ab4e58a9be7a0b4e8a7a3ftpsshe7ad89/</guid>
+      <description>0x01、使用Crunch生成字典 Crunch是Kali自带的一个字典生成软件，使用方便，生成迅速。 例如我需要生成一个6位的密码，密码组合元</description>
+    </item>
+    
+  </channel>
+</rss>

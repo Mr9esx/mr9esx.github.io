@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>setuptools on NERVGEEK</title>
+    <link>/tags/setuptools/</link>
+    <description>Recent content in setuptools on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Jun 2016 12:20:27 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/setuptools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在CentOS6.4部署django环境(python&#43;nginx&#43;uwsgi&#43;mysql)(另外再加一个Redis和Redis-py的配置)</title>
+      <link>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</link>
+      <pubDate>Fri, 24 Jun 2016 12:20:27 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</guid>
+      <description>最近想学学python web，虽然Windows也能部署开发环境，但Linux还是主流，所以直接在Linux上部署环境学习python了。 0x01</description>
+    </item>
+    
+  </channel>
+</rss>

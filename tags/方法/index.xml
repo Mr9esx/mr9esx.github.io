@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>方法 on NERVGEEK</title>
+    <link>/tags/%E6%96%B9%E6%B3%95/</link>
+    <description>Recent content in 方法 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 25 Feb 2016 11:20:29 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java之在方法中使用泛型</title>
+      <link>/2016/02/2016-02-25-javae4b98be59ca8e696b9e6b395e4b8ade4bdbfe794a8e6b39be59e8b/</link>
+      <pubDate>Thu, 25 Feb 2016 11:20:29 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-25-javae4b98be59ca8e696b9e6b395e4b8ade4bdbfe794a8e6b39be59e8b/</guid>
+      <description>在上一篇文章中，我们定义了泛型类，让类可以接受多种类型的输入： class Tools&amp;lt;SomeThing&amp;gt;{ private SomeThing st; public void setSomeThing(SomeThing st){ this.st = st; } public SomeThing getSomeThing(){ return st; } } 但有时候类并不是所有方法都适合传入的类</description>
+    </item>
+    
+    <item>
+      <title>Java中String类型的常用方法</title>
+      <link>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</link>
+      <pubDate>Sun, 24 Jan 2016 12:04:44 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-24-javae4b8adstringe7b1bbe59e8be79a84e5b8b8e794a8e696b9e6b395/</guid>
+      <description>1 . 计算字符串长度 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; System.out.println(str.lenght()); } } 2 . 字符串转换为数组 class StringFunction{ public static void main(String[] args){ String str = &amp;quot;Mr9esx&amp;quot;; char strArr[] = str.toCharArray(); for(int count = 0;count &amp;lt; strArr.lenght;count++){ System.out.println(strArr[count]+&amp;quot;-&amp;quot;); } } } 3 . 取出字符串指定位置的</description>
+    </item>
+    
+  </channel>
+</rss>

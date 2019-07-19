@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rabbit MQ on NERVGEEK</title>
+    <link>/tags/rabbit-mq/</link>
+    <description>Recent content in Rabbit MQ on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 09 Nov 2016 09:25:45 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rabbit-mq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python连接、操作Rabbit MQ队列</title>
+      <link>/2016/11/2016-11-09-pythone8bf9ee68ea5e38081e6938de4bd9crabbit-mqe9989fe58897/</link>
+      <pubDate>Wed, 09 Nov 2016 09:25:45 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-09-pythone8bf9ee68ea5e38081e6938de4bd9crabbit-mqe9989fe58897/</guid>
+      <description>在网上，非常少关于 Python 连接操作 Rabbit MQ 的详细信息，pika 文档也是没有汉化，避免以后忘记用法又找一遍教程的尴尬，还是先记下来了，而且最近也没更新什</description>
+    </item>
+    
+  </channel>
+</rss>

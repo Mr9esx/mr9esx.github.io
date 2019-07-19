@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>抽象类 on NERVGEEK</title>
+    <link>/tags/%E6%8A%BD%E8%B1%A1%E7%B1%BB/</link>
+    <description>Recent content in 抽象类 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 23 Jan 2016 09:16:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%8A%BD%E8%B1%A1%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的抽象类</title>
+      <link>/2016/01/2016-01-23-javae4b8ade79a84e68abde8b1a1e7b1bb/</link>
+      <pubDate>Sat, 23 Jan 2016 09:16:42 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-23-javae4b8ade79a84e68abde8b1a1e7b1bb/</guid>
+      <description>1 . 一个类之中包含了抽象方法，该类就是抽象类。 2 . 抽象方法即是：被声明却未被实现并使用abstract关键字修饰的方法。 3 . 不能对抽象类直接</description>
+    </item>
+    
+  </channel>
+</rss>

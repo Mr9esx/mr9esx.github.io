@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>安装 on NERVGEEK</title>
+    <link>/tags/%E5%AE%89%E8%A3%85/</link>
+    <description>Recent content in 安装 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Mar 2016 15:04:31 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%AE%89%E8%A3%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu Kylin 15.10 上安装 wine</title>
+      <link>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</link>
+      <pubDate>Wed, 16 Mar 2016 15:04:31 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</guid>
+      <description>笔记本是一台配置很差的电脑，跑Windows已觉卡顿，所以打算安装Ubuntu来延续这台电脑的服役时间。 本来打算安装国产的Linux系统——</description>
+    </item>
+    
+  </channel>
+</rss>

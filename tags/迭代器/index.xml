@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>迭代器 on NERVGEEK</title>
+    <link>/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/</link>
+    <description>Recent content in 迭代器 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 19 Feb 2016 12:38:16 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中集合类的概念以及使用方法</title>
+      <link>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</link>
+      <pubDate>Fri, 19 Feb 2016 12:38:16 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-19-javae4b8ade99b86e59088e7b1bbe79a84e6a682e5bfb5e4bba5e58f8ae4bdbfe794a8e696b9e6b395/</guid>
+      <description>集合类，或者叫集合框架。集合类可以用于储存对象，例如一个人他有姓名、年龄、身高、体重等数据，封装之后就是一个对象。假如人多了，需要存储起来，</description>
+    </item>
+    
+  </channel>
+</rss>

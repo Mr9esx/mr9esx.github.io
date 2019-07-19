@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on NERVGEEK</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 07 Oct 2018 04:09:50 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>微信支付 - 保证接口的幂等性</title>
+      <link>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</link>
+      <pubDate>Sun, 07 Oct 2018 04:09:50 +0000</pubDate>
+      
+      <guid>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</guid>
+      <description>在用户重新发起支付之前，先根据现有微信订单号主动去查询订单信息： &amp;lt;code class=&amp;quot;language-python &amp;quot;&amp;gt;# 如果已存在微信订单id，则去查询订单状态 if order_info.wx_pay_id: try: r = pay.order.query(out_trade_no=order_info.wx_pay_id) if r[&amp;quot;return_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot; and r[&amp;quot;result_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot;: try:</description>
+    </item>
+    
+    <item>
+      <title>CentOS 7.0 配置 DockerM Web 环境</title>
+      <link>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</link>
+      <pubDate>Tue, 14 Feb 2017 05:50:38 +0000</pubDate>
+      
+      <guid>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</guid>
+      <description>一、安装 Docker 1、安装 yum-utils sudo yum &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install -y yum-utils 2、设置 yum 使用稳定的 repository yum-config-manager &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ --add-repo &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ https:&amp;lt;span class=&amp;quot;hljs-comment&amp;quot;&amp;gt;//docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo 3、创建缓存 yum makecache fast 4、安装 Docker yum -y &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install docker-&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;engine 二、安装 Rabbit MQ 1、安装 Erlang yum install erlang 2</description>
+    </item>
+    
+    <item>
+      <title>Docker-py 2.0 新建容器参数笔记</title>
+      <link>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</link>
+      <pubDate>Tue, 03 Jan 2017 09:25:10 +0000</pubDate>
+      
+      <guid>/2017/01/2017-01-03-docker-py-2-0-e696b0e5bbbae5aeb9e599a8e58f82e695b0e7ac94e8aeb0/</guid>
+      <description>&amp;hellip;期末事多，博客都忘了&amp;hellip; docker-py升级到了 2.0 版本，功能变化不算很大，使用方法倒是变了一圈，以前使用 Client 方法</description>
+    </item>
+    
+    <item>
+      <title>Python 中的 @staticmethod 和 @classmethod</title>
+      <link>/2016/11/2016-11-16-python-e4b8ade79a84-staticmethod-e5928c-classmethod/</link>
+      <pubDate>Wed, 16 Nov 2016 13:07:30 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-16-python-e4b8ade79a84-staticmethod-e5928c-classmethod/</guid>
+      <description>class Method(): var1 = &amp;lsquo;hello&amp;rsquo; def init(self, var2 = &amp;ldquo;object var&amp;rdquo;): self.var2 = &amp;lsquo;var2&amp;rsquo; def show(self): print self.var2 @staticmethod def staticFunc(): print &amp;lsquo;static method&amp;rsquo; @classmethod def classFunc(cls): print cls.var1 print &amp;lsquo;class method&amp;rsquo; staticmethod和classmethod的相同点: 1.都可以通过类或</description>
+    </item>
+    
+    <item>
+      <title>Python连接、操作Rabbit MQ队列</title>
+      <link>/2016/11/2016-11-09-pythone8bf9ee68ea5e38081e6938de4bd9crabbit-mqe9989fe58897/</link>
+      <pubDate>Wed, 09 Nov 2016 09:25:45 +0000</pubDate>
+      
+      <guid>/2016/11/2016-11-09-pythone8bf9ee68ea5e38081e6938de4bd9crabbit-mqe9989fe58897/</guid>
+      <description>在网上，非常少关于 Python 连接操作 Rabbit MQ 的详细信息，pika 文档也是没有汉化，避免以后忘记用法又找一遍教程的尴尬，还是先记下来了，而且最近也没更新什</description>
+    </item>
+    
+    <item>
+      <title>Python之MySQL的Select操作返回Dict类型</title>
+      <link>/2016/09/2016-09-24-pythone4b98bmysqle79a84selecte6938de4bd9ce8bf94e59b9edicte7b1bbe59e8b/</link>
+      <pubDate>Sat, 24 Sep 2016 12:17:53 +0000</pubDate>
+      
+      <guid>/2016/09/2016-09-24-pythone4b98bmysqle79a84selecte6938de4bd9ce8bf94e59b9edicte7b1bbe59e8b/</guid>
+      <description>之前不知道 Select 操作可以获取 Dict 类型，每次取出 Select 返回的 Tuple 都是用下标来取的。只要修改过数据库那下标又不一样，那就要大幅修改 Jinja2 和代码了。假如取出的是 Dict</description>
+    </item>
+    
+    <item>
+      <title>让Python脚本不能同时执行两个（不能同时在后台执行）——单实例</title>
+      <link>/2016/08/2016-08-17-e8aea9pythone8849ae69cace4b88de883bde5908ce697b6e689a7e8a18ce4b8a4e4b8aaefbc88e4b88de883bde5908ce697b6e59ca8e5908ee58fb0e689a7e8a18c/</link>
+      <pubDate>Wed, 17 Aug 2016 13:15:17 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-17-e8aea9pythone8849ae69cace4b88de883bde5908ce697b6e689a7e8a18ce4b8a4e4b8aaefbc88e4b88de883bde5908ce697b6e59ca8e5908ee58fb0e689a7e8a18c/</guid>
+      <description>最近在做一个队列的东西，Python 轮询监听队列内的数据，为了测试，客户端我循环 500 个数据发送过去，结果我在服务端查看输出，只有零零碎碎的一部</description>
+    </item>
+    
+    <item>
+      <title>单节点版Docker管理平台(开发中)</title>
+      <link>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</link>
+      <pubDate>Tue, 16 Aug 2016 15:49:11 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-16-e58d95e88a82e782b9e78988dockere7aea1e79086/</guid>
+      <description>最近在着手Docker资源管理平台的开发，花了几天系统地学习了Docker，并看了下Docker自带的Restful API，贯彻我的“Lea</description>
+    </item>
+    
+    <item>
+      <title>学习网站收集</title>
+      <link>/2016/08/2016-08-03-e5ada6e4b9a0e7bd91e7ab99e694b6e99b86/</link>
+      <pubDate>Wed, 03 Aug 2016 15:24:14 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-03-e5ada6e4b9a0e7bd91e7ab99e694b6e99b86/</guid>
+      <description>Python、Javascript、Git教程：http://www.liaoxuefeng.com/ （廖雪峰的官方网站） Python yield 使用浅析：ht</description>
+    </item>
+    
+    <item>
+      <title>在CentOS6.4部署django环境(python&#43;nginx&#43;uwsgi&#43;mysql)(另外再加一个Redis和Redis-py的配置)</title>
+      <link>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</link>
+      <pubDate>Fri, 24 Jun 2016 12:20:27 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</guid>
+      <description>最近想学学python web，虽然Windows也能部署开发环境，但Linux还是主流，所以直接在Linux上部署环境学习python了。 0x01</description>
+    </item>
+    
+    <item>
+      <title>Python语法学习</title>
+      <link>/2016/05/2016-05-28-pythone8afade6b395e5ada6e4b9a0/</link>
+      <pubDate>Sat, 28 May 2016 15:35:34 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-28-pythone8afade6b395e5ada6e4b9a0/</guid>
+      <description>花了十来分钟看了下python的基本语法。把大概特征都用了一下。 用的是python的2.7版本，有个比较经典的问题就是中文输出出现乱码甚至程</description>
+    </item>
+    
+  </channel>
+</rss>

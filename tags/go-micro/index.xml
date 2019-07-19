@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go-micro on NERVGEEK</title>
+    <link>/tags/go-micro/</link>
+    <description>Recent content in go-micro on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 May 2019 03:42:53 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/go-micro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 10 下的 go-micro 安装笔记（go mod 模式）</title>
+      <link>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</link>
+      <pubDate>Thu, 09 May 2019 03:42:53 +0000</pubDate>
+      
+      <guid>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</guid>
+      <description>初次安装 go-micro ，遇到不少问题。 第一步先安装 go-micro: &amp;lt;code class=&amp;quot;&amp;quot;&amp;gt;go get github.com/micro/go-micro ### 第二步安装 grpc 和 protobuf: 参考本博客文章： [Windows 10 安装 Golang gRpc](https://www.nervgeek.com/2019/04/28/windows-10-%E5%AE%89%E8%A3%85-golang-grpc/) ### 第三步安装 protoc 的 micro 插件 用这个插件生成的代码会有</description>
+    </item>
+    
+  </channel>
+</rss>

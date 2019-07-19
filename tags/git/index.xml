@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on NERVGEEK</title>
+    <link>/tags/git/</link>
+    <description>Recent content in Git on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 03 Aug 2016 15:24:14 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学习网站收集</title>
+      <link>/2016/08/2016-08-03-e5ada6e4b9a0e7bd91e7ab99e694b6e99b86/</link>
+      <pubDate>Wed, 03 Aug 2016 15:24:14 +0000</pubDate>
+      
+      <guid>/2016/08/2016-08-03-e5ada6e4b9a0e7bd91e7ab99e694b6e99b86/</guid>
+      <description>Python、Javascript、Git教程：http://www.liaoxuefeng.com/ （廖雪峰的官方网站） Python yield 使用浅析：ht</description>
+    </item>
+    
+    <item>
+      <title>Git命令以及使用办法</title>
+      <link>/2016/01/how-to-use-git/</link>
+      <pubDate>Fri, 01 Jan 2016 09:53:48 +0000</pubDate>
+      
+      <guid>/2016/01/how-to-use-git/</guid>
+      <description>Git 常用命令 创建本地仓库(repository)，将会在文件夹下创建一个 .git 文件夹，.git 文件夹里存储了所有的版本信息、标记等内容 git init here 把本地</description>
+    </item>
+    
+    <item>
+      <title>Linus，一生只为寻找欢笑</title>
+      <link>/2015/11/linus-story/</link>
+      <pubDate>Mon, 30 Nov 2015 15:40:11 +0000</pubDate>
+      
+      <guid>/2015/11/linus-story/</guid>
+      <description>每个人桌面上一台电脑，这曾经是无数计算机先驱的梦想，这个梦想很早就实现了，在1997年，乔老师和比老师就说过，「比尔，我们共同控制了100%</description>
+    </item>
+    
+  </channel>
+</rss>

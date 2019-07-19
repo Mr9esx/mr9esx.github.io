@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>包装类 on NERVGEEK</title>
+    <link>/tags/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
+    <description>Recent content in 包装类 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 18 Feb 2016 15:45:27 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%8C%85%E8%A3%85%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java的基本数据类型对象与包装类</title>
+      <link>/2016/02/2016-02-18-javae79a84e59fbae69cace695b0e68daee7b1bbe59e8be5afb9e8b1a1e4b88ee58c85e8a385e7b1bb/</link>
+      <pubDate>Thu, 18 Feb 2016 15:45:27 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-18-javae79a84e59fbae69cace695b0e68daee7b1bbe59e8be5afb9e8b1a1e4b88ee58c85e8a385e7b1bb/</guid>
+      <description>“万物皆对象”，Java是一个面向对象的语言，但我们平时使用int，string等基本数据类型却是不面向对象的，在日常开发环境中时有不便，所</description>
+    </item>
+    
+  </channel>
+</rss>

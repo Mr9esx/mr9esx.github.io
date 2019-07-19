@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redis on NERVGEEK</title>
+    <link>/tags/redis/</link>
+    <description>Recent content in Redis on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 18 Apr 2016 14:07:02 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redis之php操作——String</title>
+      <link>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</link>
+      <pubDate>Mon, 18 Apr 2016 14:07:02 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</guid>
+      <description>使用PHP对Redis进行操作： connect(&#39;127.0.0.1&#39;, 6379); //验证密码 $redis-&amp;gt;auth(&amp;quot;asdasd&amp;quot;); /**String操作*/ //set方法，设置一个key和value $redis-&amp;gt;set(&amp;quot;Set&amp;quot;, &amp;quot;Redis!&amp;quot;); //get方法，根</description>
+    </item>
+    
+    <item>
+      <title>CentOS 6.7 安装配置Redis</title>
+      <link>/2016/04/2016-04-17-centos-6-7-e5ae89e8a385e9858de7bdaeredis/</link>
+      <pubDate>Sun, 17 Apr 2016 11:51:37 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-17-centos-6-7-e5ae89e8a385e9858de7bdaeredis/</guid>
+      <description>Redis是一种可持久化、开源、支持网络、基于内存的key-value存储系统，有点类似memcached，性能极高，支持超过100K+ 每秒</description>
+    </item>
+    
+  </channel>
+</rss>

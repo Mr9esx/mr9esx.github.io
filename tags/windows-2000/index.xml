@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows 2000 on NERVGEEK</title>
+    <link>/tags/windows-2000/</link>
+    <description>Recent content in Windows 2000 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 03 Jun 2016 11:17:48 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/windows-2000/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 2000 DHCP 配置用户类</title>
+      <link>/2016/06/2016-06-03-windows-2000-dhcp-e9858de7bdaee794a8e688b7e7b1bb/</link>
+      <pubDate>Fri, 03 Jun 2016 11:17:48 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-03-windows-2000-dhcp-e9858de7bdaee794a8e688b7e7b1bb/</guid>
+      <description>最近要考那个傻逼高新证，看了下书，做了两道习题，那个用户类设置卡住了，经过多次折腾，终于设置成功。 第一步：服务器右键 -&amp;gt; 定义用户类。 ![1K]UW2I6`BHINMA5J%IVEC 第二步：</description>
+    </item>
+    
+  </channel>
+</rss>

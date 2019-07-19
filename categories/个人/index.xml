@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>个人 on NERVGEEK</title>
+    <link>/categories/%E4%B8%AA%E4%BA%BA/</link>
+    <description>Recent content in 个人 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 17 May 2017 15:20:09 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/%E4%B8%AA%E4%BA%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>大学三年</title>
+      <link>/2017/05/2017-05-17-e5a4a7e5ada6e4b889e5b9b4/</link>
+      <pubDate>Wed, 17 May 2017 15:20:09 +0000</pubDate>
+      
+      <guid>/2017/05/2017-05-17-e5a4a7e5ada6e4b889e5b9b4/</guid>
+      <description>我的大学生活，准确来说只有两年半，还有半年时间是出来实习的。虽然时间不多，但我觉得大学三年经历过的事是初高中无法比拟的。当然，初高中所结交的</description>
+    </item>
+    
+    <item>
+      <title>2016，一指团结。</title>
+      <link>/2016/06/2016-06-01-2016efbc8ce4b880e68c87e59ba2e7bb93e38082/</link>
+      <pubDate>Wed, 01 Jun 2016 15:00:41 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-01-2016efbc8ce4b880e68c87e59ba2e7bb93e38082/</guid>
+      <description>六月一日晚上AKB48剧场公演之后宣布 AKB48 45th单曲第八届总选举 的速报排名，指原莉乃掉出了连续三年速报第一，由渡边麻友取得。 今年速报破4w，</description>
+    </item>
+    
+    <item>
+      <title>懒癌万岁，五月病万岁。</title>
+      <link>/2016/05/2016-05-25-e68792e7998ce4b887e5b281efbc8ce4ba94e69c88e79785e4b887e5b281e38082/</link>
+      <pubDate>Wed, 25 May 2016 14:27:45 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e68792e7998ce4b887e5b281efbc8ce4ba94e69c88e79785e4b887e5b281e38082/</guid>
+      <description>发现自己都大半个月没怎么写文章了，最近这两个月虽然学了不少东西，Bootstrap啊，一堆JS库啊，还打算把python和安卓也搞一下啊，但</description>
+    </item>
+    
+  </channel>
+</rss>

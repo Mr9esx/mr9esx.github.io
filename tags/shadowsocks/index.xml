@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shadowsocks on NERVGEEK</title>
+    <link>/tags/shadowsocks/</link>
+    <description>Recent content in shadowsocks on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 May 2016 13:44:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/shadowsocks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在Docker中下载、启动有shadowsocks代理的镜像</title>
+      <link>/2016/05/2016-05-25-e59ca8dockere4b8ade4b88be8bdbde38081e590afe58aa8e69c89shadowsockse4bba3e79086e79a84e9959ce5838f/</link>
+      <pubDate>Wed, 25 May 2016 13:44:22 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e59ca8dockere4b8ade4b88be8bdbde38081e590afe58aa8e69c89shadowsockse4bba3e79086e79a84e9959ce5838f/</guid>
+      <description>测试环境是阿里云的云服务器，目标是成功把ip更改为服务器的ip，即为代理成功。 服务器系统：ubuntu 14.10 64位 Docker信息： Client: Version: 1.11.1 API version: 1.23</description>
+    </item>
+    
+  </channel>
+</rss>

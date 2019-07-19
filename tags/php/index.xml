@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on NERVGEEK</title>
+    <link>/tags/php/</link>
+    <description>Recent content in php on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 13 Dec 2016 08:59:33 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>基于 Yii2 的练手小项目</title>
+      <link>/2016/12/2016-12-13-e59fbae4ba8e-yii2-e79a84e7bb83e6898be5b08fe9a1b9e79bae/</link>
+      <pubDate>Tue, 13 Dec 2016 08:59:33 +0000</pubDate>
+      
+      <guid>/2016/12/2016-12-13-e59fbae4ba8e-yii2-e79a84e7bb83e6898be5b08fe9a1b9e79bae/</guid>
+      <description>Yii2 框架挺好用的，就是和BS前端框架关系太大，源代码都内嵌了BS的样式，导致我用Semantic UI 需要做很多改动，而且要稍微修改一下源代码。 做</description>
+    </item>
+    
+    <item>
+      <title>Java通过Http(URL)获取PHP后台发出的JSON</title>
+      <link>/2016/04/2016-04-23-javae9809ae8bf87httpurle88eb7e58f96phpe5908ee58fb0e58f91e587bae79a84json/</link>
+      <pubDate>Sat, 23 Apr 2016 11:00:55 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-23-javae9809ae8bf87httpurle88eb7e58f96phpe5908ee58fb0e58f91e587bae79a84json/</guid>
+      <description>最近做的匿名版，网页部分已经没什么大问题了，该优化的也优化了，该实现的功能也基本实现了，所以考虑开始制作一个安卓APP，首先需要做的是PHP</description>
+    </item>
+    
+    <item>
+      <title>Redis之php操作——String</title>
+      <link>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</link>
+      <pubDate>Mon, 18 Apr 2016 14:07:02 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-18-redise4b98bphpe6938de4bd9c-string/</guid>
+      <description>使用PHP对Redis进行操作： connect(&#39;127.0.0.1&#39;, 6379); //验证密码 $redis-&amp;gt;auth(&amp;quot;asdasd&amp;quot;); /**String操作*/ //set方法，设置一个key和value $redis-&amp;gt;set(&amp;quot;Set&amp;quot;, &amp;quot;Redis!&amp;quot;); //get方法，根</description>
+    </item>
+    
+    <item>
+      <title>php上传文件过大导致POST空值</title>
+      <link>/2016/03/2016-03-22-phpe4b88ae4bca0e69687e4bbb6e8bf87e5a4a7e5afbce887b4poste7a9bae580bc/</link>
+      <pubDate>Tue, 22 Mar 2016 06:12:37 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-22-phpe4b88ae4bca0e69687e4bbb6e8bf87e5a4a7e5afbce887b4poste7a9bae580bc/</guid>
+      <description>最近在写一个匿名版程序，有一个图片上传功能，程序规定了图片大小不允许超过3M，可是在发1M~2M的图片时，也会上传失败，导致程序报错。 Notice: Undefined index:</description>
+    </item>
+    
+    <item>
+      <title>一键LNMP的命令以及配置文件的存放地址</title>
+      <link>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</link>
+      <pubDate>Thu, 17 Mar 2016 07:32:19 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</guid>
+      <description>一般人快速搭建网站都会选择一键LNMP来快速搭建环境，本博客就是基于那个一键LNMP搭建起来的，日常维护使用非常方便。 管理命令： * **LNM</description>
+    </item>
+    
+    <item>
+      <title>修改WampServer的MySQL空密码</title>
+      <link>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</link>
+      <pubDate>Fri, 04 Mar 2016 07:26:06 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-04-e4bfaee694b9wampservere79a84mysqle7a9bae5af86e7a081/</guid>
+      <description>在Windows下开发PHP，搭建Linux虚拟机无疑性能开销太大，自己在Windows下搭建PHP运行环境也非常麻烦、不稳定，因此很多人会</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x06</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x06/</link>
+      <pubDate>Tue, 12 Jan 2016 08:21:01 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x06/</guid>
+      <description>6.运行带有查询参数的语句 对于 不携带任何参数的查询语句，我们可以使用 query方法处理SELECT操作，使用exec方法处理 INSERT，U</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x05</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x05/</link>
+      <pubDate>Tue, 12 Jan 2016 08:06:50 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x05/</guid>
+      <description>5.执行 INSERT, UPDATE, DELETE 操作 5.1. mysql代码: $results = mysql_query(&amp;quot;UPDATE table SET field=&#39;value&#39;&amp;quot;) or die(mysql_error()); $affected_rows = mysql_affected_rows($result); echo $affected_rows.&#39; were affected&#39;; 5.2. PDO代码: $affected_rows = $db-&amp;gt;exec(&amp;quot;UPDATE table SET field=&#39;value&#39;&amp;quot;); echo $affected_rows.&#39; were affected&#39; DELETE ， INSERT 操作同样适用。</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x04</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x04/</link>
+      <pubDate>Tue, 12 Jan 2016 08:00:29 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x04/</guid>
+      <description>4.简单的查询语句（SELECT） 4.1. mysql代码: $result = mysql_query(&#39;SELECT * from table&#39;) or die(mysql_error()); $num_rows = mysql_num_rows($result); while($row = mysql_fetch_assoc($result)) { echo $row[&#39;field1&#39;].&#39; &#39;.$row[&#39;field2&#39;]; //etc... } 4.2. PDO代码: foreach($db-&amp;gt;query(&#39;SELECT * FROM table&#39;) as $row) { echo $row[&#39;field1&#39;].&#39; &#39;.$row[&#39;field2&#39;]; //etc... } query() 方法返回</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x03</title>
+      <link>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x03/</link>
+      <pubDate>Tue, 12 Jan 2016 07:51:45 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-12-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x03/</guid>
+      <description>3.错误处理 3.1. mysql_*函数的错误处理 //connected to mysql $result = mysql_query(&amp;quot;SELECT * FROM table&amp;quot;, $link) or die(mysql_error($link)); OR die()是个不错的错误处理方法，但是会因此结束页面，将错误信息呈现到用</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x02</title>
+      <link>/2016/01/2016-01-10-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x02/</link>
+      <pubDate>Sun, 10 Jan 2016 11:48:11 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-10-phpe69599e7a88be4b98bpdoe993bee68ea5mysqle695b0e68daee5ba93-0x02/</guid>
+      <description>2.连接MySQL 2.1. 以前的方式 $link = mysql_connect(&#39;localhost&#39;, &#39;user&#39;, &#39;pass&#39;); mysql_select_db(&#39;testdb&#39;, $link); mysql_set_charset(&#39;UTF-8&#39;, $link); 2.2. 新的方式 创建一个PDO对象，参数包括 DSN，username，password 和 一个驱动选</description>
+    </item>
+    
+    <item>
+      <title>PHP教程之PDO链接MySQL数据库 0x01</title>
+      <link>/2016/01/2016-01-05-phpe4b8admysqle695b0e68daee5ba93pdoe69599e7a88b/</link>
+      <pubDate>Tue, 05 Jan 2016 13:41:28 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-05-phpe4b8admysqle695b0e68daee5ba93pdoe69599e7a88b/</guid>
+      <description>1、为什么要使用PDO？ mysql函数已经过时，相当一段时间以来，mysql函数在其他SQL数据库编程接口方面已经有所差别；它不支持预处理，</description>
+    </item>
+    
+    <item>
+      <title>利用“PHP彩蛋”进行敏感信息获取</title>
+      <link>/2015/10/use-php-eggs-for-sensitive-information-acquisition/</link>
+      <pubDate>Mon, 19 Oct 2015 06:51:57 +0000</pubDate>
+      
+      <guid>/2015/10/use-php-eggs-for-sensitive-information-acquisition/</guid>
+      <description>关于 “ PHP 彩蛋” 的说法也许很多老PHPer已经都知道或听说了，好像是早在 PHP4 版本的时候就有彩蛋了，挺好玩儿的，可能近年来逐渐被人们遗忘了，其实彩</description>
+    </item>
+    
+  </channel>
+</rss>

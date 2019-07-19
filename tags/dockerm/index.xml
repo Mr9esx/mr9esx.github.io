@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DockerM on NERVGEEK</title>
+    <link>/tags/dockerm/</link>
+    <description>Recent content in DockerM on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 14 Feb 2017 05:50:38 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/dockerm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS 7.0 配置 DockerM Web 环境</title>
+      <link>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</link>
+      <pubDate>Tue, 14 Feb 2017 05:50:38 +0000</pubDate>
+      
+      <guid>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</guid>
+      <description>一、安装 Docker 1、安装 yum-utils sudo yum &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install -y yum-utils 2、设置 yum 使用稳定的 repository yum-config-manager &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ --add-repo &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ https:&amp;lt;span class=&amp;quot;hljs-comment&amp;quot;&amp;gt;//docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo 3、创建缓存 yum makecache fast 4、安装 Docker yum -y &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install docker-&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;engine 二、安装 Rabbit MQ 1、安装 Erlang yum install erlang 2</description>
+    </item>
+    
+  </channel>
+</rss>

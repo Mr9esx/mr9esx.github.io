@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>微信支付 on NERVGEEK</title>
+    <link>/tags/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/</link>
+    <description>Recent content in 微信支付 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 07 Oct 2018 04:09:50 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>微信支付 - 保证接口的幂等性</title>
+      <link>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</link>
+      <pubDate>Sun, 07 Oct 2018 04:09:50 +0000</pubDate>
+      
+      <guid>/2018/10/2018-10-07-e5beaee4bfa1e694afe4bb98-e59b9ee8b083e8afb7e6b182e5928ce69fa5e8afa2e8aea2e58d95e588a4e696ade694afe4bb98e68890e58a9fe698afe69c89/</guid>
+      <description>在用户重新发起支付之前，先根据现有微信订单号主动去查询订单信息： &amp;lt;code class=&amp;quot;language-python &amp;quot;&amp;gt;# 如果已存在微信订单id，则去查询订单状态 if order_info.wx_pay_id: try: r = pay.order.query(out_trade_no=order_info.wx_pay_id) if r[&amp;quot;return_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot; and r[&amp;quot;result_code&amp;quot;] == &amp;quot;SUCCESS&amp;quot;: try:</description>
+    </item>
+    
+  </channel>
+</rss>

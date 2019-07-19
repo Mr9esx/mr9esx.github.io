@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019s on NERVGEEK</title>
+    <link>/2019/</link>
+    <description>Recent content in 2019s on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 24 Jun 2019 14:21:38 +0000</lastBuildDate>
+    
+	<atom:link href="/2019/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go 面试题</title>
+      <link>/2019/06/golang-interview-question/</link>
+      <pubDate>Mon, 24 Jun 2019 14:21:38 +0000</pubDate>
+      
+      <guid>/2019/06/golang-interview-question/</guid>
+      <description>有些题目是在网上摘录，有些是把自己不懂的列为题目。 1. 描述一下你参加过的项目 答： 2. HTTP1.1 定义了几种方法？分别有什么用？ 答： 定义了八种方法（GET/</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 下的 go-micro 安装笔记（go mod 模式）</title>
+      <link>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</link>
+      <pubDate>Thu, 09 May 2019 03:42:53 +0000</pubDate>
+      
+      <guid>/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/</guid>
+      <description>初次安装 go-micro ，遇到不少问题。 第一步先安装 go-micro: &amp;lt;code class=&amp;quot;&amp;quot;&amp;gt;go get github.com/micro/go-micro ### 第二步安装 grpc 和 protobuf: 参考本博客文章： [Windows 10 安装 Golang gRpc](https://www.nervgeek.com/2019/04/28/windows-10-%E5%AE%89%E8%A3%85-golang-grpc/) ### 第三步安装 protoc 的 micro 插件 用这个插件生成的代码会有</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 安装 Golang gRpc</title>
+      <link>/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/</link>
+      <pubDate>Sun, 28 Apr 2019 07:20:42 +0000</pubDate>
+      
+      <guid>/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/</guid>
+      <description>安装 Protobuf Protobuf 会基于 .proto 文件生成各种 grpc 代码文件。 前往：Github 地址 下载相对应平台的包，并把 bin 目录加入到环境变量里。 打开命令行，输入 protoc 检验一下。 安</description>
+    </item>
+    
+    <item>
+      <title>Go 基础面试题 —— 简短声明</title>
+      <link>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-e7ae80e79fade5a3b0e6988e/</link>
+      <pubDate>Mon, 01 Apr 2019 09:50:47 +0000</pubDate>
+      
+      <guid>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-e7ae80e79fade5a3b0e6988e/</guid>
+      <description>假设声明x并且未声明y，则下面哪些条款是正确的？ x, _ := f() x, _ = f() x, y := f() x, y = f() 基础知识点：简短声明的左边必须存在一个新变量。 输出： x, _ := f()</description>
+    </item>
+    
+    <item>
+      <title>Go 基础面试题 —— slice 的切片、append、range</title>
+      <link>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-slice-e79a84e58887e78987e38081appende38081range/</link>
+      <pubDate>Mon, 01 Apr 2019 08:58:35 +0000</pubDate>
+      
+      <guid>/2019/04/2019-04-01-go-e59fbae7a180e99da2e8af95e9a298-slice-e79a84e58887e78987e38081appende38081range/</guid>
+      <description>执行以下代码时将打印什么？ package main import ( &amp;quot;fmt&amp;quot; ) func main() { s := []int{1, 2, 3} ss := s[1:] ss = append(ss, 4) for _, v := range ss { v += 10 } for i := range ss { ss[i] += 10 } fmt.Println(s) } 基础知识点：slice 是引</description>
+    </item>
+    
+  </channel>
+</rss>

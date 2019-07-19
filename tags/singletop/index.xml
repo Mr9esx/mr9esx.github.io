@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>singleTop on NERVGEEK</title>
+    <link>/tags/singletop/</link>
+    <description>Recent content in singleTop on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 04 May 2016 08:15:57 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/singletop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Activity的singleTop启动模式</title>
+      <link>/2016/05/2016-05-04-activitye79a84singletope590afe58aa8e6a8a1e5bc8f/</link>
+      <pubDate>Wed, 04 May 2016 08:15:57 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-04-activitye79a84singletope590afe58aa8e6a8a1e5bc8f/</guid>
+      <description>在AndroidManifest.xml里把android:launchMode=&amp;ldquo;standard&amp;rdquo;改成andro</description>
+    </item>
+    
+  </channel>
+</rss>

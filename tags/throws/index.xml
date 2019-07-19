@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>throws on NERVGEEK</title>
+    <link>/tags/throws/</link>
+    <description>Recent content in throws on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 28 Jan 2016 16:16:05 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/throws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java中的throws关键字</title>
+      <link>/2016/01/2016-01-28-javae4b8ade79a84throwse585b3e994aee5ad97/</link>
+      <pubDate>Thu, 28 Jan 2016 16:16:05 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-28-javae4b8ade79a84throwse585b3e994aee5ad97/</guid>
+      <description>1 . throws可以在定义一个方法的时候声明，使用throws声明之后的方法将异常抛给调用者处理，方法本身不会处理。 代码示例： class ExceptionDemo01 { public static void main(String[]</description>
+    </item>
+    
+  </channel>
+</rss>

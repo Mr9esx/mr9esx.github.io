@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XSS on NERVGEEK</title>
+    <link>/tags/xss/</link>
+    <description>Recent content in XSS on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 31 May 2016 06:54:41 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/xss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>XSS 与 CSRF 的区别</title>
+      <link>/2016/05/2016-05-31-xss-e4b88e-csrf-e79a84e58cbae588ab/</link>
+      <pubDate>Tue, 31 May 2016 06:54:41 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-31-xss-e4b88e-csrf-e79a84e58cbae588ab/</guid>
+      <description>先把总结放在前面，**XSS只是实现CSRF的其中一个途径，CSRF可以有多种方法实现。** XSS XSS漏洞最常见的是存储型XSS，在一些网站可</description>
+    </item>
+    
+  </channel>
+</rss>

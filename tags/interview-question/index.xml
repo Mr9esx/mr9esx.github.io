@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interview question on NERVGEEK</title>
+    <link>/tags/interview-question/</link>
+    <description>Recent content in interview question on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 24 Jun 2019 14:21:38 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/interview-question/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go 面试题</title>
+      <link>/2019/06/golang-interview-question/</link>
+      <pubDate>Mon, 24 Jun 2019 14:21:38 +0000</pubDate>
+      
+      <guid>/2019/06/golang-interview-question/</guid>
+      <description>有些题目是在网上摘录，有些是把自己不懂的列为题目。 1. 描述一下你参加过的项目 答： 2. HTTP1.1 定义了几种方法？分别有什么用？ 答： 定义了八种方法（GET/</description>
+    </item>
+    
+  </channel>
+</rss>

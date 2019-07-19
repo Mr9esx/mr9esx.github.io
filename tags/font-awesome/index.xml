@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>font awesome on NERVGEEK</title>
+    <link>/tags/font-awesome/</link>
+    <description>Recent content in font awesome on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 29 Feb 2016 04:49:38 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/font-awesome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在网页中使用本地Font Awesome矢量图标</title>
+      <link>/2016/02/2016-02-29-e59ca8e7bd91e9a1b5e4b8ade4bdbfe794a8e69cace59cb0font-awesomee79fa2e9878fe59bbee6a087/</link>
+      <pubDate>Mon, 29 Feb 2016 04:49:38 +0000</pubDate>
+      
+      <guid>/2016/02/2016-02-29-e59ca8e7bd91e9a1b5e4b8ade4bdbfe794a8e69cace59cb0font-awesomee79fa2e9878fe59bbee6a087/</guid>
+      <description>__ 下载地址：font-awesome __ 使用参考：FontAwesome 4.4.0 中完整的585个图标样式CSS参考（本站提供的是4.5.0版本，新增</description>
+    </item>
+    
+  </channel>
+</rss>

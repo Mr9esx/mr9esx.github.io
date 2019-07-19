@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>一键 on NERVGEEK</title>
+    <link>/tags/%E4%B8%80%E9%94%AE/</link>
+    <description>Recent content in 一键 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 17 Mar 2016 07:32:19 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E4%B8%80%E9%94%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一键LNMP的命令以及配置文件的存放地址</title>
+      <link>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</link>
+      <pubDate>Thu, 17 Mar 2016 07:32:19 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</guid>
+      <description>一般人快速搭建网站都会选择一键LNMP来快速搭建环境，本博客就是基于那个一键LNMP搭建起来的，日常维护使用非常方便。 管理命令： * **LNM</description>
+    </item>
+    
+  </channel>
+</rss>

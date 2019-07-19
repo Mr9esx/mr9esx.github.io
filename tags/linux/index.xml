@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on NERVGEEK</title>
+    <link>/tags/linux/</link>
+    <description>Recent content in Linux on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Jun 2016 12:20:27 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在CentOS6.4部署django环境(python&#43;nginx&#43;uwsgi&#43;mysql)(另外再加一个Redis和Redis-py的配置)</title>
+      <link>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</link>
+      <pubDate>Fri, 24 Jun 2016 12:20:27 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-24-e59ca8centos6-4e983a8e7bdb2djangoe78eafe5a283pythonnginxuwsgimysql/</guid>
+      <description>最近想学学python web，虽然Windows也能部署开发环境，但Linux还是主流，所以直接在Linux上部署环境学习python了。 0x01</description>
+    </item>
+    
+    <item>
+      <title>DNS原理入门</title>
+      <link>/2016/06/2016-06-18-dnse58e9fe79086e585a5e997a8/</link>
+      <pubDate>Sat, 18 Jun 2016 02:41:54 +0000</pubDate>
+      
+      <guid>/2016/06/2016-06-18-dnse58e9fe79086e585a5e997a8/</guid>
+      <description>昨天是Linux笔试，老师出了好几道我不是很懂的题，果然是基础不扎实啊。其中简答题需要我们把DNS的查询流程写出来，简直难到我了，所以现在学</description>
+    </item>
+    
+    <item>
+      <title>入侵某网站全过程</title>
+      <link>/2016/05/2016-05-25-e585a5e4beb5e69f90e7bd91e7ab99e585a8e8bf87e7a88b/</link>
+      <pubDate>Wed, 25 May 2016 13:07:07 +0000</pubDate>
+      
+      <guid>/2016/05/2016-05-25-e585a5e4beb5e69f90e7bd91e7ab99e585a8e8bf87e7a88b/</guid>
+      <description>目标站点：http://tbts.edu.tw/ 已知有SQL注入点的地址：http://www.tbts.edu.tw/about.php?</description>
+    </item>
+    
+    <item>
+      <title>CentOS 6.7 安装配置Redis</title>
+      <link>/2016/04/2016-04-17-centos-6-7-e5ae89e8a385e9858de7bdaeredis/</link>
+      <pubDate>Sun, 17 Apr 2016 11:51:37 +0000</pubDate>
+      
+      <guid>/2016/04/2016-04-17-centos-6-7-e5ae89e8a385e9858de7bdaeredis/</guid>
+      <description>Redis是一种可持久化、开源、支持网络、基于内存的key-value存储系统，有点类似memcached，性能极高，支持超过100K+ 每秒</description>
+    </item>
+    
+    <item>
+      <title>一键LNMP的命令以及配置文件的存放地址</title>
+      <link>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</link>
+      <pubDate>Thu, 17 Mar 2016 07:32:19 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-17-e4b880e994aelnmpe79a84e591bde4bba4e4bba5e58f8ae9858de7bdaee69687e4bbb6e79a84e5ad98e694bee59cb0e59d80/</guid>
+      <description>一般人快速搭建网站都会选择一键LNMP来快速搭建环境，本博客就是基于那个一键LNMP搭建起来的，日常维护使用非常方便。 管理命令： * **LNM</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Kylin 15.10 上安装 wine</title>
+      <link>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</link>
+      <pubDate>Wed, 16 Mar 2016 15:04:31 +0000</pubDate>
+      
+      <guid>/2016/03/2016-03-16-ubuntu-kylin-15-10-e4b88ae5ae89e8a385-wine/</guid>
+      <description>笔记本是一台配置很差的电脑，跑Windows已觉卡顿，所以打算安装Ubuntu来延续这台电脑的服役时间。 本来打算安装国产的Linux系统——</description>
+    </item>
+    
+    <item>
+      <title>Linux中的iptables的查看、添加、删除和修改</title>
+      <link>/2016/01/2016-01-27-linuxe4b8ade79a84iptablese79a84e69fa5e79c8be38081e6b7bbe58aa0e38081e588a0e999a4e5928ce4bfaee694b9/</link>
+      <pubDate>Wed, 27 Jan 2016 12:05:09 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-27-linuxe4b8ade79a84iptablese79a84e69fa5e79c8be38081e6b7bbe58aa0e38081e588a0e999a4e5928ce4bfaee694b9/</guid>
+      <description>这里只列出比较常用的参数，详细的man iptables 1、查看 iptables -nvL --line-number * -L 查看当前表的所有规则，默认查看的是filter表，如果要查看NAT表，可以加上-t</description>
+    </item>
+    
+    <item>
+      <title>Docker入门以及搭建WordPress与MySQL</title>
+      <link>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</link>
+      <pubDate>Thu, 21 Jan 2016 08:23:00 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</guid>
+      <description>上年因为比赛所需稍微接触了一下(真的只有一下)Docker，那个时候连启动都不知道，只是去维基了下Docker罢了。 回到正题，我搭建Dock</description>
+    </item>
+    
+    <item>
+      <title>Linus，一生只为寻找欢笑</title>
+      <link>/2015/11/linus-story/</link>
+      <pubDate>Mon, 30 Nov 2015 15:40:11 +0000</pubDate>
+      
+      <guid>/2015/11/linus-story/</guid>
+      <description>每个人桌面上一台电脑，这曾经是无数计算机先驱的梦想，这个梦想很早就实现了，在1997年，乔老师和比老师就说过，「比尔，我们共同控制了100%</description>
+    </item>
+    
+    <item>
+      <title>Iptables入门教程</title>
+      <link>/2015/10/iptables-guide/</link>
+      <pubDate>Thu, 22 Oct 2015 05:25:20 +0000</pubDate>
+      
+      <guid>/2015/10/iptables-guide/</guid>
+      <description>0x00 iptables介绍 linux的包过滤功能，即linux防火墙，它由netfilter 和 iptables 两个组件组成。 netfilter 组件也称为内核空间，是内核的一部</description>
+    </item>
+    
+    <item>
+      <title>史上最全Linux提权后获取敏感信息方法</title>
+      <link>/2015/10/2015-10-18-e58fb2e4b88ae69c80e585a8linuxe68f90e69d83e5908ee88eb7e58f96e6958fe6849fe4bfa1e681afe696b9e6b395/</link>
+      <pubDate>Sun, 18 Oct 2015 07:26:07 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-18-e58fb2e4b88ae69c80e585a8linuxe68f90e69d83e5908ee88eb7e58f96e6958fe6849fe4bfa1e681afe696b9e6b395/</guid>
+      <description>在本文开始之前，我想指出我不是专家。据我所知，在这个庞大的区域,没有一个“神奇”的答案.分享，共享（我的出发点）。下面是一个混合的命令做同样</description>
+    </item>
+    
+  </channel>
+</rss>

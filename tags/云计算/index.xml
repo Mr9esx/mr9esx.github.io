@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云计算 on NERVGEEK</title>
+    <link>/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</link>
+    <description>Recent content in 云计算 on NERVGEEK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 14 Feb 2017 05:50:38 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS 7.0 配置 DockerM Web 环境</title>
+      <link>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</link>
+      <pubDate>Tue, 14 Feb 2017 05:50:38 +0000</pubDate>
+      
+      <guid>/2017/02/2017-02-14-centos-7-0-e9858de7bdae-dockerm-web-e78eafe5a283/</guid>
+      <description>一、安装 Docker 1、安装 yum-utils sudo yum &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install -y yum-utils 2、设置 yum 使用稳定的 repository yum-config-manager &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ --add-repo &amp;lt;span class=&amp;quot;se&amp;quot;&amp;gt;\ https:&amp;lt;span class=&amp;quot;hljs-comment&amp;quot;&amp;gt;//docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo 3、创建缓存 yum makecache fast 4、安装 Docker yum -y &amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;install docker-&amp;lt;span class=&amp;quot;hljs-keyword&amp;quot;&amp;gt;engine 二、安装 Rabbit MQ 1、安装 Erlang yum install erlang 2</description>
+    </item>
+    
+    <item>
+      <title>Docker入门以及搭建WordPress与MySQL</title>
+      <link>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</link>
+      <pubDate>Thu, 21 Jan 2016 08:23:00 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-21-dockere585a5e997a8e4bba5e58f8ae690ade5bbbawordpresse4b88emysql/</guid>
+      <description>上年因为比赛所需稍微接触了一下(真的只有一下)Docker，那个时候连启动都不知道，只是去维基了下Docker罢了。 回到正题，我搭建Dock</description>
+    </item>
+    
+    <item>
+      <title>CloudStack搭建简记</title>
+      <link>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</link>
+      <pubDate>Fri, 16 Oct 2015 01:49:04 +0000</pubDate>
+      
+      <guid>/2015/10/2015-10-16-cloudstacke690ade5bbbae7ae80e8aeb0/</guid>
+      <description>###### 1.CloudStack Management ###### setenforce 0 sed -i &amp;rsquo;s/=enforcing/=disabled/&amp;lsquo; /etc/selinux/config chkconfig &amp;ndash;levels 35 iptables off /etc/init.d/iptables stop sed -i &amp;rsquo;s/=localhost.localdomain/manage.downtown8.com/&amp;lsquo; /etc/sysconfig/network echo &amp;rdquo;192.168.15.2 manage.downtown8.com&amp;rdquo; &amp;gt;&amp;gt;/etc/hosts yum -y install ntp chkconfig ntpd on service ntpd start touch /etc/yum.repos.d/cloudstack.repo cd /etc/yum.repos.d/ #echo -e &amp;rdquo;[cloudstack]\nname=cloudstack\nbaseurl=http://192.168.15.10/cloudstack/nenabled=1ngpgcheck=0&amp;quot; &amp;gt;cloudstack.repo yum -y install mysql-server #[mysqld] sed -i &amp;rdquo;7i\innodb_rollback_on_timeout=1\ninnodb_lock_wait_timeout=600\nmax_connections=350\nlog-bin=mysql-bin\nbinlog-format = &amp;rsquo;ROW&amp;rsquo;&amp;ldquo; /etc/my.cnf service mysqld start chkconfig mysqld on /usr/bin/mysqladmin -u root password &amp;rsquo;downtown#2015&amp;rsquo; yum -y install cloudstack-management cloudstack-setup-databases</description>
+    </item>
+    
+  </channel>
+</rss>

